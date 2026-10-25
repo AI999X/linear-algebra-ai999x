@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "linear-algebra-ai999x"
+version = "1.0.0"
+description = "Offline linear algebra solver: vectors, matrices, determinants, linear systems, eigenvalues, decompositions, least squares, sparse matrices and numerical methods (root finding, interpolation, quadrature), with steps, LaTeX and honest refusals"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "Apache-2.0"}
+authors = [{name = "Ibnul Jaif Farabi"}]
+maintainers = [{name = "AI999X"}]
+keywords = ["linear algebra", "matrix calculator", "determinant", "matrix inverse", "eigenvalues", "linear systems", "LU decomposition", "QR decomposition", "SVD", "least squares", "sparse matrices", "numerical methods", "root finding", "interpolation", "quadrature", "ai999x", "deterministic", "offline", "cpu", "stem", "education", "step-by-step", "latex", "solver"]
+classifiers = ["License :: OSI Approved :: Apache Software License", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3 :: Only", "Operating System :: OS Independent", "Intended Audience :: Education", "Intended Audience :: Science/Research", "Intended Audience :: Developers", "Topic :: Scientific/Engineering", "Topic :: Education", "Development Status :: 5 - Production/Stable"]
+dependencies = ["sympy>=1.12", "mpmath>=1.3"]
+
+[project.optional-dependencies]
+search = ["onnxruntime>=1.17", "tokenizers>=0.15", "numpy>=1.24"]
+plot = ["matplotlib>=3.7"]
+all = ["matplotlib>=3.7", "numpy>=1.24", "onnxruntime>=1.17", "tokenizers>=0.15"]
+reader = ["onnxruntime>=1.17", "tokenizers>=0.15", "numpy>=1.24"]
+
+[project.scripts]
+linear-algebra-ai999x = "linear_algebra_ai999x.cli:main"
+
+[project.urls]
+"Source" = "https://github.com/AI999X/linear-algebra-ai999x"
+"Issues" = "https://github.com/AI999X/linear-algebra-ai999x/issues"
+"Homepage" = "https://ai999x.com"
+"Hugging Face" = "https://huggingface.co/AI999X/linear-algebra-ai999x"
+"Funding" = "https://buymeacoffee.com/ibnuljaiffarabi"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+linear_algebra_ai999x = ["pack/*.json", "pack/*/*.json", "pack/*.sqlite", "pack/capabilities/*.py", "pack/search/*.onnx", "pack/reader/*.onnx"]

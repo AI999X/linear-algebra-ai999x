@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "linear-algebra-ai999x: an offline, verified linear algebra solver"
+authors:
+  - family-names: Farabi
+    given-names: Ibnul Jaif
+    affiliation: AI999X
+version: 1.0.0
+license: Apache-2.0
+url: "https://huggingface.co/AI999X/linear-algebra-ai999x"
+repository-code: "https://huggingface.co/AI999X/linear-algebra-ai999x"
+keywords:
+  - linear algebra
+  - matrix calculator
+  - determinant
+  - matrix inverse
+  - eigenvalues
+  - linear systems
+  - LU decomposition
+  - QR decomposition
+  - SVD
+  - least squares
+  - sparse matrices
+  - numerical methods
