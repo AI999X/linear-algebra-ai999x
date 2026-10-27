@@ -1980,6 +1980,10 @@ $$
 - **Assumes:** x and y have the same number of values; more distinct x values than the degree; degree at most 8
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
+![Least-squares fits to the points x = 0, 1, 2, 3, y = 1, 0, 3, 10: the degree-2 polynomial y = 1 − 3x + 2x² (coefficients from the package, the curve evaluated by it at 61 points) and the straight line y = −1 + 3x with R² = 0](https://huggingface.co/AI999X/linear-algebra-ai999x/resolve/main/figures/least-squares-polynomial-fit.svg)
+
+*Least-squares fits to the points x = 0, 1, 2, 3, y = 1, 0, 3, 10: the degree-2 polynomial y = 1 − 3x + 2x² (coefficients from the package, the curve evaluated by it at 61 points) and the straight line y = −1 + 3x with R² = 0.737705.*
+
 ```python
 linear_algebra_ai999x.solve('least_squares_polynomial', x='0, 1, 2, 3', y='1, 0, 3, 10', degree=2)
 # -> coefficients = [1.0, -3.0, 2.0]   (SOLVED)
@@ -2143,6 +2147,10 @@ $$
 - **Method:** one-sided Jacobi (Hestenes) orthogonalization of the columns; the column lengths are the singular values
 - **Assumes:** at most 10 x 10
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
+
+![72 points of the unit circle mapped by A = [[3, 0], [4, 5]]: an ellipse whose semi-axes are the singular values σ₁ = 6](https://huggingface.co/AI999X/linear-algebra-ai999x/resolve/main/figures/singular-values-map.svg)
+
+*72 points of the unit circle mapped by A = [[3, 0], [4, 5]]: an ellipse whose semi-axes are the singular values σ₁ = 6.7082 and σ₂ = 2.23607 returned by the package (the longest and shortest mapped radii drawn: 6.7082 and 2.23607).*
 
 ```python
 linear_algebra_ai999x.solve('singular_values', A='[[3, 0], [4, 5]]')
@@ -2308,6 +2316,10 @@ $$
 - **Method:** Gaussian elimination with partial pivoting (Doolittle form) in floating point
 - **Assumes:** A is square and nonsingular; at most 10 x 10; pivot: the first row of largest magnitude in the column (the scipy.linalg.lu convention $A = P$ L U)
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
+
+![The LU factorisation with partial pivoting returned by the package for A = [[2, 1, 1], [4, -6, 0], [-2, 7, 2]]: A = P L U with P a permutation, L unit lower triangular and U upper triangular (cells shaded by magnitude; negative values in the second colour)](https://huggingface.co/AI999X/linear-algebra-ai999x/resolve/main/figures/lu-decomposition-heatmap.svg)
+
+*The LU factorisation with partial pivoting returned by the package for A = [[2, 1, 1], [4, -6, 0], [-2, 7, 2]]: A = P L U with P a permutation, L unit lower triangular and U upper triangular (cells shaded by magnitude; negative values in the second colour). The product P L U, also computed by the package, equals A.*
 
 ```python
 linear_algebra_ai999x.solve('lu_decomposition', A='[[1, 2], [3, 4]]')
@@ -2546,6 +2558,10 @@ $$
 - **Method:** cyclic Jacobi rotations; the accumulated rotations are the eigenvectors
 - **Assumes:** A is symmetric; the eigenvalues are distinct; at most 10 x 10; sign convention: the first entry of largest magnitude of each eigenvector is positive
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
+
+![The unit square and its image under A = [[2, 1], [1, 2]] (each corner mapped by the package's matrix–vector product), with the eigenvectors it returned and their images: λ1 = 1 along (0](https://huggingface.co/AI999X/linear-algebra-ai999x/resolve/main/figures/symmetric-eigenvectors-map.svg)
+
+*The unit square and its image under A = [[2, 1], [1, 2]] (each corner mapped by the package's matrix–vector product), with the eigenvectors it returned and their images: λ1 = 1 along (0.707107, -0.707107); λ2 = 3 along (0.707107, 0.707107).*
 
 ```python
 linear_algebra_ai999x.solve('symmetric_eigenvectors', A='[[2, 1], [1, 2]]')
@@ -3572,6 +3588,10 @@ $$
 - **Method:** solve the tridiagonal system for the knot second derivatives exactly, then evaluate the cubic piece
 - **Assumes:** x strictly increasing, at least 3 knots (at most 60); x[0] <= $at  \leq  x$[-1]; natural end conditions S''$(x_{0}) = S$''$(xn) = 0$
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
+
+![Three interpolants through the nodes x = 0, 1, 2, 3, 4, y = 0, 2, 1, 3, 2, each evaluated by the package at 81 points: the natural cubic spline, the degree-4 Lagrange polynomial and piecewise-linear interpolation; marked: x = 2](https://huggingface.co/AI999X/linear-algebra-ai999x/resolve/main/figures/natural-cubic-spline-curve.svg)
+
+*Three interpolants through the nodes x = 0, 1, 2, 3, 4, y = 0, 2, 1, 3, 2, each evaluated by the package at 81 points: the natural cubic spline, the degree-4 Lagrange polynomial and piecewise-linear interpolation; marked: x = 2.5, spline value = 1.91964.*
 
 ```python
 linear_algebra_ai999x.solve('natural_cubic_spline', x='0, 1, 2', y='0, 1, 0', at=0.5)

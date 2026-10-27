@@ -4,7 +4,9 @@
 
 **[Install](https://pypi.org/project/linear-algebra-ai999x/)** · **[Capability guide](https://huggingface.co/AI999X/linear-algebra-ai999x/tree/main/docs)** · **[Evaluation](https://huggingface.co/AI999X/linear-algebra-ai999x/tree/main/evaluation)** · **[AI999X on Hugging Face](https://huggingface.co/AI999X)** · **[Website](https://ai999x.com)** · **[Support: Buy Me a Coffee](https://buymeacoffee.com/ibnuljaiffarabi)**
 
-License: Apache-2.0 · Author: Ibnul Jaif Farabi (creator and engineer) · Organization: AI999X · Version 1.0.0
+License: Apache-2.0 · Author: Ibnul Jaif Farabi (creator and engineer) · Organization: AI999X · Version 1.0.1
+
+Field: **Mathematics & Statistics** · Tasks: Question Answering, Token Classification, Text Classification, Sentence Similarity, Feature Extraction
 
 linear-algebra-ai999x is an offline, deterministic Python solver that answers linear algebra questions with verified results from 89 certified capabilities, gives 399 documented answers identically on Windows and Linux, and refuses rather than guesses when an answer cannot be verified.
 
@@ -25,7 +27,7 @@ linear-algebra-ai999x is an offline, deterministic Python solver that answers li
 
 | Property | Value |
 |---|---|
-| Package | `linear-algebra-ai999x` 1.0.0 (import `linear_algebra_ai999x`) |
+| Package | `linear-algebra-ai999x` 1.0.1 (import `linear_algebra_ai999x`) |
 | Type | Deterministic neuro-symbolic linear algebra engine (rule-based reading + certified symbolic capabilities) |
 | Capabilities | 89 certified procedures |
 | Knowledge pack | version 1.0.0 |
@@ -59,7 +61,7 @@ linear_algebra.ask("Who created you?").message
 # -> linear-algebra-ai999x was created and engineered by Ibnul Jaif Farabi at AI999X.
 ```
 
-Command line: `linear-algebra-ai999x "<question>"`, `linear-algebra-ai999x --capabilities`. The outputs above were produced by running this exact code on linear-algebra-ai999x 1.0.0.
+Command line: `linear-algebra-ai999x "<question>"`, `linear-algebra-ai999x --capabilities`. The outputs above were produced by running this exact code on linear-algebra-ai999x 1.0.1.
 
 ## Find the right capability, and draw it
 
@@ -69,7 +71,7 @@ Command line: `linear-algebra-ai999x "<question>"`, `linear-algebra-ai999x --cap
 import linear_algebra_ai999x as linear_algebra
 
 linear_algebra.search("Solve x^2 - 5x + 6 = 0", k=2)
-# -> Roots of a quadratic equation (algebra-ai999x, 0.67); Solution of two linear equations in two unknowns (algebra-ai999x, 0.57)
+# -> Roots of a quadratic equation (math-foundations-ai999x, 0.63); Roots of a cubic equation (math-foundations-ai999x, 0.59)
 ```
 
 ## How every answer is verified
@@ -80,6 +82,116 @@ linear_algebra.search("Solve x^2 - 5x + 6 = 0", k=2)
 4. **Checking** — dimensions, substitution back into the defining equation, and agreement between independent readings; any disagreement becomes a refusal, never a number.
 
 Capabilities are certified before they ship: each must reproduce hand-worked reference cases, reject a deliberately wrong variant (a control), and leave every benchmark answer unchanged.
+
+## Worked examples
+
+Each question was put to `linear-algebra-ai999x`; the answer is the one it returned, with the steps it took.
+
+**Determinant of a 3 x 3 matrix** · _Determinants_
+
+> Find the determinant of [[2, 0, 1], [1, 3, 2], [1, 1, 2]].
+
+→ **det = 6**
+
+<details><summary>Steps</summary>
+
+- Determinant of a 3 x 3 matrix: A = [2 0 1; 1 3 2; 1 1 2] → det = 6
+
+</details>
+
+**Two linear equations in two unknowns** · _Linear systems_
+
+> Solve the system 2x + 3y = 7, x - y = 1.
+
+→ **solution = [2, 1], det = -5**
+
+<details><summary>Steps</summary>
+
+- Two linear equations in two unknowns: A = [2 3; 1 -1], b = [7, 1] → solution = [2, 1], det = -5
+
+</details>
+
+**Eigenvalues of a 2 x 2 matrix** · _Eigenvalues_
+
+> Find the eigenvalues of [[2, 1], [1, 2]].
+
+→ **lambda1 = 1, lambda2 = 3**
+
+<details><summary>Steps</summary>
+
+- Eigenvalues of a 2 x 2 matrix: A = [2 1; 1 2] → lambda1 = 1, lambda2 = 3
+
+</details>
+
+**Root of a polynomial by Newton's method** · _Numerical methods_
+
+> Use Newton's method to find a root of x^3 - 2x - 5 starting from x0 = 2.
+
+→ **root = 2.094551482**
+
+<details><summary>Steps</summary>
+
+- Root of a polynomial by Newton's method: coefficients = [1, 0, -2, -5], x0 = 2 → root = 2.094551482
+
+</details>
+
+**QR decomposition (Householder)** · _Decompositions_
+
+`m.solve("qr_decomposition", A="[[3, 1], [4, 2]]")`
+
+→ **Q = [[0.6, -0.8], [0.8, 0.6]], R = [[5, 2.2], [-0, 0.4]]**
+
+<details><summary>Steps</summary>
+
+- QR decomposition (Householder): A = [3 1; 4 2] → Q = [[0.6, -0.8], [0.8, 0.6]], R = [[5, 2.2], [-0, 0.4]]
+
+</details>
+
+**Least-squares regression line** · _Least squares_
+
+> Find the least squares line for the points (1, 2), (2, 3), (3, 5), (4, 4).
+
+→ **slope = 0.8, intercept = 1.5, r_squared = 0.64**
+
+<details><summary>Steps</summary>
+
+- Least-squares regression line: x = [1, 2, 3, 4], y = [2, 3, 5, 4] → slope = 0.8, intercept = 1.5, r_squared = 0.64
+
+</details>
+
+## Figures
+
+Every point was computed by `linear-algebra-ai999x`.
+
+**A linear map of the plane and its eigenvectors**
+
+![A linear map of the plane and its eigenvectors — computed by linear-algebra-ai999x](https://huggingface.co/AI999X/linear-algebra-ai999x/resolve/main/figures/symmetric-eigenvectors-map.svg)
+
+_The unit square and its image under A = [[2, 1], [1, 2]] (each corner mapped by the package's matrix–vector product), with the eigenvectors it returned and their images: λ1 = 1 along (0.707107, -0.707107); λ2 = 3 along (0.707107, 0.707107)._
+
+**The unit circle under a matrix: singular values as semi-axes**
+
+![The unit circle under a matrix: singular values as semi-axes — computed by linear-algebra-ai999x](https://huggingface.co/AI999X/linear-algebra-ai999x/resolve/main/figures/singular-values-map.svg)
+
+_72 points of the unit circle mapped by A = [[3, 0], [4, 5]]: an ellipse whose semi-axes are the singular values σ₁ = 6.7082 and σ₂ = 2.23607 returned by the package (the longest and shortest mapped radii drawn: 6.7082 and 2.23607)._
+
+**LU factorisation as matrices**
+
+![LU factorisation as matrices — computed by linear-algebra-ai999x](https://huggingface.co/AI999X/linear-algebra-ai999x/resolve/main/figures/lu-decomposition-heatmap.svg)
+
+_The LU factorisation with partial pivoting returned by the package for A = [[2, 1, 1], [4, -6, 0], [-2, 7, 2]]: A = P L U with P a permutation, L unit lower triangular and U upper triangular (cells shaded by magnitude; negative values in the second colour). The product P L U, also computed by the package, equals A._
+
+**Least-squares polynomial and line through the same points**
+
+![Least-squares polynomial and line through the same points — computed by linear-algebra-ai999x](https://huggingface.co/AI999X/linear-algebra-ai999x/resolve/main/figures/least-squares-polynomial-fit.svg)
+
+_Least-squares fits to the points x = 0, 1, 2, 3, y = 1, 0, 3, 10: the degree-2 polynomial y = 1 − 3x + 2x² (coefficients from the package, the curve evaluated by it at 61 points) and the straight line y = −1 + 3x with R² = 0.737705._
+
+**Interpolation through five nodes: spline, polynomial, linear**
+
+![Interpolation through five nodes: spline, polynomial, linear — computed by linear-algebra-ai999x](https://huggingface.co/AI999X/linear-algebra-ai999x/resolve/main/figures/natural-cubic-spline-curve.svg)
+
+_Three interpolants through the nodes x = 0, 1, 2, 3, 4, y = 0, 2, 1, 3, 2, each evaluated by the package at 81 points: the natural cubic spline, the degree-4 Lagrange polynomial and piecewise-linear interpolation; marked: x = 2.5, spline value = 1.91964._
 
 ## Capabilities
 
@@ -104,10 +216,10 @@ Capabilities are certified before they ship: each must reproduce hand-worked ref
 ## Citation
 
 ```bibtex
-@software{linear_algebra_ai999x_1_0_0,
+@software{linear_algebra_ai999x_1_0_1,
   title  = {linear-algebra-ai999x: an offline, verified linear algebra solver},
   author = {Farabi, Ibnul Jaif}, organization = {AI999X},
-  year   = {2026}, version = {1.0.0},
+  year   = {2026}, version = {1.0.1},
   url    = {https://huggingface.co/AI999X/linear-algebra-ai999x}
 }
 ```
