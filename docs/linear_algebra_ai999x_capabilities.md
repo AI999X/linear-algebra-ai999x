@@ -220,6 +220,10 @@ $$
 - **Assumes:** u and v have the same number of entries
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
+![the vector u + v (sum) returned by linear-algebra-ai999x for the worked example, one value for each u (first vector) (3 values, first 5, last 9, largest 9)](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/vector-addition-series)
+
+*the vector u + v (sum) returned by linear-algebra-ai999x for the worked example, one value for each u (first vector) (3 values, first 5, last 9, largest 9). Inputs: u = 1, 2, 3, v = 4, 5, 6.*
+
 ```python
 linear_algebra_ai999x.solve('vector_addition', u='1, 2, 3', v='4, 5, 6')
 # -> sum = [5.0, 7.0, 9.0]   (SOLVED)
@@ -260,6 +264,10 @@ $$
 - **Method:** entry-by-entry subtraction (exact decimal arithmetic)
 - **Assumes:** u and v have the same number of entries
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
+
+![The plane vectors of the worked example as arrows from the origin: input u = (5, 3), v = (2, 7); returned by linear-algebra-ai999x: difference = (3, -4)](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/vector-subtraction-vectors)
+
+*The plane vectors of the worked example as arrows from the origin: input u = (5, 3), v = (2, 7); returned by linear-algebra-ai999x: difference = (3, -4). Marked: the tip of each returned vector.*
 
 ```python
 linear_algebra_ai999x.solve('vector_subtraction', u='5, 3', v='2, 7')
@@ -302,6 +310,10 @@ $$
 - **Assumes:** 
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
+![the vector k v (product) returned by linear-algebra-ai999x for the worked example, one value for each position in the list (3 values, first 4, last 12, largest 12)](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/scalar-vector-multiplication-series)
+
+*the vector k v (product) returned by linear-algebra-ai999x for the worked example, one value for each position in the list (3 values, first 4, last 12, largest 12). Inputs: k = 4, v = 1, -2, 3.*
+
 ```python
 linear_algebra_ai999x.solve('scalar_vector_multiplication', k=4, v='1, -2, 3')
 # -> product = [4.0, -8.0, 12.0]   (SOLVED)
@@ -343,6 +355,10 @@ $$
 - **Assumes:** u and v have the same number of entries
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
+![dot (the dot product u ](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/dot-product-sensitivity)
+
+*dot (the dot product u . v) as value 3 of u (first vector) moves from 0 to 4, the other values as given (1, 2, 3); 41 runs of linear-algebra-ai999x. Other inputs: v = 4, -5, 6. Marked: the worked example, u[3] = 3, dot = 12.*
+
 ```python
 linear_algebra_ai999x.solve('dot_product', u='1, 2, 3', v='4, -5, 6')
 # -> dot = 12   (SOLVED)
@@ -383,6 +399,10 @@ $$
 - **Method:** determinant formula (u2 $v_{3} - u_{3}$ v2, u3 $v_{1} - u_{1}$ v3, u1 $v_{2} - u_{2}$ v1), exact decimal arithmetic
 - **Assumes:** u and v have exactly 3 entries
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
+
+![the vector u x v (cross) returned by linear-algebra-ai999x for the worked example, one value for each u (first vector (3 entries)) (3 values, first -3, last -3, largest 6)](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/cross-product-series)
+
+*the vector u x v (cross) returned by linear-algebra-ai999x for the worked example, one value for each u (first vector (3 entries)) (3 values, first -3, last -3, largest 6). Inputs: u = 1, 2, 3, v = 4, 5, 6.*
 
 ```python
 linear_algebra_ai999x.solve('cross_product', u='1, 2, 3', v='4, 5, 6')
@@ -426,6 +446,10 @@ $$
 - **Assumes:** 
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
+![norm (Euclidean length |v|_2) as value 2 of v (the vector) moves from 2](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/vector-norm-sensitivity)
+
+*norm (Euclidean length |v|_2) as value 2 of v (the vector) moves from 2.5 to 4.5, the other values as given (3, 4); 41 runs of linear-algebra-ai999x. Marked: the worked example, v[2] = 4, norm = 5.*
+
 ```python
 linear_algebra_ai999x.solve('vector_norm', v='3, 4')
 # -> norm = 5, norm1 = 7, norm_inf = 4   (SOLVED)
@@ -465,6 +489,10 @@ $$
 - **Method:** divide each entry by the Euclidean length
 - **Assumes:** v is not the zero vector
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
+
+![The plane vectors of the worked example as arrows from the origin: input v = (3, 4); returned by linear-algebra-ai999x: unit = (0](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/unit-vector-vectors)
+
+*The plane vectors of the worked example as arrows from the origin: input v = (3, 4); returned by linear-algebra-ai999x: unit = (0.6, 0.8). Marked: the tip of each returned vector.*
 
 ```python
 linear_algebra_ai999x.solve('unit_vector', v='3, 4')
@@ -507,6 +535,10 @@ $$
 - **Method:** $\theta = 2$ atan2(|a - b|, |a + b|) with a, b the unit vectors (accurate also near 0 and 180 degrees)
 - **Assumes:** u and v have the same number of entries; neither vector is zero
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
+
+![angle_degrees (angle in degrees) as value 2 of u (first vector) moves from 0 to 1](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/angle-between-vectors-sensitivity)
+
+*angle_degrees (angle in degrees) as value 2 of u (first vector) moves from 0 to 1.5, the other values as given (1, 0); 41 runs of linear-algebra-ai999x. Other inputs: v = 1, 1. Marked: the worked example, u[2] = 0, angle_degrees = 45.*
 
 ```python
 linear_algebra_ai999x.solve('angle_between_vectors', u='1, 0', v='1, 1')
@@ -554,6 +586,10 @@ $$
 - **Assumes:** the points have the same number of coordinates
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
+![distance (Euclidean distance |p - r|) as value 2 of p (coordinates of the first point) moves from 0](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/distance-between-points-sensitivity)
+
+*distance (Euclidean distance |p - r|) as value 2 of p (coordinates of the first point) moves from 0.5 to 2.5, the other values as given (1, 2); 41 runs of linear-algebra-ai999x. Other inputs: r = 4, 6. Marked: the worked example, p[2] = 2, distance = 5.*
+
 ```python
 linear_algebra_ai999x.solve('distance_between_points', p='1, 2', r='4, 6')
 # -> distance = 5   (SOLVED)
@@ -596,6 +632,10 @@ $$
 - **Assumes:** each vector has exactly 3 entries
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
+![The worked example of Scalar triple product (volume of a parallelepiped) as inputs and results: stated u = 1, 0, 0, v = 0, 1, 0, w = 0, 0, 1; returned by linear-algebra-ai999x: triple = 1, volume = 1](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/triple-scalar-product-io)
+
+*The worked example of Scalar triple product (volume of a parallelepiped) as inputs and results: stated u = 1, 0, 0, v = 0, 1, 0, w = 0, 0, 1; returned by linear-algebra-ai999x: triple = 1, volume = 1.*
+
 ```python
 linear_algebra_ai999x.solve('triple_scalar_product', u='1, 0, 0', v='0, 1, 0', w='0, 0, 1')
 # -> triple = 1, volume = 1   (SOLVED)
@@ -636,6 +676,10 @@ $$
 - **Method:** Lagrange's identity |u x v|^2 = |u|^2 |v|^2 - (u . v)^2 (exact under the root)
 - **Assumes:** u and v have the same number of entries, 2 or 3
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
+
+![area (parallelogram area |u x v|) as value 2 of u (first side (2 or 3 entries)) moves from 0 to 4](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/parallelogram-area-sensitivity)
+
+*area (parallelogram area |u x v|) as value 2 of u (first side (2 or 3 entries)) moves from 0 to 4.5, the other values as given (3, 0); 41 runs of linear-algebra-ai999x. Other inputs: v = 1, 2. Marked: the worked example, u[2] = 0, area = 6.*
 
 ```python
 linear_algebra_ai999x.solve('parallelogram_area', u='3, 0', v='1, 2')
@@ -678,6 +722,10 @@ $$
 - **Assumes:** u and v have the same number of entries; v is not the zero vector
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
+![The plane vectors of the worked example as arrows from the origin: input u = (2, 3), v = (1, 0); returned by linear-algebra-ai999x: projection = (2, 0); also returned scalar_projection = 2](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/vector-projection-vectors)
+
+*The plane vectors of the worked example as arrows from the origin: input u = (2, 3), v = (1, 0); returned by linear-algebra-ai999x: projection = (2, 0); also returned scalar_projection = 2. Marked: the tip of each returned vector.*
+
 ```python
 linear_algebra_ai999x.solve('vector_projection', u='2, 3', v='1, 0')
 # -> projection = [2.0, 0.0], scalar_projection = 2   (SOLVED)
@@ -718,6 +766,10 @@ $$
 - **Method:** multiply by the rotation matrix [[cos t, -sin t], [sin t, cos t]] (exact at multiples of 90 degrees)
 - **Assumes:** v has 2 entries; a positive angle turns counterclockwise
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
+
+![The plane vectors of the worked example as arrows from the origin: input v = (1, 0); returned by linear-algebra-ai999x: rotated = (0, 1)](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/rotate-vector-2d-vectors)
+
+*The plane vectors of the worked example as arrows from the origin: input v = (1, 0); returned by linear-algebra-ai999x: rotated = (0, 1). Other inputs: angle = 90. Marked: the tip of each returned vector.*
 
 ```python
 linear_algebra_ai999x.solve('rotate_vector_2d', v='1, 0', angle=90)
@@ -765,6 +817,10 @@ $$
 - **Assumes:** A and B have the same shape
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
+![The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): A (input); B (input); sum (returned)](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/matrix-addition-matrix)
+
+*The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): A (input); B (input); sum (returned).*
+
 ```python
 linear_algebra_ai999x.solve('matrix_addition', A='[[1, 2], [3, 4]]', B='[[5, 6], [7, 8]]')
 # -> sum = [[6.0, 8.0], [10.0, 12.0]]   (SOLVED)
@@ -806,6 +862,10 @@ $$
 - **Assumes:** A and B have the same shape
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
+![The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): A (input); B (input); difference (returned)](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/matrix-subtraction-matrix)
+
+*The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): A (input); B (input); difference (returned).*
+
 ```python
 linear_algebra_ai999x.solve('matrix_subtraction', A='[[5, 6], [7, 8]]', B='[[1, 1], [1, 1]]')
 # -> difference = [[4.0, 5.0], [6.0, 7.0]]   (SOLVED)
@@ -846,6 +906,10 @@ $$
 - **Assumes:** 
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
+![The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): A (input); product (returned)](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/scalar-matrix-multiplication-matrix)
+
+*The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): A (input); product (returned). Other inputs: k = 3.*
+
 ```python
 linear_algebra_ai999x.solve('scalar_matrix_multiplication', k=3, A='[[1, 2], [3, 4]]')
 # -> product = [[3.0, 6.0], [9.0, 12.0]]   (SOLVED)
@@ -885,6 +949,10 @@ $$
 - **Assumes:** 
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
+![The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): A (input); transpose (returned)](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/matrix-transpose-matrix)
+
+*The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): A (input); transpose (returned).*
+
 ```python
 linear_algebra_ai999x.solve('matrix_transpose', A='[[1, 2, 3], [4, 5, 6]]')
 # -> transpose = [[1.0, 4.0], [2.0, 5.0], [3.0, 6.0]]   (SOLVED)
@@ -923,6 +991,10 @@ $$
 - **Method:** sum of the diagonal (exact)
 - **Assumes:** A is square
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
+
+![The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): A (input)](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/matrix-trace-matrix)
+
+*The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): A (input). Returned with them by linear-algebra-ai999x: trace = 5.*
 
 ```python
 linear_algebra_ai999x.solve('matrix_trace', A='[[1, 2], [3, 4]]')
@@ -965,6 +1037,10 @@ $$
 - **Assumes:** columns of A = rows of B; at most 10 rows and columns
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
+![The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): A (input); B (input); product (returned)](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/matrix-multiplication-matrix)
+
+*The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): A (input); B (input); product (returned).*
+
 ```python
 linear_algebra_ai999x.solve('matrix_multiplication', A='[[1, 2], [3, 4]]', B='[[5, 6], [7, 8]]')
 # -> product = [[19.0, 22.0], [43.0, 50.0]]   (SOLVED)
@@ -1005,6 +1081,14 @@ $$
 - **Method:** dot product of each row with x (exact decimal arithmetic)
 - **Assumes:** columns of A = length of x
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
+
+![The plane vectors of the worked example as arrows from the origin: input x = (5, 6); returned by linear-algebra-ai999x: image = (17, 39)](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/matrix-vector-product-vectors)
+
+*The plane vectors of the worked example as arrows from the origin: input x = (5, 6); returned by linear-algebra-ai999x: image = (17, 39). Other inputs: A = [[1, 2], [3, 4]]. Marked: the tip of each returned vector.*
+
+![The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): A (input); image (returned)](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/matrix-vector-product-matrix)
+
+*The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): A (input); image (returned). Other inputs: x = 5, 6.*
 
 ```python
 linear_algebra_ai999x.solve('matrix_vector_product', A='[[1, 2], [3, 4]]', x='5, 6')
@@ -1047,6 +1131,10 @@ $$
 - **Assumes:** 
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
+![The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): outer (returned)](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/outer-product-matrix)
+
+*The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): outer (returned). Other inputs: u = 1, 2, v = 3, 4, 5.*
+
 ```python
 linear_algebra_ai999x.solve('outer_product', u='1, 2', v='3, 4, 5')
 # -> outer = [[3.0, 4.0, 5.0], [6.0, 8.0, 10.0]]   (SOLVED)
@@ -1086,6 +1174,10 @@ $$
 - **Assumes:** each matrix at most 6 x 6
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
+![The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): A (input); B (input); kron (returned)](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/kronecker-product-matrix)
+
+*The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): A (input); B (input); kron (returned).*
+
 ```python
 linear_algebra_ai999x.solve('kronecker_product', A='[[1, 2], [3, 4]]', B='[[0, 1], [1, 0]]')
 # -> kron = [[0.0, 1.0, 0.0, 2.0], [1.0, 0.0, 2.0, 0.0], [0.0, 3.0, 0.0, 4.0], [3.0, 0.0, 4.0, 0.0]]   (SOLVED)
@@ -1124,6 +1216,10 @@ $$
 - **Method:** binary powering (repeated squaring) in exact decimal arithmetic
 - **Assumes:** A is square; k is a whole number, $0  \leq  k  \leq  64$
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
+
+![The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): A (input); power (returned)](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/matrix-power-matrix)
+
+*The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): A (input); power (returned). Other inputs: k = 3.*
 
 ```python
 linear_algebra_ai999x.solve('matrix_power', A='[[1, 1], [0, 1]]', k=3)
@@ -1171,6 +1267,10 @@ $$
 - **Assumes:** A is 2 x 2
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
+![The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): A (input)](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/determinant-2x2-matrix)
+
+*The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): A (input). Returned with them by linear-algebra-ai999x: det = -2.*
+
 ```python
 linear_algebra_ai999x.solve('determinant_2x2', A='[[1, 2], [3, 4]]')
 # -> det = -2   (SOLVED)
@@ -1215,6 +1315,10 @@ $$
 - **Assumes:** A is 3 x 3
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
+![The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): A (input)](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/determinant-3x3-matrix)
+
+*The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): A (input). Returned with them by linear-algebra-ai999x: det = 6.*
+
 ```python
 linear_algebra_ai999x.solve('determinant_3x3', A='[[2, 0, 1], [1, 3, 2], [1, 1, 2]]')
 # -> det = 6   (SOLVED)
@@ -1258,6 +1362,10 @@ $$
 - **Method:** Gaussian elimination with partial pivoting in exact rational arithmetic: det = (-1)^swaps x product of pivots
 - **Assumes:** A is square; at most 10 x 10
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
+
+![The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): A (input)](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/determinant-matrix)
+
+*The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): A (input). Returned with them by linear-algebra-ai999x: det = 4.*
 
 ```python
 linear_algebra_ai999x.solve('determinant', A='[[1, 2, 0, 0], [3, 4, 0, 0], [0, 0, 5, 6], [0, 0, 7, 8]]')
@@ -1304,6 +1412,10 @@ $$
 - **Assumes:** A is square; det $A  \neq  0$ (a singular matrix has no inverse); at most 10 x 10
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
+![The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): A (input); inverse (returned)](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/matrix-inverse-matrix)
+
+*The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): A (input); inverse (returned).*
+
 ```python
 linear_algebra_ai999x.solve('matrix_inverse', A='[[4, 7], [2, 6]]')
 # -> inverse = [[0.6, -0.7], [-0.2, 0.4]]   (SOLVED)
@@ -1345,6 +1457,14 @@ $$
 - **Method:** Cramer's rule x_j = det(A_j)/det(A) in exact decimal arithmetic
 - **Assumes:** A is 2 x 2; det $A  \neq  0$ (otherwise there is no unique solution)
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
+
+![The plane vectors of the worked example as arrows from the origin: input b = (7, 1); returned by linear-algebra-ai999x: solution = (2, 1); also returned det = -5](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/solve-2x2-system-vectors)
+
+*The plane vectors of the worked example as arrows from the origin: input b = (7, 1); returned by linear-algebra-ai999x: solution = (2, 1); also returned det = -5. Other inputs: A = 2 3; 1 -1. Marked: the tip of each returned vector.*
+
+![The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): A (input); solution (returned)](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/solve-2x2-system-matrix)
+
+*The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): A (input); solution (returned). Returned with them by linear-algebra-ai999x: det = -5. Other inputs: b = 7, 1.*
 
 ```python
 linear_algebra_ai999x.solve('solve_2x2_system', A='2 3; 1 -1', b='7, 1')
@@ -1389,6 +1509,14 @@ $$
 - **Assumes:** A is 3 x 3; det $A  \neq  0$ (otherwise there is no unique solution)
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
+![the solution (x, y, z) (solution) returned by linear-algebra-ai999x for the worked example, one value for each position in the list (3 values, first 1, last 3, largest 3)](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/solve-3x3-system-series)
+
+*the solution (x, y, z) (solution) returned by linear-algebra-ai999x for the worked example, one value for each position in the list (3 values, first 1, last 3, largest 3). Inputs: A = 1 1 1; 2 -1 1; 1 2 -1, b = 6, 3, 2.*
+
+![The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): A (input); solution (returned)](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/solve-3x3-system-matrix)
+
+*The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): A (input); solution (returned). Returned with them by linear-algebra-ai999x: det = 7. Other inputs: b = 6, 3, 2.*
+
 ```python
 linear_algebra_ai999x.solve('solve_3x3_system', A='1 1 1; 2 -1 1; 1 2 -1', b='6, 3, 2')
 # -> solution = [1.0, 2.0, 3.0], det = 7   (SOLVED)
@@ -1430,6 +1558,14 @@ $$
 - **Assumes:** A is square and nonsingular; b has one entry per row of A; at most 10 x 10
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
+![The plane vectors of the worked example as arrows from the origin: input b = (3, 5); returned by linear-algebra-ai999x: solution = (0](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/solve-linear-system-vectors)
+
+*The plane vectors of the worked example as arrows from the origin: input b = (3, 5); returned by linear-algebra-ai999x: solution = (0.8, 1.4). Other inputs: A = [[2, 1], [1, 3]]. Marked: the tip of each returned vector.*
+
+![The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): A (input); solution (returned)](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/solve-linear-system-matrix)
+
+*The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): A (input); solution (returned). Other inputs: b = 3, 5.*
+
 ```python
 linear_algebra_ai999x.solve('solve_linear_system', A='[[2, 1], [1, 3]]', b='3, 5')
 # -> solution = [0.8, 1.4]   (SOLVED)
@@ -1469,6 +1605,10 @@ $$
 - **Method:** count of pivots of the reduced row echelon form, exact rational arithmetic
 - **Assumes:** at most 10 x 10
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
+
+![The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): A (input)](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/matrix-rank-matrix)
+
+*The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): A (input). Returned with them by linear-algebra-ai999x: rank = 2.*
 
 ```python
 linear_algebra_ai999x.solve('matrix_rank', A='[[1, 2, 3], [2, 4, 6], [1, 0, 1]]')
@@ -1516,6 +1656,10 @@ $$
 - **Assumes:** at most 10 x 10
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
+![The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): A (input); rref (returned)](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/rref-matrix)
+
+*The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): A (input); rref (returned). Returned with them by linear-algebra-ai999x: rank = 2.*
+
 ```python
 linear_algebra_ai999x.solve('rref', A='[[1, 2, 3], [4, 5, 6], [7, 8, 9]]')
 # -> rref = [[1.0, 0.0, -1.0], [0.0, 1.0, 2.0], [0.0, 0.0, 0.0]], pivot_columns = [1.0, 2.0], rank = 2   (SOLVED)
@@ -1555,6 +1699,10 @@ $$
 - **Method:** solve $Ax = 0$ from the exact reduced row echelon form; each free variable gives one basis vector
 - **Assumes:** at most 10 x 10
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
+
+![The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): A (input); basis (returned)](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/null-space-matrix)
+
+*The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): A (input); basis (returned). Returned with them by linear-algebra-ai999x: nullity = 2.*
 
 ```python
 linear_algebra_ai999x.solve('null_space', A='[[1, 2, 3], [2, 4, 6]]')
@@ -1602,6 +1750,10 @@ $$
 - **Assumes:** at most 10 x 10
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
+![The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): A (input); basis (returned)](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/column-space-matrix)
+
+*The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): A (input); basis (returned). Returned with them by linear-algebra-ai999x: dimension = 2.*
+
 ```python
 linear_algebra_ai999x.solve('column_space', A='[[1, 2, 3], [2, 4, 7]]')
 # -> dimension = 2, basis = [[1.0, 2.0], [3.0, 7.0]]   (SOLVED)
@@ -1641,6 +1793,10 @@ $$
 - **Method:** the vectors are independent exactly when the rank of the matrix of rows equals their number (exact)
 - **Assumes:** all vectors have the same length; at most 10 vectors of at most 10 entries
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
+
+![The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): vectors (input)](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/linear-independence-matrix)
+
+*The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): vectors (input). Returned with them by linear-algebra-ai999x: rank = 2.*
 
 ```python
 linear_algebra_ai999x.solve('linear_independence', vectors='1 2 3; 4 5 6; 7 8 9')
@@ -1684,6 +1840,10 @@ $$
 - **Method:** compare rank A, rank [A | b] and the number of unknowns (exact row reduction)
 - **Assumes:** b has one entry per row of A; at most 10 x 10
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
+
+![The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): A (input)](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/linear-system-classification-matrix)
+
+*The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): A (input). Returned with them by linear-algebra-ai999x: rank_A = 1, rank_augmented = 2. Other inputs: b = 2, 5.*
 
 ```python
 linear_algebra_ai999x.solve('linear_system_classification', A='1 1; 2 2', b='2, 5')
@@ -1733,6 +1893,10 @@ $$
 - **Assumes:** A is square, at least 2 x 2; $1  \leq  i$, $j  \leq  n$
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
+![The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): A (input)](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/minor-cofactor-matrix)
+
+*The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): A (input). Returned with them by linear-algebra-ai999x: minor = -6, cofactor = 6. Other inputs: i = 2, j = 3.*
+
 ```python
 linear_algebra_ai999x.solve('minor_cofactor', A='[[1, 2, 3], [4, 5, 6], [7, 8, 10]]', i=2, j=3)
 # -> minor = -6, cofactor = 6   (SOLVED)
@@ -1773,6 +1937,10 @@ $$
 - **Assumes:** A is square; at most 7 x 7
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
+![The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): A (input); adjugate (returned)](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/adjugate-matrix)
+
+*The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): A (input); adjugate (returned).*
+
 ```python
 linear_algebra_ai999x.solve('adjugate', A='[[1, 2], [3, 4]]')
 # -> adjugate = [[4.0, -2.0], [-3.0, 1.0]]   (SOLVED)
@@ -1810,6 +1978,14 @@ $$
 - **Method:** Faddeev-LeVerrier recursion in exact rational arithmetic
 - **Assumes:** A is square; at most 10 x 10
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
+
+![[1, c1, ](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/characteristic-polynomial-series)
+
+*[1, c1, ..., cn] of det(lambda I - A), highest power first (coefficients) returned by linear-algebra-ai999x for the worked example, one value for each position in the list (3 values, first 1, last 3, largest 3). Inputs: A = [[2, 1], [1, 2]].*
+
+![The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): A (input)](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/characteristic-polynomial-matrix)
+
+*The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): A (input).*
 
 ```python
 linear_algebra_ai999x.solve('characteristic_polynomial', A='[[2, 1], [1, 2]]')
@@ -1850,6 +2026,10 @@ $$
 - **Method:** quadratic formula on the characteristic polynomial (trace and determinant exact, stable form)
 - **Assumes:** A is 2 x 2
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
+
+![The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): A (input)](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/eigenvalues-2x2-matrix)
+
+*The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): A (input). Returned with them by linear-algebra-ai999x: lambda1 = 1, lambda2 = 3.*
 
 ```python
 linear_algebra_ai999x.solve('eigenvalues_2x2', A='[[2, 1], [1, 2]]')
@@ -1896,6 +2076,14 @@ $$
 - **Assumes:** n basis vectors of length n that are linearly independent; v has n entries
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
+![The plane vectors of the worked example as arrows from the origin: input v = (3, 1); returned by linear-algebra-ai999x: coordinates = (2, 1)](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/change-of-basis-vectors)
+
+*The plane vectors of the worked example as arrows from the origin: input v = (3, 1); returned by linear-algebra-ai999x: coordinates = (2, 1). Other inputs: basis = 1 1; 1 -1. Marked: the tip of each returned vector.*
+
+![The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): basis (input); coordinates (returned)](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/change-of-basis-matrix)
+
+*The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): basis (input); coordinates (returned). Other inputs: v = 3, 1.*
+
 ```python
 linear_algebra_ai999x.solve('change_of_basis', basis='1 1; 1 -1', v='3, 1')
 # -> coordinates = [2.0, 1.0]   (SOLVED)
@@ -1937,6 +2125,10 @@ $$
 - **Method:** b = Sxy / Sxx, a = mean(y) - b mean(x), R^2 = Sxy^2 / (Sxx Syy), exact sums
 - **Assumes:** x and y have the same number of values, at least 2; the x values are not all equal; the y values are not all equal (otherwise $R^{2}$ is undefined)
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
+
+![The data y (y values) against x (x values) as given in the worked example (4 points); drawn on it from what linear-algebra-ai999x returned: the line y = 1](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/least-squares-line-xy)
+
+*The data y (y values) against x (x values) as given in the worked example (4 points); drawn on it from what linear-algebra-ai999x returned: the line y = 1.5 + 0.8·x from the returned intercept and slope. Also returned: r_squared = 0.64.*
 
 ```python
 linear_algebra_ai999x.solve('least_squares_line', x='1, 2, 3, 4', y='2, 3, 5, 4')
@@ -1983,6 +2175,14 @@ $$
 ![Least-squares fits to the points x = 0, 1, 2, 3, y = 1, 0, 3, 10: the degree-2 polynomial y = 1 − 3x + 2x² (coefficients from the package, the curve evaluated by it at 61 points) and the straight line y = −1 + 3x with R² = 0](https://huggingface.co/AI999X/linear-algebra-ai999x/resolve/main/figures/least-squares-polynomial-fit.svg)
 
 *Least-squares fits to the points x = 0, 1, 2, 3, y = 1, 0, 3, 10: the degree-2 polynomial y = 1 − 3x + 2x² (coefficients from the package, the curve evaluated by it at 61 points) and the straight line y = −1 + 3x with R² = 0.737705.*
+
+![[c0, c1, ](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/least-squares-polynomial-series)
+
+*[c0, c1, ..., cd], lowest power first (coefficients) returned by linear-algebra-ai999x for the worked example, one value for each position in the list (3 values, first 1, last 2, largest 2). Inputs: x = 0, 1, 2, 3, y = 1, 0, 3, 10, degree = 2.*
+
+![The data y (y values) against x (x values) as given in the worked example (4 points)](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/least-squares-polynomial-xy)
+
+*The data y (y values) against x (x values) as given in the worked example (4 points). Other inputs: degree = 2.*
 
 ```python
 linear_algebra_ai999x.solve('least_squares_polynomial', x='0, 1, 2, 3', y='1, 0, 3, 10', degree=2)
@@ -2031,6 +2231,10 @@ $$
 - **Assumes:** at least as many rows as columns; the columns of A are linearly independent; at most 10 x 10
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
+![The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): A (input)](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/least-squares-solution-matrix)
+
+*The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): A (input). Returned with them by linear-algebra-ai999x: residual_norm = 1.1547. Other inputs: b = 1, 1, 0.*
+
 ```python
 linear_algebra_ai999x.solve('least_squares_solution', A='[[1, 0], [0, 1], [1, 1]]', b='1, 1, 0')
 # -> solution = [0.3333333333333333, 0.3333333333333333], residual_norm = 1.1547   (SOLVED)
@@ -2070,6 +2274,10 @@ $$
 - **Assumes:** A has full rank (independent rows or independent columns); at most 10 x 10
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
+![The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): A (input); pseudoinverse (returned)](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/pseudoinverse-matrix)
+
+*The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): A (input); pseudoinverse (returned).*
+
 ```python
 linear_algebra_ai999x.solve('pseudoinverse', A='[[1, 0], [0, 1], [1, 1]]')
 # -> pseudoinverse = [[0.6666666666666666, -0.3333333333333333, 0.3333333333333333], [-0.3333333333333333, 0.6666666666666666, 0.3333333333333333]]   (SOLVED)
@@ -2108,6 +2316,10 @@ $$
 - **Method:** $P = A$ (A^T A)^-1 $A^{T}$ in exact rational arithmetic
 - **Assumes:** the columns of A are linearly independent; at most 10 x 10
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
+
+![The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): A (input); projection (returned)](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/projection-matrix-matrix)
+
+*The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): A (input); projection (returned).*
 
 ```python
 linear_algebra_ai999x.solve('projection_matrix', A='1; 2')
@@ -2152,6 +2364,10 @@ $$
 
 *72 points of the unit circle mapped by A = [[3, 0], [4, 5]]: an ellipse whose semi-axes are the singular values σ₁ = 6.7082 and σ₂ = 2.23607 returned by the package (the longest and shortest mapped radii drawn: 6.7082 and 2.23607).*
 
+![The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): A (input); singular_values (returned)](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/singular-values-matrix)
+
+*The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): A (input); singular_values (returned).*
+
 ```python
 linear_algebra_ai999x.solve('singular_values', A='[[3, 0], [4, 5]]')
 # -> singular_values = [6.708203932499369, 2.2360679774997894]   (SOLVED)
@@ -2194,6 +2410,10 @@ $$
 - **Assumes:** at most 10 x 10
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
+![The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): A (input)](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/matrix-norms-matrix)
+
+*The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): A (input). Returned with them by linear-algebra-ai999x: frobenius = 5.47723, norm1 = 6, norm_inf = 7, norm2 = 5.11667.*
+
 ```python
 linear_algebra_ai999x.solve('matrix_norms', A='[[1, -2], [3, 4]]')
 # -> frobenius = 5.47723, norm1 = 6, norm_inf = 7, norm2 = 5.11667   (SOLVED)
@@ -2233,6 +2453,10 @@ $$
 - **Method:** singular values by one-sided Jacobi; the 1-norm one from the exact inverse
 - **Assumes:** A is square and nonsingular; at most 10 x 10
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
+
+![The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): A (input)](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/condition-number-matrix)
+
+*The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): A (input). Returned with them by linear-algebra-ai999x: cond2 = 4, cond1 = 4.*
 
 ```python
 linear_algebra_ai999x.solve('condition_number', A='[[2, 0], [0, 0.5]]')
@@ -2275,6 +2499,10 @@ $$
 - **Method:** one-sided Jacobi SVD, keep the k largest singular triplets
 - **Assumes:** 1 <= k <= min(rows, columns); $sigma_k > sigma_$(k+1) (otherwise A_k is not unique); at most 10 x 10
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
+
+![The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): A (input); approximation (returned)](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/low-rank-approximation-matrix)
+
+*The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): A (input); approximation (returned). Returned with them by linear-algebra-ai999x: error2 = 1, errorF = 1. Other inputs: k = 1.*
 
 ```python
 linear_algebra_ai999x.solve('low_rank_approximation', A='[[3, 0], [0, 1]]', k=1)
@@ -2321,6 +2549,10 @@ $$
 
 *The LU factorisation with partial pivoting returned by the package for A = [[2, 1, 1], [4, -6, 0], [-2, 7, 2]]: A = P L U with P a permutation, L unit lower triangular and U upper triangular (cells shaded by magnitude; negative values in the second colour). The product P L U, also computed by the package, equals A.*
 
+![The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): A (input); P (returned); L (returned); U (returned)](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/lu-decomposition-matrix)
+
+*The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): A (input); P (returned); L (returned); U (returned).*
+
 ```python
 linear_algebra_ai999x.solve('lu_decomposition', A='[[1, 2], [3, 4]]')
 # -> P = [[0.0, 1.0], [1.0, 0.0]], L = [[1.0, 0.0], [0.3333333333333333, 1.0]], U = [[3.0, 4.0], [0.0, 0.6666666666666667]]   (SOLVED)
@@ -2361,6 +2593,10 @@ $$
 - **Assumes:** rows >= columns; independent columns; at most 10 x 10; convention: the diagonal of R is positive (unique)
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
+![The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): A (input); Q (returned); R (returned)](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/qr-decomposition-matrix)
+
+*The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): A (input); Q (returned); R (returned).*
+
 ```python
 linear_algebra_ai999x.solve('qr_decomposition', A='[[3, 1], [4, 2]]')
 # -> Q = [[0.5999999999999999, -0.7999999999999999], [0.7999999999999999, 0.6000000000000001]], R = [[5.0, 2.1999999999999997], [-0.0, 0.40000000000000013]]   (SOLVED)
@@ -2400,6 +2636,10 @@ $$
 - **Assumes:** the vectors are linearly independent; at most 10 vectors of at most 10 entries
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
+![The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): vectors (input); orthonormal (returned)](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/gram-schmidt-matrix)
+
+*The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): vectors (input); orthonormal (returned).*
+
 ```python
 linear_algebra_ai999x.solve('gram_schmidt', vectors='3 4; 1 0')
 # -> orthonormal = [[0.6, 0.8], [0.7999999999999999, -0.6]]   (SOLVED)
@@ -2438,6 +2678,10 @@ $$
 - **Method:** the Cholesky-Banachiewicz recursion $l_jj = sqrt$(a_jj - sum l_jk^2), l_ij = (a_ij - sum l_ik l_jk)/l_jj
 - **Assumes:** A is symmetric; A is positive definite (checked exactly by its leading minors); at most 10 x 10
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
+
+![The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): A (input); L (returned)](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/cholesky-matrix)
+
+*The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): A (input); L (returned).*
 
 ```python
 linear_algebra_ai999x.solve('cholesky', A='[[4, 2], [2, 3]]')
@@ -2480,6 +2724,10 @@ $$
 - **Assumes:** A is symmetric; at most 10 x 10
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
+![The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): A (input); leading_minors (returned)](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/positive-definiteness-matrix)
+
+*The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): A (input); leading_minors (returned).*
+
 ```python
 linear_algebra_ai999x.solve('positive_definiteness', A='[[2, -1], [-1, 2]]')
 # -> positive_definite = True, leading_minors = [2.0, 3.0]   (SOLVED)
@@ -2519,6 +2767,14 @@ $$
 - **Method:** cyclic Jacobi rotations until the off-diagonal part vanishes
 - **Assumes:** A is symmetric; at most 10 x 10
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
+
+![eigenvalues, ascending (eigenvalues) returned by linear-algebra-ai999x for the worked example (A = [[2, 1, 0], [1, 2, 1], [0, 1, 2]]), drawn in the complex plane: 0](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/symmetric-eigenvalues-complex)
+
+*eigenvalues, ascending (eigenvalues) returned by linear-algebra-ai999x for the worked example (A = [[2, 1, 0], [1, 2, 1], [0, 1, 2]]), drawn in the complex plane: 0.585786 + 0i, 2 + 0i, 3.41421 + 0i.*
+
+![The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): A (input); eigenvalues (returned)](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/symmetric-eigenvalues-matrix)
+
+*The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): A (input); eigenvalues (returned).*
 
 ```python
 linear_algebra_ai999x.solve('symmetric_eigenvalues', A='[[2, 1, 0], [1, 2, 1], [0, 1, 2]]')
@@ -2563,6 +2819,14 @@ $$
 
 *The unit square and its image under A = [[2, 1], [1, 2]] (each corner mapped by the package's matrix–vector product), with the eigenvectors it returned and their images: λ1 = 1 along (0.707107, -0.707107); λ2 = 3 along (0.707107, 0.707107).*
 
+![eigenvalues, ascending (eigenvalues) returned by linear-algebra-ai999x for the worked example (A = [[2, 1], [1, 2]]), drawn in the complex plane: 1 + 0i, 3 + 0i](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/symmetric-eigenvectors-complex)
+
+*eigenvalues, ascending (eigenvalues) returned by linear-algebra-ai999x for the worked example (A = [[2, 1], [1, 2]]), drawn in the complex plane: 1 + 0i, 3 + 0i.*
+
+![The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): A (input); eigenvectors (returned)](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/symmetric-eigenvectors-matrix)
+
+*The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): A (input); eigenvectors (returned).*
+
 ```python
 linear_algebra_ai999x.solve('symmetric_eigenvectors', A='[[2, 1], [1, 2]]')
 # -> eigenvalues = [0.9999999999999998, 2.9999999999999996], eigenvectors = [[0.7071067811865476, -0.7071067811865476], [0.7071067811865476, 0.7071067811865476]]   (SOLVED)
@@ -2603,6 +2867,14 @@ $$
 - **Method:** Householder reduction to Hessenberg form, then the shifted QR algorithm (Wilkinson shifts, Givens rotations, deflation)
 - **Assumes:** A is square; at most 10 x 10
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
+
+![eigenvalues: real ones ascending, then complex pairs by real part, positive imaginary part first (eigenvalues) returned by linear-algebra-ai999x for the worked example (A = [[1, 2, 0], [0, 3, 0], [2, -4, 2]]), drawn in the complex plane: 1 + 0i, 2 + 0i, 3 + 0i](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/general-eigenvalues-complex)
+
+*eigenvalues: real ones ascending, then complex pairs by real part, positive imaginary part first (eigenvalues) returned by linear-algebra-ai999x for the worked example (A = [[1, 2, 0], [0, 3, 0], [2, -4, 2]]), drawn in the complex plane: 1 + 0i, 2 + 0i, 3 + 0i.*
+
+![The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): A (input); eigenvalues (returned)](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/general-eigenvalues-matrix)
+
+*The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): A (input); eigenvalues (returned). Returned with them by linear-algebra-ai999x: spectral_radius = 3.*
 
 ```python
 linear_algebra_ai999x.solve('general_eigenvalues', A='[[1, 2, 0], [0, 3, 0], [2, -4, 2]]')
@@ -2645,6 +2917,10 @@ $$
 - **Assumes:** A is square, at most 10 x 10; one real eigenvalue is strictly largest in magnitude
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
+![The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): A (input); eigenvector (returned)](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/power-iteration-matrix)
+
+*The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): A (input); eigenvector (returned). Returned with them by linear-algebra-ai999x: eigenvalue = 5.*
+
 ```python
 linear_algebra_ai999x.solve('power_iteration', A='[[4, 1], [2, 3]]')
 # -> eigenvalue = 5, eigenvector = [0.7071067811865475, 0.7071067811865475]   (SOLVED)
@@ -2685,6 +2961,10 @@ $$
 - **Assumes:** A is square and nonsingular, at most 10 x 10; one real eigenvalue is strictly smallest in magnitude
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
+![The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): A (input); eigenvector (returned)](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/inverse-iteration-matrix)
+
+*The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): A (input); eigenvector (returned). Returned with them by linear-algebra-ai999x: eigenvalue = 2.*
+
 ```python
 linear_algebra_ai999x.solve('inverse_iteration', A='[[4, 1], [2, 3]]')
 # -> eigenvalue = 2, eigenvector = [-0.447213595499958, 0.894427190999916]   (SOLVED)
@@ -2723,6 +3003,10 @@ $$
 - **Method:** scaling and squaring: a Taylor series for exp(A / 2^s) with |$A / 2^{s}$|$_1  \leq  1/2$, then s squarings
 - **Assumes:** A is square, at most 10 x 10; |A|$_1  \leq  50$
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
+
+![The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): A (input); exponential (returned)](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/matrix-exponential-matrix)
+
+*The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): A (input); exponential (returned).*
 
 ```python
 linear_algebra_ai999x.solve('matrix_exponential', A='[[0, 1], [0, 0]]')
@@ -2768,6 +3052,10 @@ $$
 - **Assumes:** A is symmetric positive definite; at most 10 x 10
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
+![The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): A (input); sqrt (returned)](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/matrix-square-root-matrix)
+
+*The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): A (input); sqrt (returned).*
+
 ```python
 linear_algebra_ai999x.solve('matrix_square_root', A='[[5, 4], [4, 5]]')
 # -> sqrt = [[1.9999999999999991, 0.9999999999999996], [0.9999999999999996, 1.9999999999999991]]   (SOLVED)
@@ -2807,6 +3095,10 @@ $$
 - **Method:** from the one-sided Jacobi SVD $A = W$ S $V^{T}$: $U = W$ $V^{T}$, $P = V$ S $V^{T}$
 - **Assumes:** A is square and nonsingular; at most 10 x 10; right polar form $A = U$ P (scipy.linalg.polar's default)
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
+
+![The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): A (input); U (returned); P (returned)](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/polar-decomposition-matrix)
+
+*The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): A (input); U (returned); P (returned).*
 
 ```python
 linear_algebra_ai999x.solve('polar_decomposition', A='[[2, 0], [0, 3]]')
@@ -2848,6 +3140,14 @@ $$
 - **Assumes:** A is square and strictly diagonally dominant by rows (guarantees convergence); at most 10 x 10
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
+![The plane vectors of the worked example as arrows from the origin: input b = (6, 12); returned by linear-algebra-ai999x: solution = (1, 2)](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/jacobi-iteration-vectors)
+
+*The plane vectors of the worked example as arrows from the origin: input b = (6, 12); returned by linear-algebra-ai999x: solution = (1, 2). Other inputs: A = [[4, 1], [2, 5]]. Marked: the tip of each returned vector.*
+
+![The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): A (input); solution (returned)](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/jacobi-iteration-matrix)
+
+*The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): A (input); solution (returned). Other inputs: b = 6, 12.*
+
 ```python
 linear_algebra_ai999x.solve('jacobi_iteration', A='[[4, 1], [2, 5]]', b='6, 12')
 # -> solution = [1.0, 2.0]   (SOLVED)
@@ -2888,6 +3188,14 @@ $$
 - **Assumes:** A is square and strictly diagonally dominant, or symmetric positive definite (guarantees convergence); at most 10 x 10
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
+![The plane vectors of the worked example as arrows from the origin: input b = (6, 12); returned by linear-algebra-ai999x: solution = (1, 2)](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/gauss-seidel-vectors)
+
+*The plane vectors of the worked example as arrows from the origin: input b = (6, 12); returned by linear-algebra-ai999x: solution = (1, 2). Other inputs: A = [[4, 1], [2, 5]]. Marked: the tip of each returned vector.*
+
+![The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): A (input); solution (returned)](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/gauss-seidel-matrix)
+
+*The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): A (input); solution (returned). Other inputs: b = 6, 12.*
+
 ```python
 linear_algebra_ai999x.solve('gauss_seidel', A='[[4, 1], [2, 5]]', b='6, 12')
 # -> solution = [1.0, 2.0]   (SOLVED)
@@ -2927,6 +3235,14 @@ $$
 - **Method:** conjugate gradients from $x = 0$ (at most n steps in exact arithmetic), restarted twice to remove rounding errors
 - **Assumes:** A is symmetric positive definite (checked exactly); at most 10 x 10
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
+
+![The plane vectors of the worked example as arrows from the origin: input b = (1, 2); returned by linear-algebra-ai999x: solution = (0](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/conjugate-gradient-vectors)
+
+*The plane vectors of the worked example as arrows from the origin: input b = (1, 2); returned by linear-algebra-ai999x: solution = (0.0909091, 0.636364). Other inputs: A = [[4, 1], [1, 3]]. Marked: the tip of each returned vector.*
+
+![The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): A (input); solution (returned)](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/conjugate-gradient-matrix)
+
+*The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): A (input); solution (returned). Other inputs: b = 1, 2.*
 
 ```python
 linear_algebra_ai999x.solve('conjugate_gradient', A='[[4, 1], [1, 3]]', b='1, 2')
@@ -2969,6 +3285,10 @@ $$
 - **Method:** the Thomas algorithm (forward sweep, back substitution) in exact rational arithmetic
 - **Assumes:** $n  \geq  2$, at most 200; no zero pivot arises in the elimination (true for diagonally dominant matrices)
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
+
+![the solution x (solution) returned by linear-algebra-ai999x for the worked example, one value for each position in the list (3 values, first 1, last 1, largest 1)](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/tridiagonal-solve-series)
+
+*the solution x (solution) returned by linear-algebra-ai999x for the worked example, one value for each position in the list (3 values, first 1, last 1, largest 1). Inputs: sub = 1, 1, diag = 4, 4, 4, sup = 1, 1, d = 5, 6, 5.*
 
 ```python
 linear_algebra_ai999x.solve('tridiagonal_solve', sub='1, 1', diag='4, 4, 4', sup='1, 1', d='5, 6, 5')
@@ -3013,6 +3333,14 @@ $$
 - **Assumes:** at most 50 x 50; zeros are not stored; indices sorted within each row (canonical form)
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
+![0-based column index of each value (indices) at each nonzero values, row by row (data), both returned by linear-algebra-ai999x for the worked example (A = [[1, 0, 2], [0, 0, 3], [4, 5, 0]]): 1 → 0; 2 → 2; 3 → 2; 4 → 0; 5 → 1](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/csr-format-series)
+
+*0-based column index of each value (indices) at each nonzero values, row by row (data), both returned by linear-algebra-ai999x for the worked example (A = [[1, 0, 2], [0, 0, 3], [4, 5, 0]]): 1 → 0; 2 → 2; 3 → 2; 4 → 0; 5 → 1.*
+
+![The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): A (input)](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/csr-format-matrix)
+
+*The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): A (input). Returned with them by linear-algebra-ai999x: nnz = 5, density = 0.555556.*
+
 ```python
 linear_algebra_ai999x.solve('csr_format', A='[[1, 0, 2], [0, 0, 3], [4, 5, 0]]')
 # -> data = [1.0, 2.0, 3.0, 4.0, 5.0], indices = [0, 2, 2, 0, 1], indptr = [0, 2, 3, 5], nnz = 5, density = 0.555556   (SOLVED)
@@ -3055,6 +3383,10 @@ $$
 - **Assumes:** at most 50 x 50; zeros are not stored; indices sorted within each column (canonical form)
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
+![The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): A (input)](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/csc-format-matrix)
+
+*The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): A (input). Returned with them by linear-algebra-ai999x: nnz = 5, density = 0.555556.*
+
 ```python
 linear_algebra_ai999x.solve('csc_format', A='[[1, 0, 2], [0, 0, 3], [4, 5, 0]]')
 # -> data = [1.0, 4.0, 5.0, 2.0, 3.0], indices = [0, 2, 2, 0, 1], indptr = [0, 2, 3, 5], nnz = 5, density = 0.555556   (SOLVED)
@@ -3095,6 +3427,10 @@ $$
 - **Method:** row r holds data[indptr[r]:indptr[$r+1$]] at columns indices[indptr[r]:indptr[$r+1$]]
 - **Assumes:** indptr starts at 0, never decreases, ends at len(data); indices within 0..ncols-1; duplicate entries are summed; at most 50 x 50
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
+
+![The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): dense (returned)](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/csr-to-dense-matrix)
+
+*The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): dense (returned). Other inputs: data = 1, 2, 3, indices = 0, 2, 1, indptr = 0, 2, 3, ncols = 3.*
 
 ```python
 linear_algebra_ai999x.solve('csr_to_dense', data='1, 2, 3', indices='0, 2, 1', indptr='0, 2, 3', ncols=3)
@@ -3138,6 +3474,10 @@ $$
 - **Assumes:** consistent CSR arrays; column indices below len(x); at most 50 x 50
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
+![The worked example of Sparse matrix times vector (CSR) as inputs and results: stated data = 1, 2, 3, indices = 0, 2, 1, indptr = 0, 2, 3, x = 1, 1, 1; returned by linear-algebra-ai999x: product = [3](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/sparse-matvec-io)
+
+*The worked example of Sparse matrix times vector (CSR) as inputs and results: stated data = 1, 2, 3, indices = 0, 2, 1, indptr = 0, 2, 3, x = 1, 1, 1; returned by linear-algebra-ai999x: product = [3.0, 3.0].*
+
 ```python
 linear_algebra_ai999x.solve('sparse_matvec', data='1, 2, 3', indices='0, 2, 1', indptr='0, 2, 3', x='1, 1, 1')
 # -> product = [3.0, 3.0]   (SOLVED)
@@ -3179,6 +3519,14 @@ $$
 - **Assumes:** $L > 0$; $u = 0$ at both ends (homogeneous Dirichlet conditions); at most 200 interior points
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
+![approximate u at the interior points (u) returned by linear-algebra-ai999x for the worked example, one value for each position in the list (3 values, first 0](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/poisson-1d-series)
+
+*approximate u at the interior points (u) returned by linear-algebra-ai999x for the worked example, one value for each position in the list (3 values, first 0.09375, last 0.09375, largest 0.125). Inputs: f = 1, 1, 1, L = 1.*
+
+![h (grid spacing L/(n+1)) against L (length of the interval) from 0](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/poisson-1d-curve)
+
+*h (grid spacing L/(n+1)) against L (length of the interval) from 0.5 to 1.5. Other inputs as in the worked example: f = 1, 1, 1. 31 points computed by linear-algebra-ai999x; marked: the worked example, L = 1, h = 0.25.*
+
 ```python
 linear_algebra_ai999x.solve('poisson_1d', f='1, 1, 1', L=1)
 # -> u = [0.09375, 0.125, 0.09375], h = 0.25   (SOLVED)
@@ -3219,6 +3567,10 @@ $$
 - **Assumes:** $h > 0$; $u = 0$ on the boundary; at most 12 x 12 interior points
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
+![The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): f (input); u (returned)](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/poisson-2d-matrix)
+
+*The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): f (input); u (returned). Other inputs: h = 0.5.*
+
 ```python
 linear_algebra_ai999x.solve('poisson_2d', f='[[1, 1], [1, 1]]', h=0.5)
 # -> u = [[0.125, 0.125], [0.12499999999999999, 0.12499999999999999]]   (SOLVED)
@@ -3258,6 +3610,10 @@ $$
 - **Method:** bisection until the interval cannot be halved in floating point (about 52 halvings per unit)
 - **Assumes:** $a < b$; p(a) and p(b) have opposite signs; exactly one root in (a, b) (checked exactly by a Sturm sequence); the root is simple and well conditioned
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
+
+![Brackets [a, b] for the root of the polynomial with coefficients 1, 0, -2 (highest power first): the worked example's [1, 2] (top) and three wider ones chosen here; on each, the root the package returned is marked: [1, 2] → 1](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/bisection-root-interval)
+
+*Brackets [a, b] for the root of the polynomial with coefficients 1, 0, -2 (highest power first): the worked example's [1, 2] (top) and three wider ones chosen here; on each, the root the package returned is marked: [1, 2] → 1.41421; [0.5, 2] → 1.41421; [1, 3] → 1.41421; [0.5, 3] → 1.41421.*
 
 ```python
 linear_algebra_ai999x.solve('bisection_root', coefficients='1, 0, -2', a=1, b=2)
@@ -3301,6 +3657,10 @@ $$
 - **Assumes:** the iteration converges (within 200 steps) to a simple, well-conditioned root; p'(x) never vanishes at an iterate
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
+![root (the root the iteration converges to) as value 4 of coefficients (polynomial coefficients, highest power first (written out in x in a question)) moves from -8 to 4, the other values as given (1, 0, -2, -5); 41 runs of linear-algebra-ai999x](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/newton-root-sensitivity)
+
+*root (the root the iteration converges to) as value 4 of coefficients (polynomial coefficients, highest power first (written out in x in a question)) moves from -8 to 4, the other values as given (1, 0, -2, -5); 41 runs of linear-algebra-ai999x. Other inputs: x0 = 2. Marked: the worked example, coefficients[4] = -5, root = 2.09455.*
+
 ```python
 linear_algebra_ai999x.solve('newton_root', coefficients='1, 0, -2, -5', x0=2)
 # -> root = 2.09455   (SOLVED)
@@ -3343,6 +3703,10 @@ $$
 - **Assumes:** $x_{0}  \neq  x_{1}$; the iteration converges (within 200 steps) to a simple, well-conditioned root
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
+![root (the root the iteration converges to) as value 4 of coefficients (polynomial coefficients, highest power first (written out in x in a question)) moves from -8 to 4, the other values as given (1, 0, -2, -5); 41 runs of linear-algebra-ai999x](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/secant-root-sensitivity)
+
+*root (the root the iteration converges to) as value 4 of coefficients (polynomial coefficients, highest power first (written out in x in a question)) moves from -8 to 4, the other values as given (1, 0, -2, -5); 41 runs of linear-algebra-ai999x. Other inputs: x0 = 2, x1 = 3. Marked: the worked example, coefficients[4] = -5, root = 2.09455.*
+
 ```python
 linear_algebra_ai999x.solve('secant_root', coefficients='1, 0, -2, -5', x0=2, x1=3)
 # -> root = 2.09455   (SOLVED)
@@ -3383,6 +3747,10 @@ $$
 - **Method:** Horner's scheme with the derivative carried along (exact decimal arithmetic)
 - **Assumes:** at most degree 12
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
+
+![value (p(x)) against x (the point) from 0](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/polynomial-evaluation-curve)
+
+*value (p(x)) against x (the point) from 0.3 to 30 on a logarithmic axis. Other inputs as in the worked example: coefficients = 2, -6, 2, -1. 41 points computed by linear-algebra-ai999x; marked: the worked example, x = 3, value = 5.*
 
 ```python
 linear_algebra_ai999x.solve('polynomial_evaluation', coefficients='2, -6, 2, -1', x=3)
@@ -3425,6 +3793,14 @@ $$
 - **Assumes:** distinct x values; x and y of equal length (at most 60)
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
+![The data y (y values of the data) against x (x values of the data (distinct)) as given in the worked example (3 points)](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/lagrange-interpolation-xy)
+
+*The data y (y values of the data) against x (x values of the data (distinct)) as given in the worked example (3 points). Also returned: value = 2.875. Other inputs: at = 1.5.*
+
+![value (interpolated value p(at)) against at (the point where the interpolant is evaluated) from 0](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/lagrange-interpolation-curve)
+
+*value (interpolated value p(at)) against at (the point where the interpolant is evaluated) from 0.15 to 15 on a logarithmic axis. Other inputs as in the worked example: x = 0, 1, 2, y = 1, 3, 2. 41 points computed by linear-algebra-ai999x; marked: the worked example, at = 1.5, value = 2.875.*
+
 ```python
 linear_algebra_ai999x.solve('lagrange_interpolation', x='0, 1, 2', y='1, 3, 2', at=1.5)
 # -> value = 2.875   (SOLVED)
@@ -3466,6 +3842,14 @@ $$
 - **Assumes:** distinct x values; x and y of equal length (at most 60)
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
+![divided differences f[x0], f[x0,x1], ](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/newton-divided-differences-series)
+
+*divided differences f[x0], f[x0,x1], ...: p(t) = c0 + c1 (t - x0) + c2 (t - x0)(t - x1) + ... (coefficients) returned by linear-algebra-ai999x for the worked example, one value for each x (x values (distinct)) (3 values, first 1, last 1, largest 3). Inputs: x = 1, 2, 4, y = 1, 4, 16.*
+
+![The data y (y values) against x (x values (distinct)) as given in the worked example (3 points); drawn on it from what linear-algebra-ai999x returned: the returned coefficients](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/newton-divided-differences-xy)
+
+*The data y (y values) against x (x values (distinct)) as given in the worked example (3 points); drawn on it from what linear-algebra-ai999x returned: the returned coefficients.*
+
 ```python
 linear_algebra_ai999x.solve('newton_divided_differences', x='1, 2, 4', y='1, 4, 16')
 # -> coefficients = [1.0, 3.0, 1.0]   (SOLVED)
@@ -3505,6 +3889,14 @@ $$
 - **Method:** solve the Vandermonde system V $c = y$ in exact rational arithmetic
 - **Assumes:** distinct x values; at most 15 points
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
+
+![[c0, c1, ](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/interpolating-polynomial-series)
+
+*[c0, c1, ...], lowest power first (coefficients) returned by linear-algebra-ai999x for the worked example, one value for each x (x values (distinct)) (3 values, first 1, last 1, largest 1). Inputs: x = 0, 1, 2, y = 1, 3, 7.*
+
+![The data y (y values) against x (x values (distinct)) as given in the worked example (3 points); drawn on it from what linear-algebra-ai999x returned: the returned coefficients](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/interpolating-polynomial-xy)
+
+*The data y (y values) against x (x values (distinct)) as given in the worked example (3 points); drawn on it from what linear-algebra-ai999x returned: the returned coefficients.*
 
 ```python
 linear_algebra_ai999x.solve('interpolating_polynomial', x='0, 1, 2', y='1, 3, 7')
@@ -3546,6 +3938,14 @@ $$
 - **Method:** locate the interval containing the point and interpolate linearly (exact)
 - **Assumes:** x strictly increasing; x[0] <= $at  \leq  x$[-1] (no extrapolation)
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
+
+![The data y (y values) against x (x values, strictly increasing) as given in the worked example (3 points)](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/linear-interpolation-xy)
+
+*The data y (y values) against x (x values, strictly increasing) as given in the worked example (3 points). Also returned: value = 2.5. Other inputs: at = 2.*
+
+![value (interpolated value) against at (the point (within the data range)) from 1 to 3](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/linear-interpolation-curve)
+
+*value (interpolated value) against at (the point (within the data range)) from 1 to 3. Other inputs as in the worked example: x = 0, 1, 3, y = 0, 2, 3. 31 points computed by linear-algebra-ai999x; marked: the worked example, at = 2, value = 2.5.*
 
 ```python
 linear_algebra_ai999x.solve('linear_interpolation', x='0, 1, 3', y='0, 2, 3', at=2)
@@ -3593,6 +3993,14 @@ $$
 
 *Three interpolants through the nodes x = 0, 1, 2, 3, 4, y = 0, 2, 1, 3, 2, each evaluated by the package at 81 points: the natural cubic spline, the degree-4 Lagrange polynomial and piecewise-linear interpolation; marked: x = 2.5, spline value = 1.91964.*
 
+![The data y (values at the knots) against x (knots, strictly increasing (at least 3)) as given in the worked example (3 points)](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/natural-cubic-spline-xy)
+
+*The data y (values at the knots) against x (knots, strictly increasing (at least 3)) as given in the worked example (3 points). Also returned: value = 0.6875. Other inputs: at = 0.5.*
+
+![value (spline value S(at)) against at (the point (within the knots)) from 0](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/natural-cubic-spline-curve-2)
+
+*value (spline value S(at)) against at (the point (within the knots)) from 0.05 to 5 on a logarithmic axis. Other inputs as in the worked example: x = 0, 1, 2, y = 0, 1, 0. 33 points computed by linear-algebra-ai999x; marked: the worked example, at = 0.5, value = 0.6875.*
+
 ```python
 linear_algebra_ai999x.solve('natural_cubic_spline', x='0, 1, 2', y='0, 1, 0', at=0.5)
 # -> value = 0.6875   (SOLVED)
@@ -3636,6 +4044,14 @@ $$
 - **Assumes:** x strictly increasing, at least 2 knots (at most 60); x[0] <= $at  \leq  x$[-1]
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
+![The data y (values at the knots) against x (knots, strictly increasing) as given in the worked example (3 points)](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/clamped-cubic-spline-xy)
+
+*The data y (values at the knots) against x (knots, strictly increasing) as given in the worked example (3 points). Also returned: value = 0.625. Other inputs: slope_start = 1, slope_end = -1, at = 0.5.*
+
+![value (spline value S(at)) against at (the point (within the knots)) from 0](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/clamped-cubic-spline-curve)
+
+*value (spline value S(at)) against at (the point (within the knots)) from 0.05 to 5 on a logarithmic axis. One curve for each value of slope_start (slope S'(x0)): 1, 0.5, 2. Other inputs as in the worked example: x = 0, 1, 2, y = 0, 1, 0, slope_end = -1. 33 points per curve computed by linear-algebra-ai999x; marked: the worked example, at = 0.5, value = 0.625.*
+
 ```python
 linear_algebra_ai999x.solve('clamped_cubic_spline', x='0, 1, 2', y='0, 1, 0', slope_start=1, slope_end=-1, at=0.5)
 # -> value = 0.625   (SOLVED)
@@ -3674,6 +4090,10 @@ $$
 - **Method:** sum of (x_(i+1) - x_i)(y_i + y_(i+1))/2, exact decimal arithmetic
 - **Assumes:** x strictly increasing; at least 2 points (at most 60)
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
+
+![The data y (y values) against x (x values, strictly increasing) as given in the worked example (4 points)](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/trapezoid-rule-xy)
+
+*The data y (y values) against x (x values, strictly increasing) as given in the worked example (4 points). Also returned: integral = 6.5.*
 
 ```python
 linear_algebra_ai999x.solve('trapezoid_rule', x='0, 1, 2, 4', y='1, 3, 2, 0')
@@ -3714,6 +4134,10 @@ $$
 - **Method:** $h/3$ (y_0 + 4 $y_1 + 2$ $y_2 + 4$ y_3 + ... + y_n), exact decimal arithmetic
 - **Assumes:** x equally spaced and increasing; an odd number of points, at least 3 (an even number of intervals)
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
+
+![The data y (y values) against x (equally spaced, increasing x values (odd count)) as given in the worked example (3 points)](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/simpson-rule-xy)
+
+*The data y (y values) against x (equally spaced, increasing x values (odd count)) as given in the worked example (3 points). Also returned: integral = 4.66667.*
 
 ```python
 linear_algebra_ai999x.solve('simpson_rule', x='0, 1, 2', y='1, 2, 5')
@@ -3757,6 +4181,10 @@ $$
 - **Assumes:** $a < b$; $1  \leq  n  \leq  1000$
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
+![integral (midpoint-rule estimate) against n (number of subintervals) from 1 to 12](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/midpoint-rule-curve)
+
+*integral (midpoint-rule estimate) against n (number of subintervals) from 1 to 12. One curve for each value of b (upper limit): 2, 1, 4. Other inputs as in the worked example: coefficients = 1, 0, 0, a = 0. 12 points per curve computed by linear-algebra-ai999x; marked: the worked example, n = 4, integral = 2.625.*
+
 ```python
 linear_algebra_ai999x.solve('midpoint_rule', coefficients='1, 0, 0', a=0, b=2, n=4)
 # -> integral = 2.625   (SOLVED)
@@ -3796,6 +4224,10 @@ $$
 - **Method:** Newton's method on the Legendre polynomial P_n (three-term recurrence); $w_i = 2$ / ($(1 - x_i^{2})$ P_n'(x_i)^2)
 - **Assumes:** $1  \leq  n  \leq  40$
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
+
+![weights w_i (weights) at each nodes x_i in [-1, 1], ascending (nodes), both returned by linear-algebra-ai999x for the worked example (n = 2): -0](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/gauss-legendre-rule-series)
+
+*weights w_i (weights) at each nodes x_i in [-1, 1], ascending (nodes), both returned by linear-algebra-ai999x for the worked example (n = 2): -0.57735 → 1; 0.57735 → 1.*
 
 ```python
 linear_algebra_ai999x.solve('gauss_legendre_rule', n=2)
@@ -3839,6 +4271,10 @@ $$
 - **Method:** map the n Gauss-Legendre nodes to [a, b]: $(b - a)/2$ sum w_i p($(a + b)/2 + (b - a)/2$ x_i)
 - **Assumes:** $a < b$; $1  \leq  n  \leq  40$
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
+
+![integral (Gauss-Legendre estimate) against n (number of Gauss points (1 to 40)) from 1 to 7](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/gauss-legendre-integral-curve)
+
+*integral (Gauss-Legendre estimate) against n (number of Gauss points (1 to 40)) from 1 to 7. Other inputs as in the worked example: coefficients = 1, 1, 0, 0, a = 0, b = 2. 7 points computed by linear-algebra-ai999x; marked: the worked example, n = 2, integral = 6.66667.*
 
 ```python
 linear_algebra_ai999x.solve('gauss_legendre_integral', coefficients='1, 1, 0, 0', a=0, b=2, n=2)
@@ -3884,6 +4320,10 @@ $$
 - **Method:** (y_(i+1) - y_(i-1))/(2h) inside; $(y_1 - y_0)/h$ and (y_n - y_(n-1))/h at the ends (exact decimal arithmetic)
 - **Assumes:** $h > 0$; at least 2 samples (at most 200)
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
+
+![estimated dy/dx at each sample (derivative) returned by linear-algebra-ai999x for the worked example, one value for each y (samples y_0, ](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/numerical-derivative-series)
+
+*estimated dy/dx at each sample (derivative) returned by linear-algebra-ai999x for the worked example, one value for each y (samples y_0, ..., y_n (at least 2)) (5 values, first 1, last 7, largest 7). Inputs: y = 0, 1, 4, 9, 16, h = 1.*
 
 ```python
 linear_algebra_ai999x.solve('numerical_derivative', y='0, 1, 4, 9, 16', h=1)
