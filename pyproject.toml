@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "linear-algebra-ai999x"
-version = "1.0.2"
+version = "1.0.3"
 description = "Offline linear algebra solver: vectors, matrices, determinants, linear systems, eigenvalues, decompositions, least squares, sparse matrices and numerical methods (root finding, interpolation, quadrature), with steps, LaTeX and honest refusals"
 readme = "README.md"
 requires-python = ">=3.10"
