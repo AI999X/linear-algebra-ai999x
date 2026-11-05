@@ -199,7 +199,7 @@ Call `solve("<id>", **inputs)` with plain numbers; the result's `values` holds e
 
 <a id="vector_addition"></a>
 
-### Sum of two vectors — `vector_addition`
+### Sum of two vectors: `vector_addition`
 
 Add two vectors of the same length entry by entry.
 
@@ -244,7 +244,7 @@ linear_algebra_ai999x.solve('vector_addition', u=[0.1, 0.2], v=[0.2, 0.1])
 
 <a id="vector_subtraction"></a>
 
-### Difference of two vectors — `vector_subtraction`
+### Difference of two vectors: `vector_subtraction`
 
 Subtract the second vector from the first, entry by entry.
 
@@ -289,7 +289,7 @@ linear_algebra_ai999x.solve('vector_subtraction', u=[1, 2, 3], v=[4, 5, 6])
 
 <a id="scalar_vector_multiplication"></a>
 
-### Scalar multiple of a vector — `scalar_vector_multiplication`
+### Scalar multiple of a vector: `scalar_vector_multiplication`
 
 Multiply every entry of a vector by a number k.
 
@@ -334,7 +334,7 @@ linear_algebra_ai999x.solve('scalar_vector_multiplication', k=2.5, v=[2, 4, 6])
 
 <a id="dot_product"></a>
 
-### Dot product of two vectors — `dot_product`
+### Dot product of two vectors: `dot_product`
 
 The dot (scalar, inner) product u . v = sum of u_i v_i.
 
@@ -379,7 +379,7 @@ linear_algebra_ai999x.solve('dot_product', u=[0.1, 0.2], v=[3, 3])
 
 <a id="cross_product"></a>
 
-### Cross product of two 3-D vectors — `cross_product`
+### Cross product of two 3-D vectors: `cross_product`
 
 The cross product u x v of two vectors in three dimensions (right-hand rule).
 
@@ -424,7 +424,7 @@ linear_algebra_ai999x.solve('cross_product', u=[1, 0, 0], v=[0, 1, 0])
 
 <a id="vector_norm"></a>
 
-### Length (norm) of a vector — `vector_norm`
+### Length (norm) of a vector: `vector_norm`
 
 The Euclidean length |v| of a vector, with its 1-norm (sum of magnitudes) and max-norm.
 
@@ -470,7 +470,7 @@ linear_algebra_ai999x.solve('vector_norm', v=[1, 2, 2])
 
 <a id="unit_vector"></a>
 
-### Unit vector in the direction of a vector — `unit_vector`
+### Unit vector in the direction of a vector: `unit_vector`
 
 Normalize a nonzero vector: v / |v|, the vector of length 1 pointing the same way.
 
@@ -514,7 +514,7 @@ linear_algebra_ai999x.solve('unit_vector', v=[0, 0, 5])
 
 <a id="angle_between_vectors"></a>
 
-### Angle between two vectors — `angle_between_vectors`
+### Angle between two vectors: `angle_between_vectors`
 
 The angle between two nonzero vectors, in degrees and radians (between 0 and 180 degrees).
 
@@ -565,7 +565,7 @@ linear_algebra_ai999x.solve('angle_between_vectors', u=[1, 2], v=[-2, -4])
 
 <a id="distance_between_points"></a>
 
-### Distance between two points — `distance_between_points`
+### Distance between two points: `distance_between_points`
 
 The Euclidean distance between two points given by their coordinates (any dimension).
 
@@ -609,7 +609,7 @@ linear_algebra_ai999x.solve('distance_between_points', p=[0, 0, 0], r=[2, 3, 6])
 
 <a id="triple_scalar_product"></a>
 
-### Scalar triple product (volume of a parallelepiped) — `triple_scalar_product`
+### Scalar triple product (volume of a parallelepiped), `triple_scalar_product`
 
 u . (v x w), the signed volume of the parallelepiped spanned by three $3-D$ vectors, and its absolute value.
 
@@ -655,7 +655,7 @@ linear_algebra_ai999x.solve('triple_scalar_product', u=[1, 2, 3], v=[0, 1, 4], w
 
 <a id="parallelogram_area"></a>
 
-### Area of the parallelogram (and triangle) spanned by two vectors — `parallelogram_area`
+### Area of the parallelogram (and triangle) spanned by two vectors, `parallelogram_area`
 
 |u x v|: the area of the parallelogram with sides u and v (2-D or 3-D), and half of it for the triangle.
 
@@ -700,7 +700,7 @@ linear_algebra_ai999x.solve('parallelogram_area', u=[1, 0, 0], v=[0, 2, 0])
 
 <a id="vector_projection"></a>
 
-### Projection of one vector onto another — `vector_projection`
+### Projection of one vector onto another: `vector_projection`
 
 The orthogonal projection of u onto v, (u.v / v.v) v, and the scalar projection (component) u.v / |v|.
 
@@ -746,7 +746,7 @@ linear_algebra_ai999x.solve('vector_projection', u=[1, 2, 3], v=[1, 1, 1])
 
 <a id="rotate_vector_2d"></a>
 
-### Rotation of a plane vector — `rotate_vector_2d`
+### Rotation of a plane vector: `rotate_vector_2d`
 
 Rotate a $2-D$ vector counterclockwise about the origin by an angle given in degrees.
 
@@ -796,7 +796,7 @@ linear_algebra_ai999x.solve('rotate_vector_2d', v=[3, 4], angle=180)
 
 <a id="matrix_addition"></a>
 
-### Sum of two matrices — `matrix_addition`
+### Sum of two matrices: `matrix_addition`
 
 Add two matrices of the same shape entry by entry.
 
@@ -841,7 +841,7 @@ linear_algebra_ai999x.solve('matrix_addition', A=[[0.1, 0.2, 0.3]], B=[[0.2, 0.1
 
 <a id="matrix_subtraction"></a>
 
-### Difference of two matrices — `matrix_subtraction`
+### Difference of two matrices: `matrix_subtraction`
 
 Subtract the second matrix from the first, entry by entry.
 
@@ -885,7 +885,7 @@ linear_algebra_ai999x.solve('matrix_subtraction', A=[[4, 3], [2, 1]], B=[[1, 2],
 
 <a id="scalar_matrix_multiplication"></a>
 
-### Scalar multiple of a matrix — `scalar_matrix_multiplication`
+### Scalar multiple of a matrix: `scalar_matrix_multiplication`
 
 Multiply every entry of a matrix by a number k.
 
@@ -929,7 +929,7 @@ linear_algebra_ai999x.solve('scalar_matrix_multiplication', k=0.5, A=[[2, 4], [6
 
 <a id="matrix_transpose"></a>
 
-### Transpose of a matrix — `matrix_transpose`
+### Transpose of a matrix: `matrix_transpose`
 
 Swap rows and columns: the transpose $A^{T}$ with (A^T)$_ij = a_ji.$
 
@@ -972,7 +972,7 @@ linear_algebra_ai999x.solve('matrix_transpose', A=[[1, 2], [3, 4]])
 
 <a id="matrix_trace"></a>
 
-### Trace of a square matrix — `matrix_trace`
+### Trace of a square matrix: `matrix_trace`
 
 The trace: the sum of the diagonal entries of a square matrix.
 
@@ -1016,7 +1016,7 @@ linear_algebra_ai999x.solve('matrix_trace', A=[[2, 0, 1], [3, 5, 0], [1, 1, -4]]
 
 <a id="matrix_multiplication"></a>
 
-### Product of two matrices — `matrix_multiplication`
+### Product of two matrices: `matrix_multiplication`
 
 The matrix product AB (rows of A times columns of B).
 
@@ -1061,7 +1061,7 @@ linear_algebra_ai999x.solve('matrix_multiplication', A=[[1, 0, 2]], B=[[1], [2],
 
 <a id="matrix_vector_product"></a>
 
-### Matrix times vector (image under a linear map) — `matrix_vector_product`
+### Matrix times vector (image under a linear map), `matrix_vector_product`
 
 The vector Ax: the image of x under the linear transformation with matrix A.
 
@@ -1110,7 +1110,7 @@ linear_algebra_ai999x.solve('matrix_vector_product', A=[[1, 2, 3], [4, 5, 6]], x
 
 <a id="outer_product"></a>
 
-### Outer product of two vectors — `outer_product`
+### Outer product of two vectors: `outer_product`
 
 The matrix u $v^{T}$ with entries u_i v_j.
 
@@ -1153,7 +1153,7 @@ linear_algebra_ai999x.solve('outer_product', u=[1, -1], v=[2, 3])
 
 <a id="kronecker_product"></a>
 
-### Kronecker (tensor) product of two matrices — `kronecker_product`
+### Kronecker (tensor) product of two matrices, `kronecker_product`
 
 The block matrix A (x) B whose (i, j) block is a_ij B.
 
@@ -1196,7 +1196,7 @@ linear_algebra_ai999x.solve('kronecker_product', A=[[1, 2]], B=[[1], [1]])
 
 <a id="matrix_power"></a>
 
-### Power of a square matrix — `matrix_power`
+### Power of a square matrix: `matrix_power`
 
 $A^{k}$ for a square matrix A and a whole number k $(A^{0} = I)$.
 
@@ -1247,7 +1247,7 @@ linear_algebra_ai999x.solve('matrix_power', A=[[1, 2], [3, 4]], k=0)
 
 <a id="determinant_2x2"></a>
 
-### Determinant of a 2 x 2 matrix — `determinant_2x2`
+### Determinant of a 2 x 2 matrix: `determinant_2x2`
 
 det [[a, b], [c, d]] = ad - bc.
 
@@ -1295,7 +1295,7 @@ linear_algebra_ai999x.solve('determinant_2x2', A=[[0.1, 0.2], [0.3, 0.4]])
 
 <a id="determinant_3x3"></a>
 
-### Determinant of a 3 x 3 matrix — `determinant_3x3`
+### Determinant of a 3 x 3 matrix: `determinant_3x3`
 
 The determinant of a 3 x 3 matrix by the rule of Sarrus.
 
@@ -1343,7 +1343,7 @@ linear_algebra_ai999x.solve('determinant_3x3', A=[[1, 2, 3], [4, 5, 6], [7, 8, 9
 
 <a id="determinant"></a>
 
-### Determinant of an n x n matrix — `determinant`
+### Determinant of an n x n matrix: `determinant`
 
 The determinant of a square matrix of any size up to 10 x 10, by row reduction.
 
@@ -1392,7 +1392,7 @@ linear_algebra_ai999x.solve('determinant', A=[[1, 2], [3, 4]])
 
 <a id="matrix_inverse"></a>
 
-### Inverse of a square matrix — `matrix_inverse`
+### Inverse of a square matrix: `matrix_inverse`
 
 The inverse $A^{-1}$ of a nonsingular square matrix (any size up to 10 x 10).
 
@@ -1436,7 +1436,7 @@ linear_algebra_ai999x.solve('matrix_inverse', A=[[1, 2, 3], [0, 1, 4], [5, 6, 0]
 
 <a id="solve_2x2_system"></a>
 
-### Two linear equations in two unknowns — `solve_2x2_system`
+### Two linear equations in two unknowns: `solve_2x2_system`
 
 Solve a x + b $y = e$, c x + d $y = f$ for (x, y) by Cramer's rule.
 
@@ -1487,7 +1487,7 @@ linear_algebra_ai999x.solve('solve_2x2_system', A=[[3, -1], [1, 2]], b=[5, 4])
 
 <a id="solve_3x3_system"></a>
 
-### Three linear equations in three unknowns — `solve_3x3_system`
+### Three linear equations in three unknowns: `solve_3x3_system`
 
 Solve three linear equations in x, y, z by Cramer's rule.
 
@@ -1537,7 +1537,7 @@ linear_algebra_ai999x.solve('solve_3x3_system', A=[[1, 1, 1], [0, 2, 5], [2, 5, 
 
 <a id="solve_linear_system"></a>
 
-### Solve a square linear system Ax = b — `solve_linear_system`
+### Solve a square linear system Ax = b, `solve_linear_system`
 
 The unique solution of $Ax = b$ for a nonsingular n x n matrix A (n up to 10).
 
@@ -1586,7 +1586,7 @@ linear_algebra_ai999x.solve('solve_linear_system', A=[[1, 2, 0, 0], [0, 1, 2, 0]
 
 <a id="matrix_rank"></a>
 
-### Rank of a matrix — `matrix_rank`
+### Rank of a matrix: `matrix_rank`
 
 The rank: the number of linearly independent rows (equivalently columns) of a matrix.
 
@@ -1634,7 +1634,7 @@ linear_algebra_ai999x.solve('matrix_rank', A=[[0, 0], [0, 0]])
 
 <a id="rref"></a>
 
-### Reduced row echelon form — `rref`
+### Reduced row echelon form: `rref`
 
 The reduced row echelon form (RREF) of a matrix, its pivot columns (1-based) and its rank.
 
@@ -1679,7 +1679,7 @@ linear_algebra_ai999x.solve('rref', A=[[2, 4, 6], [1, 3, 5]])
 
 <a id="null_space"></a>
 
-### Null space (kernel) of a matrix — `null_space`
+### Null space (kernel) of a matrix: `null_space`
 
 The dimension of the null space {x : $Ax = 0$} (the nullity) and a basis of it.
 
@@ -1729,7 +1729,7 @@ linear_algebra_ai999x.solve('null_space', A=[[1, 0], [0, 1]])
 
 <a id="column_space"></a>
 
-### Column space of a matrix — `column_space`
+### Column space of a matrix: `column_space`
 
 A basis of the column space (range) of A: the pivot columns of A itself, and its dimension.
 
@@ -1773,7 +1773,7 @@ linear_algebra_ai999x.solve('column_space', A=[[1, 2], [2, 4]])
 
 <a id="linear_independence"></a>
 
-### Linear independence of vectors — `linear_independence`
+### Linear independence of vectors: `linear_independence`
 
 Whether a list of vectors is linearly independent, with the rank of the list.
 
@@ -1818,7 +1818,7 @@ linear_algebra_ai999x.solve('linear_independence', vectors=[[1, 0], [1, 1]])
 
 <a id="linear_system_classification"></a>
 
-### Number of solutions of a linear system — `linear_system_classification`
+### Number of solutions of a linear system: `linear_system_classification`
 
 Whether $Ax = b$ has a unique solution, infinitely many, or none (Rouche-Capelli), with the two ranks.
 
@@ -1870,7 +1870,7 @@ linear_algebra_ai999x.solve('linear_system_classification', A=[[2, 1], [1, 3]], 
 
 <a id="minor_cofactor"></a>
 
-### Minor and cofactor of an entry — `minor_cofactor`
+### Minor and cofactor of an entry: `minor_cofactor`
 
 The minor M_ij (determinant with row i and column j deleted) and the cofactor $C_ij = (-1)^{i+j}$ M_ij.
 
@@ -1917,7 +1917,7 @@ linear_algebra_ai999x.solve('minor_cofactor', A=[[1, 2, 3], [4, 5, 6], [7, 8, 10
 
 <a id="adjugate"></a>
 
-### Adjugate (classical adjoint) of a matrix — `adjugate`
+### Adjugate (classical adjoint) of a matrix: `adjugate`
 
 adj(A): the transpose of the matrix of cofactors; A adj(A) = det(A) I.
 
@@ -1959,7 +1959,7 @@ linear_algebra_ai999x.solve('adjugate', A=[[1, 2, 3], [0, 1, 4], [5, 6, 0]])
 
 <a id="characteristic_polynomial"></a>
 
-### Characteristic polynomial of a matrix — `characteristic_polynomial`
+### Characteristic polynomial of a matrix: `characteristic_polynomial`
 
 The coefficients of det(lambda I - A) = lambda^n + c1 $\lambda^{n-1} + ... + cn$, highest power first.
 
@@ -2006,7 +2006,7 @@ linear_algebra_ai999x.solve('characteristic_polynomial', A=[[1, 2, 0], [0, 3, 0]
 
 <a id="eigenvalues_2x2"></a>
 
-### Eigenvalues of a 2 x 2 matrix — `eigenvalues_2x2`
+### Eigenvalues of a 2 x 2 matrix: `eigenvalues_2x2`
 
 Both eigenvalues of a 2 x 2 matrix from its characteristic equation $\lambda^{2} - tr$(A) lambda + det(A) = 0.
 
@@ -2055,7 +2055,7 @@ linear_algebra_ai999x.solve('eigenvalues_2x2', A=[[4, 1], [2, 3]])
 
 <a id="change_of_basis"></a>
 
-### Coordinates of a vector in a basis — `change_of_basis`
+### Coordinates of a vector in a basis: `change_of_basis`
 
 The coordinates c of v with respect to a basis b1, ..., bn: $v = c_{1}$ $b_{1} + ... + cn$ bn.
 
@@ -2103,7 +2103,7 @@ linear_algebra_ai999x.solve('change_of_basis', basis=[[1, 0, 0], [1, 1, 0], [1, 
 
 <a id="least_squares_line"></a>
 
-### Least-squares regression line — `least_squares_line`
+### Least-squares regression line: `least_squares_line`
 
 The straight line $y = a + b$ x that best fits data points in the least-squares sense, with $R^{2.}$
 
@@ -2150,7 +2150,7 @@ linear_algebra_ai999x.solve('least_squares_line', x=[0, 1, 2, 3], y=[1, 3, 5, 7]
 
 <a id="least_squares_polynomial"></a>
 
-### Least-squares polynomial fit — `least_squares_polynomial`
+### Least-squares polynomial fit: `least_squares_polynomial`
 
 The polynomial $c_{0} + c_{1}$ x + ... + cd $x^{d}$ of a given degree that best fits data in the least-squares sense.
 
@@ -2209,7 +2209,7 @@ linear_algebra_ai999x.solve('least_squares_polynomial', x=[1, 2, 3, 4], y=[2, 3,
 
 <a id="least_squares_solution"></a>
 
-### Least-squares solution of an overdetermined system — `least_squares_solution`
+### Least-squares solution of an overdetermined system, `least_squares_solution`
 
 The x minimizing |Ax - b| for a tall matrix A with independent columns, and the residual length.
 
@@ -2254,7 +2254,7 @@ linear_algebra_ai999x.solve('least_squares_solution', A=[[1, 1], [1, 2], [1, 3]]
 
 <a id="pseudoinverse"></a>
 
-### Moore-Penrose pseudoinverse (full rank) — `pseudoinverse`
+### Moore-Penrose pseudoinverse (full rank): `pseudoinverse`
 
 The pseudoinverse A+ of a matrix with independent columns, (A^T A)^-1 $A^{T}$, or independent rows, $A^{T}$ (A A^T)^-1.
 
@@ -2297,7 +2297,7 @@ linear_algebra_ai999x.solve('pseudoinverse', A=[[1, 2, 3]])
 
 <a id="projection_matrix"></a>
 
-### Orthogonal projection matrix onto a column space — `projection_matrix`
+### Orthogonal projection matrix onto a column space, `projection_matrix`
 
 The matrix $P = A$ (A^T A)^-1 $A^{T}$ that projects orthogonally onto the column space of A.
 
@@ -2340,7 +2340,7 @@ linear_algebra_ai999x.solve('projection_matrix', A=[[1, 0], [0, 1], [0, 0]])
 
 <a id="singular_values"></a>
 
-### Singular values of a matrix — `singular_values`
+### Singular values of a matrix: `singular_values`
 
 The singular values of a matrix (any shape up to 10 x 10), largest first.
 
@@ -2387,7 +2387,7 @@ linear_algebra_ai999x.solve('singular_values', A=[[1, 0, 0], [0, 2, 0]])
 
 <a id="matrix_norms"></a>
 
-### Norms of a matrix — `matrix_norms`
+### Norms of a matrix: `matrix_norms`
 
 The Frobenius norm, the 1-norm (largest column sum), the infinity-norm (largest row sum) and the spectral 2-norm.
 
@@ -2433,7 +2433,7 @@ linear_algebra_ai999x.solve('matrix_norms', A=[[3, 0], [0, -4]])
 
 <a id="condition_number"></a>
 
-### Condition number of a matrix — `condition_number`
+### Condition number of a matrix: `condition_number`
 
 How sensitive $Ax = b$ is to errors: the 2-norm condition number sigma_max/sigma_min and the 1-norm one.
 
@@ -2477,7 +2477,7 @@ linear_algebra_ai999x.solve('condition_number', A=[[1, 2], [3, 4]])
 
 <a id="low_rank_approximation"></a>
 
-### Best rank-k approximation (Eckart-Young) — `low_rank_approximation`
+### Best rank-k approximation (Eckart-Young): `low_rank_approximation`
 
 The rank-k matrix closest to A in the 2- and Frobenius norms (truncated SVD), with both approximation errors.
 
@@ -2523,7 +2523,7 @@ linear_algebra_ai999x.solve('low_rank_approximation', A=[[2, 0, 0], [0, 3, 0], [
 
 <a id="lu_decomposition"></a>
 
-### LU decomposition with partial pivoting — `lu_decomposition`
+### LU decomposition with partial pivoting: `lu_decomposition`
 
 Factor a nonsingular square matrix as $A = P$ L U (permutation, unit lower triangular, upper triangular).
 
@@ -2572,7 +2572,7 @@ linear_algebra_ai999x.solve('lu_decomposition', A=[[2, 1, 1], [4, 3, 3], [8, 7, 
 
 <a id="qr_decomposition"></a>
 
-### QR decomposition (Householder) — `qr_decomposition`
+### QR decomposition (Householder): `qr_decomposition`
 
 Factor $A = Q$ R with orthonormal columns Q and upper triangular R (reduced form, positive diagonal of R).
 
@@ -2616,7 +2616,7 @@ linear_algebra_ai999x.solve('qr_decomposition', A=[[1, 0], [0, 1], [0, 0]])
 
 <a id="gram_schmidt"></a>
 
-### Gram-Schmidt orthonormalization — `gram_schmidt`
+### Gram-Schmidt orthonormalization: `gram_schmidt`
 
 Turn linearly independent vectors v1, ..., vk into orthonormal vectors e1, ..., ek spanning the same nested subspaces.
 
@@ -2659,7 +2659,7 @@ linear_algebra_ai999x.solve('gram_schmidt', vectors=[[1, 0, 0], [1, 1, 0]])
 
 <a id="cholesky"></a>
 
-### Cholesky decomposition — `cholesky`
+### Cholesky decomposition: `cholesky`
 
 Factor a symmetric positive definite matrix as $A = L$ $L^{T}$ with L lower triangular, positive diagonal.
 
@@ -2703,7 +2703,7 @@ linear_algebra_ai999x.solve('cholesky', A=[[4, 12, -16], [12, 37, -43], [-16, -4
 
 <a id="positive_definiteness"></a>
 
-### Positive definiteness test (Sylvester's criterion) — `positive_definiteness`
+### Positive definiteness test (Sylvester's criterion), `positive_definiteness`
 
 Whether a symmetric matrix is positive definite, with its leading principal minors.
 
@@ -2748,7 +2748,7 @@ linear_algebra_ai999x.solve('positive_definiteness', A=[[1, 2], [2, 1]])
 
 <a id="symmetric_eigenvalues"></a>
 
-### Eigenvalues of a symmetric matrix (Jacobi method) — `symmetric_eigenvalues`
+### Eigenvalues of a symmetric matrix (Jacobi method), `symmetric_eigenvalues`
 
 All eigenvalues of a real symmetric matrix (they are real), in ascending order.
 
@@ -2794,7 +2794,7 @@ linear_algebra_ai999x.solve('symmetric_eigenvalues', A=[[2, 0, 0], [0, 3, 4], [0
 
 <a id="symmetric_eigenvectors"></a>
 
-### Eigenvalues and eigenvectors of a symmetric matrix — `symmetric_eigenvectors`
+### Eigenvalues and eigenvectors of a symmetric matrix, `symmetric_eigenvectors`
 
 The orthonormal eigenvectors of a real symmetric matrix with distinct eigenvalues (spectral decomposition).
 
@@ -2847,7 +2847,7 @@ linear_algebra_ai999x.solve('symmetric_eigenvectors', A=[[2, 0, 0], [0, 3, 4], [
 
 <a id="general_eigenvalues"></a>
 
-### Eigenvalues of a general square matrix (QR algorithm) — `general_eigenvalues`
+### Eigenvalues of a general square matrix (QR algorithm), `general_eigenvalues`
 
 All eigenvalues (real or complex) of a real square matrix, and its spectral radius.
 
@@ -2896,7 +2896,7 @@ linear_algebra_ai999x.solve('general_eigenvalues', A=[[0, -1, 0], [1, 0, 0], [0,
 
 <a id="power_iteration"></a>
 
-### Dominant eigenvalue by power iteration — `power_iteration`
+### Dominant eigenvalue by power iteration: `power_iteration`
 
 The eigenvalue of largest magnitude and its unit eigenvector, by the power method.
 
@@ -2940,7 +2940,7 @@ linear_algebra_ai999x.solve('power_iteration', A=[[2, 0, 0], [0, -5, 0], [0, 0, 
 
 <a id="inverse_iteration"></a>
 
-### Smallest eigenvalue by inverse iteration — `inverse_iteration`
+### Smallest eigenvalue by inverse iteration: `inverse_iteration`
 
 The eigenvalue of smallest magnitude and its unit eigenvector, by inverse power iteration.
 
@@ -2984,7 +2984,7 @@ linear_algebra_ai999x.solve('inverse_iteration', A=[[2, 0, 0], [0, -5, 0], [0, 0
 
 <a id="matrix_exponential"></a>
 
-### Matrix exponential — `matrix_exponential`
+### Matrix exponential: `matrix_exponential`
 
 exp(A) = I + A + A^2/2! + ..., the solution operator of x' = A x.
 
@@ -3032,7 +3032,7 @@ linear_algebra_ai999x.solve('matrix_exponential', A=[[1, 0], [0, 2]])
 
 <a id="matrix_square_root"></a>
 
-### Square root of a positive definite matrix — `matrix_square_root`
+### Square root of a positive definite matrix: `matrix_square_root`
 
 The unique symmetric positive definite X with $X^{2} = A$, for a symmetric positive definite A.
 
@@ -3075,7 +3075,7 @@ linear_algebra_ai999x.solve('matrix_square_root', A=[[2, 0], [0, 9]])
 
 <a id="polar_decomposition"></a>
 
-### Polar decomposition — `polar_decomposition`
+### Polar decomposition: `polar_decomposition`
 
 Write a nonsingular square matrix as $A = U$ P: U orthogonal (a rotation or reflection), P symmetric positive definite (a stretch).
 
@@ -3119,7 +3119,7 @@ linear_algebra_ai999x.solve('polar_decomposition', A=[[0, -2], [1, 0]])
 
 <a id="jacobi_iteration"></a>
 
-### Jacobi iteration for Ax = b — `jacobi_iteration`
+### Jacobi iteration for Ax = b, `jacobi_iteration`
 
 Solve $Ax = b$ for a strictly diagonally dominant A by the Jacobi method, iterated to convergence.
 
@@ -3167,7 +3167,7 @@ linear_algebra_ai999x.solve('jacobi_iteration', A=[[10, -1, 2], [-1, 11, -1], [2
 
 <a id="gauss_seidel"></a>
 
-### Gauss-Seidel iteration for Ax = b — `gauss_seidel`
+### Gauss-Seidel iteration for Ax = b, `gauss_seidel`
 
 Solve $Ax = b$ by the Gauss-Seidel method (each new value used at once), iterated to convergence.
 
@@ -3215,7 +3215,7 @@ linear_algebra_ai999x.solve('gauss_seidel', A=[[4, -1, 0], [-1, 4, -1], [0, -1, 
 
 <a id="conjugate_gradient"></a>
 
-### Conjugate gradient method for Ax = b — `conjugate_gradient`
+### Conjugate gradient method for Ax = b, `conjugate_gradient`
 
 Solve $Ax = b$ for a symmetric positive definite A by the method of conjugate gradients.
 
@@ -3263,7 +3263,7 @@ linear_algebra_ai999x.solve('conjugate_gradient', A=[[2, -1, 0], [-1, 2, -1], [0
 
 <a id="tridiagonal_solve"></a>
 
-### Tridiagonal system (Thomas algorithm) — `tridiagonal_solve`
+### Tridiagonal system (Thomas algorithm): `tridiagonal_solve`
 
 Solve a tridiagonal system given its three diagonals and right-hand side, in O(n) operations.
 
@@ -3309,7 +3309,7 @@ linear_algebra_ai999x.solve('tridiagonal_solve', sub=[-1, -1, -1], diag=[2, 2, 2
 
 <a id="csr_format"></a>
 
-### Compressed sparse row (CSR) form of a matrix — `csr_format`
+### Compressed sparse row (CSR) form of a matrix, `csr_format`
 
 Store a matrix in compressed sparse row form: the nonzero values, their column indices and the row pointers.
 
@@ -3359,7 +3359,7 @@ linear_algebra_ai999x.solve('csr_format', A=[[0, 7], [0, 0], [8, 0]])
 
 <a id="csc_format"></a>
 
-### Compressed sparse column (CSC) form of a matrix — `csc_format`
+### Compressed sparse column (CSC) form of a matrix, `csc_format`
 
 Store a matrix in compressed sparse column form: the nonzero values, their row indices and the column pointers.
 
@@ -3405,7 +3405,7 @@ linear_algebra_ai999x.solve('csc_format', A=[[0, 7], [0, 0], [8, 0]])
 
 <a id="csr_to_dense"></a>
 
-### Dense matrix from CSR arrays — `csr_to_dense`
+### Dense matrix from CSR arrays: `csr_to_dense`
 
 Rebuild the full matrix from compressed sparse row arrays (data, indices, indptr) and the number of columns.
 
@@ -3451,7 +3451,7 @@ linear_algebra_ai999x.solve('csr_to_dense', data=[5], indices=[1], indptr=[0, 0,
 
 <a id="sparse_matvec"></a>
 
-### Sparse matrix times vector (CSR) — `sparse_matvec`
+### Sparse matrix times vector (CSR): `sparse_matvec`
 
 The product $y = A$ x for a matrix A given in compressed sparse row form.
 
@@ -3497,7 +3497,7 @@ linear_algebra_ai999x.solve('sparse_matvec', data=[2, -1], indices=[0, 1], indpt
 
 <a id="poisson_1d"></a>
 
-### 1-D Poisson equation by finite differences — `poisson_1d`
+### 1-D Poisson equation by finite differences, `poisson_1d`
 
 Solve -u'' = f on (0, L) with u(0) = u(L) = 0 on n equally spaced interior points (second-order finite differences).
 
@@ -3546,7 +3546,7 @@ linear_algebra_ai999x.solve('poisson_1d', f=[2, 2, 2], L=4)
 
 <a id="poisson_2d"></a>
 
-### 2-D Poisson equation on a grid (5-point stencil) — `poisson_2d`
+### 2-D Poisson equation on a grid (5-point stencil), `poisson_2d`
 
 Solve -(u_xx + u_yy) = f on a rectangle with $u = 0$ on the boundary, on an n x m grid of interior points with spacing h.
 
@@ -3589,7 +3589,7 @@ linear_algebra_ai999x.solve('poisson_2d', f=[[4]], h=1)
 
 <a id="bisection_root"></a>
 
-### Root of a polynomial by bisection — `bisection_root`
+### Root of a polynomial by bisection: `bisection_root`
 
 The root of a polynomial inside an interval [a, b] where it changes sign, by repeated halving.
 
@@ -3636,7 +3636,7 @@ linear_algebra_ai999x.solve('bisection_root', coefficients=[1, -1, -2], a=0, b=5
 
 <a id="newton_root"></a>
 
-### Root of a polynomial by Newton's method — `newton_root`
+### Root of a polynomial by Newton's method: `newton_root`
 
 A root of a polynomial by Newton's method x <- x - p(x)/p'(x) from a starting value x0.
 
@@ -3681,7 +3681,7 @@ linear_algebra_ai999x.solve('newton_root', coefficients=[1, 0, -2], x0=1)
 
 <a id="secant_root"></a>
 
-### Root of a polynomial by the secant method — `secant_root`
+### Root of a polynomial by the secant method: `secant_root`
 
 A root of a polynomial by the secant method from two starting values x0 and x1.
 
@@ -3726,7 +3726,7 @@ linear_algebra_ai999x.solve('secant_root', coefficients=[1, 0, -2], x0=1, x1=2)
 
 <a id="polynomial_evaluation"></a>
 
-### Evaluate a polynomial and its derivative (Horner's method) — `polynomial_evaluation`
+### Evaluate a polynomial and its derivative (Horner's method), `polynomial_evaluation`
 
 The value p(x) and the derivative p'(x) of a polynomial at a point.
 
@@ -3771,7 +3771,7 @@ linear_algebra_ai999x.solve('polynomial_evaluation', coefficients=[1, 0, 0, -3, 
 
 <a id="lagrange_interpolation"></a>
 
-### Lagrange interpolation — `lagrange_interpolation`
+### Lagrange interpolation: `lagrange_interpolation`
 
 The value at a point of the polynomial of lowest degree through given data points (Lagrange form).
 
@@ -3821,7 +3821,7 @@ linear_algebra_ai999x.solve('lagrange_interpolation', x=[1, 2, 4], y=[1, 4, 16],
 
 <a id="newton_divided_differences"></a>
 
-### Newton divided differences — `newton_divided_differences`
+### Newton divided differences: `newton_divided_differences`
 
 The coefficients f[x0], f[x0,x1], ..., f[x0..xn] of the Newton form of the interpolating polynomial.
 
@@ -3869,7 +3869,7 @@ linear_algebra_ai999x.solve('newton_divided_differences', x=[0, 1, 3], y=[1, 2, 
 
 <a id="interpolating_polynomial"></a>
 
-### Coefficients of the interpolating polynomial — `interpolating_polynomial`
+### Coefficients of the interpolating polynomial, `interpolating_polynomial`
 
 The polynomial $c_{0} + c_{1}$ x + ... + c(n-1) $x^{n-1}$ passing exactly through n data points.
 
@@ -3917,7 +3917,7 @@ linear_algebra_ai999x.solve('interpolating_polynomial', x=[-1, 0, 1], y=[2, 1, 2
 
 <a id="linear_interpolation"></a>
 
-### Piecewise linear interpolation — `linear_interpolation`
+### Piecewise linear interpolation: `linear_interpolation`
 
 The value at a point of the broken line joining consecutive data points.
 
@@ -3967,7 +3967,7 @@ linear_algebra_ai999x.solve('linear_interpolation', x=[10, 20, 30], y=[5, 9, 4],
 
 <a id="natural_cubic_spline"></a>
 
-### Natural cubic spline interpolation — `natural_cubic_spline`
+### Natural cubic spline interpolation: `natural_cubic_spline`
 
 The value at a point of the natural cubic spline through the data (second derivative zero at both ends).
 
@@ -4020,7 +4020,7 @@ linear_algebra_ai999x.solve('natural_cubic_spline', x=[0, 1, 2, 3], y=[0, 1, 8, 
 
 <a id="clamped_cubic_spline"></a>
 
-### Clamped cubic spline interpolation — `clamped_cubic_spline`
+### Clamped cubic spline interpolation: `clamped_cubic_spline`
 
 The value at a point of the cubic spline through the data with prescribed slopes at the two ends.
 
@@ -4070,7 +4070,7 @@ linear_algebra_ai999x.solve('clamped_cubic_spline', x=[0, 1, 2], y=[0, 1, 8], sl
 
 <a id="trapezoid_rule"></a>
 
-### Trapezoidal rule for tabulated data — `trapezoid_rule`
+### Trapezoidal rule for tabulated data: `trapezoid_rule`
 
 The integral of tabulated data by the composite trapezoidal rule (any spacing).
 
@@ -4114,7 +4114,7 @@ linear_algebra_ai999x.solve('trapezoid_rule', x=[0, 0.5, 1], y=[1, 2, 4])
 
 <a id="simpson_rule"></a>
 
-### Simpson's rule for tabulated data — `simpson_rule`
+### Simpson's rule for tabulated data: `simpson_rule`
 
 The integral of equally spaced tabulated data by the composite Simpson $1/3$ rule.
 
@@ -4158,7 +4158,7 @@ linear_algebra_ai999x.solve('simpson_rule', x=[0, 0.5, 1, 1.5, 2], y=[0, 0.25, 1
 
 <a id="midpoint_rule"></a>
 
-### Composite midpoint rule for a polynomial — `midpoint_rule`
+### Composite midpoint rule for a polynomial: `midpoint_rule`
 
 Approximate the integral of a polynomial over [a, b] by the composite midpoint rule with n subintervals.
 
@@ -4204,7 +4204,7 @@ linear_algebra_ai999x.solve('midpoint_rule', coefficients=[3, 0, 1], a=0, b=1, n
 
 <a id="gauss_legendre_rule"></a>
 
-### Gauss-Legendre quadrature nodes and weights — `gauss_legendre_rule`
+### Gauss-Legendre quadrature nodes and weights, `gauss_legendre_rule`
 
 The nodes and weights of the n-point Gauss-Legendre rule on [-1, 1] (exact for polynomials of degree up to 2n - 1).
 
@@ -4249,7 +4249,7 @@ linear_algebra_ai999x.solve('gauss_legendre_rule', n=3)
 
 <a id="gauss_legendre_integral"></a>
 
-### Gauss-Legendre quadrature of a polynomial — `gauss_legendre_integral`
+### Gauss-Legendre quadrature of a polynomial: `gauss_legendre_integral`
 
 The n-point Gauss-Legendre approximation of the integral of a polynomial over [a, b] (exact up to degree 2n - 1).
 
@@ -4300,7 +4300,7 @@ linear_algebra_ai999x.solve('gauss_legendre_integral', coefficients=[1, 0, 0, 0,
 
 <a id="numerical_derivative"></a>
 
-### Derivative of equally spaced data (finite differences) — `numerical_derivative`
+### Derivative of equally spaced data (finite differences), `numerical_derivative`
 
 Estimate dy/dx at every sample of equally spaced data: central differences inside, one-sided differences at the ends.
 

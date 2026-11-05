@@ -1,4 +1,4 @@
-# linear-algebra: the Linear Algebra program — user guide
+# linear-algebra: the Linear Algebra program, user guide
 
 **linear-algebra-ai999x 1.1.0**, Rust build: command line, desktop app and browser. **Creator / engineer:** Ibnul Jaif Farabi · **Company:** AI999X · support@ai999x.com
 
@@ -17,63 +17,63 @@ Linear Algebra covers vectors, matrices, determinants, linear systems, eigenvalu
 
 ## 1. Get it
 
-Version 1.4.0 of the AI999X desktop app and of the command-line bundle. Checksums for every file: https://downloads.ai999x.com/desktop/1.4.0/SHA256SUMS; the newest version is always under https://downloads.ai999x.com/desktop/latest/. Full instructions: https://www.ai999x.com/desktop-cli/
+Version 1.5.0 of the AI999X desktop app and of the command-line bundle. Checksums for every file: https://downloads.ai999x.com/desktop/1.5.0/SHA256SUMS; the newest version is always under https://downloads.ai999x.com/desktop/latest/. Full instructions: https://www.ai999x.com/desktop-cli/
 
 | what | system | download |
 |---|---|---|
-| Desktop app: Linear Algebra | Windows x86-64 | https://downloads.ai999x.com/desktop/1.4.0/ai999x-linear-algebra-1.4.0-windows-x86_64.zip |
-| Desktop app: Linear Algebra | Linux x86-64 | https://downloads.ai999x.com/desktop/1.4.0/ai999x-linear-algebra-1.4.0-linux-x86_64.tar.gz |
-| Desktop app: all models | Windows x86-64 | https://downloads.ai999x.com/desktop/1.4.0/ai999x-1.4.0-windows-x86_64.zip |
-| Desktop app: all models | Linux x86-64 | https://downloads.ai999x.com/desktop/1.4.0/ai999x-1.4.0-linux-x86_64.tar.gz |
-| Command line | Windows x86-64 | https://downloads.ai999x.com/desktop/1.4.0/ai999x-cli-1.4.0-windows-x86_64.zip |
-| Command line | Linux x86-64 | https://downloads.ai999x.com/desktop/1.4.0/ai999x-cli-1.4.0-linux-x86_64.tar.gz |
+| Desktop app: Linear Algebra | Windows x86-64 | https://downloads.ai999x.com/desktop/1.5.0/ai999x-linear-algebra-1.5.0-windows-x86_64.zip |
+| Desktop app: Linear Algebra | Linux x86-64 | https://downloads.ai999x.com/desktop/1.5.0/ai999x-linear-algebra-1.5.0-linux-x86_64.tar.gz |
+| Desktop app: all models | Windows x86-64 | https://downloads.ai999x.com/desktop/1.5.0/ai999x-1.5.0-windows-x86_64.zip |
+| Desktop app: all models | Linux x86-64 | https://downloads.ai999x.com/desktop/1.5.0/ai999x-1.5.0-linux-x86_64.tar.gz |
+| Command line | Windows x86-64 | https://downloads.ai999x.com/desktop/1.5.0/ai999x-cli-1.5.0-windows-x86_64.zip |
+| Command line | Linux x86-64 | https://downloads.ai999x.com/desktop/1.5.0/ai999x-cli-1.5.0-linux-x86_64.tar.gz |
 
 ### Desktop app
 
-Linear Algebra in its own app: search, questions in words, input forms, live figures and explanations. Windows: Download ai999x-linear-algebra-1.4.0-windows-x86_64.zip, right-click it → Extract All, then open the folder and start ai999x-linear-algebra.exe. If Windows SmartScreen asks, choose More info → Run anyway. Linux:
+Linear Algebra in its own app: search, questions in words, input forms, live figures and explanations. Windows: Download ai999x-linear-algebra-1.5.0-windows-x86_64.zip, right-click it → Extract All, then open the folder and start ai999x-linear-algebra.exe. If Windows SmartScreen asks, choose More info → Run anyway. Linux:
 
 ```shell
-curl -LO https://downloads.ai999x.com/desktop/1.4.0/ai999x-linear-algebra-1.4.0-linux-x86_64.tar.gz
-curl -LO https://downloads.ai999x.com/desktop/1.4.0/SHA256SUMS
+curl -LO https://downloads.ai999x.com/desktop/1.5.0/ai999x-linear-algebra-1.5.0-linux-x86_64.tar.gz
+curl -LO https://downloads.ai999x.com/desktop/1.5.0/SHA256SUMS
 sha256sum -c --ignore-missing SHA256SUMS
-tar xzf ai999x-linear-algebra-1.4.0-linux-x86_64.tar.gz
-./ai999x-linear-algebra-1.4.0-linux-x86_64/ai999x-linear-algebra
+tar xzf ai999x-linear-algebra-1.5.0-linux-x86_64.tar.gz
+./ai999x-linear-algebra-1.5.0-linux-x86_64/ai999x-linear-algebra
 ```
 
-It opens on this model: type a question or pick a capability, fill in the form and press Compute. The AI999X desktop app with every model works the same way (choose the model first). Windows: Download ai999x-1.4.0-windows-x86_64.zip, right-click it → Extract All, then open the folder and start ai999x.exe. If Windows SmartScreen asks, choose More info → Run anyway. Linux:
+It opens on this model: type a question or pick a capability, fill in the form and press Compute. The AI999X desktop app with every model works the same way (choose the model first). Windows: Download ai999x-1.5.0-windows-x86_64.zip, right-click it → Extract All, then open the folder and start ai999x.exe. If Windows SmartScreen asks, choose More info → Run anyway. Linux:
 
 ```shell
-curl -LO https://downloads.ai999x.com/desktop/1.4.0/ai999x-1.4.0-linux-x86_64.tar.gz
-curl -LO https://downloads.ai999x.com/desktop/1.4.0/SHA256SUMS
+curl -LO https://downloads.ai999x.com/desktop/1.5.0/ai999x-1.5.0-linux-x86_64.tar.gz
+curl -LO https://downloads.ai999x.com/desktop/1.5.0/SHA256SUMS
 sha256sum -c --ignore-missing SHA256SUMS
-tar xzf ai999x-1.4.0-linux-x86_64.tar.gz
-./ai999x-1.4.0-linux-x86_64/ai999x
+tar xzf ai999x-1.5.0-linux-x86_64.tar.gz
+./ai999x-1.5.0-linux-x86_64/ai999x
 ```
 
-### Command line — Linux
+### Command line: Linux
 
 The bundle holds one program per model; `linear-algebra` is this one. The checksum line should print OK.
 
 ```shell
-curl -LO https://downloads.ai999x.com/desktop/1.4.0/ai999x-cli-1.4.0-linux-x86_64.tar.gz
-curl -LO https://downloads.ai999x.com/desktop/1.4.0/SHA256SUMS
+curl -LO https://downloads.ai999x.com/desktop/1.5.0/ai999x-cli-1.5.0-linux-x86_64.tar.gz
+curl -LO https://downloads.ai999x.com/desktop/1.5.0/SHA256SUMS
 sha256sum -c --ignore-missing SHA256SUMS
-mkdir -p ~/.local/share && tar xzf ai999x-cli-1.4.0-linux-x86_64.tar.gz -C ~/.local/share
-echo 'export PATH="$HOME/.local/share/ai999x-cli-1.4.0-linux-x86_64:$PATH"' >> ~/.bashrc && source ~/.bashrc
+mkdir -p ~/.local/share && tar xzf ai999x-cli-1.5.0-linux-x86_64.tar.gz -C ~/.local/share
+echo 'export PATH="$HOME/.local/share/ai999x-cli-1.5.0-linux-x86_64:$PATH"' >> ~/.bashrc && source ~/.bashrc
 linear-algebra --version
 ```
 
-### Command line — Windows (PowerShell)
+### Command line: Windows (PowerShell)
 
 The fourth line should print True.
 
 ```powershell
-$F = "ai999x-cli-1.4.0-windows-x86_64.zip"
-Invoke-WebRequest "https://downloads.ai999x.com/desktop/1.4.0/$F" -OutFile $F
-Invoke-WebRequest "https://downloads.ai999x.com/desktop/1.4.0/SHA256SUMS" -OutFile SHA256SUMS
+$F = "ai999x-cli-1.5.0-windows-x86_64.zip"
+Invoke-WebRequest "https://downloads.ai999x.com/desktop/1.5.0/$F" -OutFile $F
+Invoke-WebRequest "https://downloads.ai999x.com/desktop/1.5.0/SHA256SUMS" -OutFile SHA256SUMS
 (Get-FileHash $F -Algorithm SHA256).Hash.ToLower() -eq ((Select-String -SimpleMatch $F SHA256SUMS).Line -split ' ')[0]
 Expand-Archive $F -DestinationPath "$env:LOCALAPPDATA\AI999X" -Force
-$D = "$env:LOCALAPPDATA\AI999X\ai999x-cli-1.4.0-windows-x86_64"; $env:Path += ";$D"
+$D = "$env:LOCALAPPDATA\AI999X\ai999x-cli-1.5.0-windows-x86_64"; $env:Path += ";$D"
 [Environment]::SetEnvironmentVariable("Path", [Environment]::GetEnvironmentVariable("Path", "User") + ";$D", "User")
 linear-algebra --version
 ```
@@ -96,7 +96,7 @@ Prints the model, its version and that this is the Rust build.
 
 ```shell
 $ linear-algebra --version
-linear-algebra-ai999x 1.0.3 (Rust build, ax-engine 0.1.0)
+linear-algebra-ai999x 1.5.0 (Rust build, ax-engine 1.5.0)
 ```
 
 ### 2.2 Ask in words
@@ -188,29 +188,7 @@ $ linear-algebra solve newton_root "coefficients=[1, 0, -2, -5]"
 NEEDS_INPUT: newton_root needs x0 (starting value). Example: solve('newton_root', coefficients='1, 0, -2, -5', x0=2).
 ```
 
-### 2.9 Draw the figures
-
-The live figures for your own inputs, written as SVG files into the folder given with --out (here the current folder); open them in any browser. Without --out the SVG text comes back as JSON.
-
-```shell
-$ linear-algebra figures newton_root "coefficients=[1, 0, -2, -5]" x0=2.0 --out .
-[
-  {
-    "slug": "newton-root-live-1",
-    "title": "The root the iteration converges to as polynomial coefficients, highest power first (w... varies",
-    "caption": "The root the iteration converges to as coefficients[1] runs from 0.25 to 1.75, every other input as you entered it (41 solutions). Marked: your coefficients[1] = 1 gives root = 2.095. Your inputs: coefficients = (list), x0 = 2.0.",
-    "file": ".\\newton-root-live-1.svg"
-  },
-  {
-    "slug": "newton-root-live-2",
-    "title": "The root the iteration converges to as polynomial coefficients, highest power first (w... varies",
-    "caption": "The root the iteration converges to as coefficients[4] runs from -8.75 to -1.25, every other input as you entered it (29 solutions). Marked: your coefficients[4] = -5 gives root = 2.095. Your inputs: coefficients = (list), x0 = 2.0.",
-    "file": ".\\newton-root-live-2.svg"
-  }
-]
-```
-
-### 2.10 Many questions at once
+### 2.9 Many questions at once
 
 One JSON request per line in, one JSON answer per line out, in order: for scripts, notebooks and agents (the program starts once). In PowerShell: Get-Content cases.jsonl | linear-algebra batch
 
@@ -283,24 +261,6 @@ answers = [json.loads(line) for line in out.splitlines()]
 
 `linear-algebra figures <capability> name=value ... --out DIR` draws the live figures for those inputs and writes each as an SVG file into DIR (an existing folder); without `--out` the SVG text comes back as JSON. The desktop app and the model page draw the same figures as soon as you press Compute.
 
-```shell
-$ linear-algebra figures newton_root "coefficients=[1, 0, -2, -5]" x0=2.0 --out .
-[
-  {
-    "slug": "newton-root-live-1",
-    "title": "The root the iteration converges to as polynomial coefficients, highest power first (w... varies",
-    "caption": "The root the iteration converges to as coefficients[1] runs from 0.25 to 1.75, every other input as you entered it (41 solutions). Marked: your coefficients[1] = 1 gives root = 2.095. Your inputs: coefficients = (list), x0 = 2.0.",
-    "file": ".\\newton-root-live-1.svg"
-  },
-  {
-    "slug": "newton-root-live-2",
-    "title": "The root the iteration converges to as polynomial coefficients, highest power first (w... varies",
-    "caption": "The root the iteration converges to as coefficients[4] runs from -8.75 to -1.25, every other input as you entered it (29 solutions). Marked: your coefficients[4] = -5 gives root = 2.095. Your inputs: coefficients = (list), x0 = 2.0.",
-    "file": ".\\newton-root-live-2.svg"
-  }
-]
-```
-
 ## 7. In a web page or Node.js: WebAssembly
 
 The same model is a WebAssembly module, `linear_algebra_ai999x.wasm` (https://www.ai999x.com/compute/rust/linear_algebra_ai999x.wasm), with a small loader, `ax-wasm.js` (https://www.ai999x.com/compute/rust/ax-wasm.js). It runs in a browser, a Web Worker or Node.js, with no server.
@@ -324,7 +284,7 @@ By topic. For each: what it does, what it needs and gives, when it applies, and 
 
 <a id="low_rank_approximation"></a>
 
-#### Best rank-k approximation (Eckart-Young) — `low_rank_approximation`
+#### Best rank-k approximation (Eckart-Young): `low_rank_approximation`
 
 The rank-k matrix closest to A in the 2- and Frobenius norms (truncated SVD), with both approximation errors.
 
@@ -334,11 +294,11 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `A` | in | the matrix | — |
-| `k` | in | target rank k | — |
-| `approximation` | out | the best rank-k approximation A_k | — |
-| `error2` | out | \|A - A_k\|_2 = sigma_(k+1) | — |
-| `errorF` | out | \|A - A_k\|_F = sqrt(sigma_(k+1)^2 + ...) | — |
+| `A` | in | the matrix | - |
+| `k` | in | target rank k | - |
+| `approximation` | out | the best rank-k approximation A_k | - |
+| `error2` | out | \|A - A_k\|_2 = sigma_(k+1) | - |
+| `errorF` | out | \|A - A_k\|_F = sqrt(sigma_(k+1)^2 + ...) | - |
 
 **Applies when:** 1 <= k <= min(rows, columns); sigma_k > sigma_(k+1) (otherwise A_k is not unique); at most 10 x 10.
 
@@ -355,7 +315,7 @@ errorF = 1
 
 <a id="cholesky"></a>
 
-#### Cholesky decomposition — `cholesky`
+#### Cholesky decomposition: `cholesky`
 
 Factor a symmetric positive definite matrix as A = L L^T with L lower triangular, positive diagonal.
 
@@ -365,8 +325,8 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `A` | in | a symmetric positive definite matrix | — |
-| `L` | out | lower triangular factor with positive diagonal | — |
+| `A` | in | a symmetric positive definite matrix | - |
+| `L` | out | lower triangular factor with positive diagonal | - |
 
 **Applies when:** A is symmetric; A is positive definite (checked exactly by its leading minors); at most 10 x 10.
 
@@ -381,7 +341,7 @@ L = [[2.0,0.0,0.0],[6.0,1.0,0.0],[-8.0,5.0,3.0]]
 
 <a id="lu_decomposition"></a>
 
-#### LU decomposition with partial pivoting — `lu_decomposition`
+#### LU decomposition with partial pivoting: `lu_decomposition`
 
 Factor a nonsingular square matrix as A = P L U (permutation, unit lower triangular, upper triangular).
 
@@ -391,10 +351,10 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `A` | in | a nonsingular square matrix | — |
-| `P` | out | permutation matrix (A = P L U) | — |
-| `L` | out | unit lower triangular factor, \|l_ij\| <= 1 | — |
-| `U` | out | upper triangular factor | — |
+| `A` | in | a nonsingular square matrix | - |
+| `P` | out | permutation matrix (A = P L U) | - |
+| `L` | out | unit lower triangular factor, \|l_ij\| <= 1 | - |
+| `U` | out | upper triangular factor | - |
 
 **Applies when:** A is square and nonsingular; at most 10 x 10; pivot: the first row of largest magnitude in the column (the scipy.linalg.lu convention A = P L U).
 
@@ -411,7 +371,7 @@ U = [[3.0,4.0],[0.0,0.6666666666666667]]
 
 <a id="polar_decomposition"></a>
 
-#### Polar decomposition — `polar_decomposition`
+#### Polar decomposition: `polar_decomposition`
 
 Write a nonsingular square matrix as A = U P: U orthogonal (a rotation or reflection), P symmetric positive definite (a stretch).
 
@@ -421,9 +381,9 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `A` | in | a nonsingular square matrix | — |
-| `U` | out | orthogonal factor | — |
-| `P` | out | symmetric positive definite factor (A^T A)^(1/2) | — |
+| `A` | in | a nonsingular square matrix | - |
+| `U` | out | orthogonal factor | - |
+| `P` | out | symmetric positive definite factor (A^T A)^(1/2) | - |
 
 **Applies when:** A is square and nonsingular; at most 10 x 10; right polar form A = U P (scipy.linalg.polar's default).
 
@@ -439,7 +399,7 @@ P = [[1.0,0.0],[0.0,2.0]]
 
 <a id="qr_decomposition"></a>
 
-#### QR decomposition (Householder) — `qr_decomposition`
+#### QR decomposition (Householder): `qr_decomposition`
 
 Factor A = Q R with orthonormal columns Q and upper triangular R (reduced form, positive diagonal of R).
 
@@ -449,9 +409,9 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `A` | in | a matrix with at least as many rows as columns, independent columns | — |
-| `Q` | out | m x n matrix with orthonormal columns | — |
-| `R` | out | n x n upper triangular, positive diagonal | — |
+| `A` | in | a matrix with at least as many rows as columns, independent columns | - |
+| `Q` | out | m x n matrix with orthonormal columns | - |
+| `R` | out | n x n upper triangular, positive diagonal | - |
 
 **Applies when:** rows >= columns; independent columns; at most 10 x 10; convention: the diagonal of R is positive (unique).
 
@@ -467,7 +427,7 @@ R = [[5.0,2.1999999999999997],[0.0,0.40000000000000013]]
 
 <a id="singular_values"></a>
 
-#### Singular values of a matrix — `singular_values`
+#### Singular values of a matrix: `singular_values`
 
 The singular values of a matrix (any shape up to 10 x 10), largest first.
 
@@ -477,8 +437,8 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `A` | in | the matrix | — |
-| `singular_values` | out | singular values, descending | — |
+| `A` | in | the matrix | - |
+| `singular_values` | out | singular values, descending | - |
 
 **Applies when:** at most 10 x 10.
 
@@ -495,7 +455,7 @@ singular_values = [6.708203932499369,2.2360679774997894]
 
 <a id="adjugate"></a>
 
-#### Adjugate (classical adjoint) of a matrix — `adjugate`
+#### Adjugate (classical adjoint) of a matrix: `adjugate`
 
 adj(A): the transpose of the matrix of cofactors; A adj(A) = det(A) I.
 
@@ -505,8 +465,8 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `A` | in | a square matrix (up to 7 x 7) | — |
-| `adjugate` | out | the adjugate matrix adj(A) | — |
+| `A` | in | a square matrix (up to 7 x 7) | - |
+| `adjugate` | out | the adjugate matrix adj(A) | - |
 
 **Applies when:** A is square; at most 7 x 7.
 
@@ -521,7 +481,7 @@ adjugate = [[4.0,-2.0],[-3.0,1.0]]
 
 <a id="determinant_2x2"></a>
 
-#### Determinant of a 2 x 2 matrix — `determinant_2x2`
+#### Determinant of a 2 x 2 matrix: `determinant_2x2`
 
 det [[a, b], [c, d]] = ad - bc.
 
@@ -531,8 +491,8 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `A` | in | a 2 x 2 matrix | — |
-| `det` | out | the determinant ad - bc | — |
+| `A` | in | a 2 x 2 matrix | - |
+| `det` | out | the determinant ad - bc | - |
 
 **Applies when:** A is 2 x 2.
 
@@ -547,7 +507,7 @@ det = -2
 
 <a id="determinant_3x3"></a>
 
-#### Determinant of a 3 x 3 matrix — `determinant_3x3`
+#### Determinant of a 3 x 3 matrix: `determinant_3x3`
 
 The determinant of a 3 x 3 matrix by the rule of Sarrus.
 
@@ -557,8 +517,8 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `A` | in | a 3 x 3 matrix | — |
-| `det` | out | the determinant | — |
+| `A` | in | a 3 x 3 matrix | - |
+| `det` | out | the determinant | - |
 
 **Applies when:** A is 3 x 3.
 
@@ -573,7 +533,7 @@ det = 6
 
 <a id="determinant"></a>
 
-#### Determinant of an n x n matrix — `determinant`
+#### Determinant of an n x n matrix: `determinant`
 
 The determinant of a square matrix of any size up to 10 x 10, by row reduction.
 
@@ -583,8 +543,8 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `A` | in | a square matrix (up to 10 x 10) | — |
-| `det` | out | the determinant | — |
+| `A` | in | a square matrix (up to 10 x 10) | - |
+| `det` | out | the determinant | - |
 
 **Applies when:** A is square; at most 10 x 10.
 
@@ -599,7 +559,7 @@ det = 4
 
 <a id="minor_cofactor"></a>
 
-#### Minor and cofactor of an entry — `minor_cofactor`
+#### Minor and cofactor of an entry: `minor_cofactor`
 
 The minor M_ij (determinant with row i and column j deleted) and the cofactor C_ij = (-1)^(i+j) M_ij.
 
@@ -609,11 +569,11 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `A` | in | a square matrix | — |
-| `i` | in | row of the entry (1-based) | — |
-| `j` | in | column of the entry (1-based) | — |
-| `minor` | out | the minor M_ij | — |
-| `cofactor` | out | the cofactor C_ij | — |
+| `A` | in | a square matrix | - |
+| `i` | in | row of the entry (1-based) | - |
+| `j` | in | column of the entry (1-based) | - |
+| `minor` | out | the minor M_ij | - |
+| `cofactor` | out | the cofactor C_ij | - |
 
 **Applies when:** A is square, at least 2 x 2; 1 <= i, j <= n.
 
@@ -631,7 +591,7 @@ cofactor = 6
 
 <a id="characteristic_polynomial"></a>
 
-#### Characteristic polynomial of a matrix — `characteristic_polynomial`
+#### Characteristic polynomial of a matrix: `characteristic_polynomial`
 
 The coefficients of det(lambda I - A) = lambda^n + c1 lambda^(n-1) + ... + cn, highest power first.
 
@@ -641,8 +601,8 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `A` | in | a square matrix (up to 10 x 10) | — |
-| `coefficients` | out | [1, c1, ..., cn] of det(lambda I - A), highest power first | — |
+| `A` | in | a square matrix (up to 10 x 10) | - |
+| `coefficients` | out | [1, c1, ..., cn] of det(lambda I - A), highest power first | - |
 
 **Applies when:** A is square; at most 10 x 10.
 
@@ -657,7 +617,7 @@ coefficients = [1.0,-4.0,3.0]
 
 <a id="power_iteration"></a>
 
-#### Dominant eigenvalue by power iteration — `power_iteration`
+#### Dominant eigenvalue by power iteration: `power_iteration`
 
 The eigenvalue of largest magnitude and its unit eigenvector, by the power method.
 
@@ -667,9 +627,9 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `A` | in | a square matrix with a single real dominant eigenvalue | — |
-| `eigenvalue` | out | the dominant eigenvalue | — |
-| `eigenvector` | out | its unit eigenvector (first largest entry positive) | — |
+| `A` | in | a square matrix with a single real dominant eigenvalue | - |
+| `eigenvalue` | out | the dominant eigenvalue | - |
+| `eigenvector` | out | its unit eigenvector (first largest entry positive) | - |
 
 **Applies when:** A is square, at most 10 x 10; one real eigenvalue is strictly largest in magnitude.
 
@@ -685,7 +645,7 @@ eigenvector = [0.7071067811865475,0.7071067811865475]
 
 <a id="symmetric_eigenvectors"></a>
 
-#### Eigenvalues and eigenvectors of a symmetric matrix — `symmetric_eigenvectors`
+#### Eigenvalues and eigenvectors of a symmetric matrix, `symmetric_eigenvectors`
 
 The orthonormal eigenvectors of a real symmetric matrix with distinct eigenvalues (spectral decomposition).
 
@@ -695,9 +655,9 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `A` | in | a symmetric matrix with distinct eigenvalues | — |
-| `eigenvalues` | out | eigenvalues, ascending | — |
-| `eigenvectors` | out | unit eigenvectors in the same order, one per row | — |
+| `A` | in | a symmetric matrix with distinct eigenvalues | - |
+| `eigenvalues` | out | eigenvalues, ascending | - |
+| `eigenvectors` | out | unit eigenvectors in the same order, one per row | - |
 
 **Applies when:** A is symmetric; the eigenvalues are distinct; at most 10 x 10; sign convention: the first entry of largest magnitude of each eigenvector is positive.
 
@@ -713,7 +673,7 @@ eigenvectors = [[0.7071067811865476,-0.7071067811865476],[0.7071067811865476,0.7
 
 <a id="eigenvalues_2x2"></a>
 
-#### Eigenvalues of a 2 x 2 matrix — `eigenvalues_2x2`
+#### Eigenvalues of a 2 x 2 matrix: `eigenvalues_2x2`
 
 Both eigenvalues of a 2 x 2 matrix from its characteristic equation lambda^2 - tr(A) lambda + det(A) = 0.
 
@@ -723,9 +683,9 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `A` | in | a 2 x 2 matrix | — |
-| `lambda1` | out | first eigenvalue (the smaller real one, or the one with positive imaginary part) | — |
-| `lambda2` | out | second eigenvalue | — |
+| `A` | in | a 2 x 2 matrix | - |
+| `lambda1` | out | first eigenvalue (the smaller real one, or the one with positive imaginary part) | - |
+| `lambda2` | out | second eigenvalue | - |
 
 **Applies when:** A is 2 x 2.
 
@@ -741,7 +701,7 @@ lambda2 = 3
 
 <a id="general_eigenvalues"></a>
 
-#### Eigenvalues of a general square matrix (QR algorithm) — `general_eigenvalues`
+#### Eigenvalues of a general square matrix (QR algorithm), `general_eigenvalues`
 
 All eigenvalues (real or complex) of a real square matrix, and its spectral radius.
 
@@ -751,9 +711,9 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `A` | in | a square matrix (up to 10 x 10) | — |
-| `eigenvalues` | out | eigenvalues: real ones ascending, then complex pairs by real part, positive imaginary part first | — |
-| `spectral_radius` | out | largest \|eigenvalue\| | — |
+| `A` | in | a square matrix (up to 10 x 10) | - |
+| `eigenvalues` | out | eigenvalues: real ones ascending, then complex pairs by real part, positive imaginary part first | - |
+| `spectral_radius` | out | largest \|eigenvalue\| | - |
 
 **Applies when:** A is square; at most 10 x 10.
 
@@ -769,7 +729,7 @@ spectral_radius = 3
 
 <a id="symmetric_eigenvalues"></a>
 
-#### Eigenvalues of a symmetric matrix (Jacobi method) — `symmetric_eigenvalues`
+#### Eigenvalues of a symmetric matrix (Jacobi method), `symmetric_eigenvalues`
 
 All eigenvalues of a real symmetric matrix (they are real), in ascending order.
 
@@ -779,8 +739,8 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `A` | in | a symmetric matrix (up to 10 x 10) | — |
-| `eigenvalues` | out | eigenvalues, ascending | — |
+| `A` | in | a symmetric matrix (up to 10 x 10) | - |
+| `eigenvalues` | out | eigenvalues, ascending | - |
 
 **Applies when:** A is symmetric; at most 10 x 10.
 
@@ -795,7 +755,7 @@ eigenvalues = [0.585786437626905,1.999999999999999,3.4142135623730936]
 
 <a id="positive_definiteness"></a>
 
-#### Positive definiteness test (Sylvester's criterion) — `positive_definiteness`
+#### Positive definiteness test (Sylvester's criterion), `positive_definiteness`
 
 Whether a symmetric matrix is positive definite, with its leading principal minors.
 
@@ -805,9 +765,9 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `A` | in | a symmetric matrix | — |
-| `positive_definite` | out | true when x^T A x > 0 for every x != 0 | — |
-| `leading_minors` | out | the leading principal minors D1, ..., Dn | — |
+| `A` | in | a symmetric matrix | - |
+| `positive_definite` | out | true when x^T A x > 0 for every x != 0 | - |
+| `leading_minors` | out | the leading principal minors D1, ..., Dn | - |
 
 **Applies when:** A is symmetric; at most 10 x 10.
 
@@ -823,7 +783,7 @@ leading_minors = [2.0,3.0]
 
 <a id="inverse_iteration"></a>
 
-#### Smallest eigenvalue by inverse iteration — `inverse_iteration`
+#### Smallest eigenvalue by inverse iteration: `inverse_iteration`
 
 The eigenvalue of smallest magnitude and its unit eigenvector, by inverse power iteration.
 
@@ -833,9 +793,9 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `A` | in | a nonsingular square matrix with a single real eigenvalue of smallest magnitude | — |
-| `eigenvalue` | out | the eigenvalue of smallest magnitude | — |
-| `eigenvector` | out | its unit eigenvector (first largest entry positive) | — |
+| `A` | in | a nonsingular square matrix with a single real eigenvalue of smallest magnitude | - |
+| `eigenvalue` | out | the eigenvalue of smallest magnitude | - |
+| `eigenvector` | out | its unit eigenvector (first largest entry positive) | - |
 
 **Applies when:** A is square and nonsingular, at most 10 x 10; one real eigenvalue is strictly smallest in magnitude.
 
@@ -853,7 +813,7 @@ eigenvector = [-0.447213595499958,0.894427190999916]
 
 <a id="least_squares_polynomial"></a>
 
-#### Least-squares polynomial fit — `least_squares_polynomial`
+#### Least-squares polynomial fit: `least_squares_polynomial`
 
 The polynomial c0 + c1 x + ... + cd x^d of a given degree that best fits data in the least-squares sense.
 
@@ -863,10 +823,10 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `x` | in | x values | — |
-| `y` | in | y values | — |
-| `degree` | in | degree d of the polynomial (0 to 8) | — |
-| `coefficients` | out | [c0, c1, ..., cd], lowest power first | — |
+| `x` | in | x values | - |
+| `y` | in | y values | - |
+| `degree` | in | degree d of the polynomial (0 to 8) | - |
+| `coefficients` | out | [c0, c1, ..., cd], lowest power first | - |
 
 **Applies when:** x and y have the same number of values; more distinct x values than the degree; degree at most 8.
 
@@ -881,7 +841,7 @@ coefficients = [1.0,-3.0,2.0]
 
 <a id="least_squares_line"></a>
 
-#### Least-squares regression line — `least_squares_line`
+#### Least-squares regression line: `least_squares_line`
 
 The straight line y = a + b x that best fits data points in the least-squares sense, with R^2.
 
@@ -891,11 +851,11 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `x` | in | x values | — |
-| `y` | in | y values | — |
-| `slope` | out | slope b | — |
-| `intercept` | out | intercept a | — |
-| `r_squared` | out | coefficient of determination R^2 | — |
+| `x` | in | x values | - |
+| `y` | in | y values | - |
+| `slope` | out | slope b | - |
+| `intercept` | out | intercept a | - |
+| `r_squared` | out | coefficient of determination R^2 | - |
 
 **Applies when:** x and y have the same number of values, at least 2; the x values are not all equal; the y values are not all equal (otherwise R^2 is undefined).
 
@@ -912,7 +872,7 @@ r_squared = 0.64
 
 <a id="least_squares_solution"></a>
 
-#### Least-squares solution of an overdetermined system — `least_squares_solution`
+#### Least-squares solution of an overdetermined system, `least_squares_solution`
 
 The x minimizing |Ax - b| for a tall matrix A with independent columns, and the residual length.
 
@@ -922,10 +882,10 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `A` | in | coefficient matrix | — |
-| `b` | in | right-hand side | — |
-| `solution` | out | least-squares solution x | — |
-| `residual_norm` | out | \|Ax - b\| at the solution | — |
+| `A` | in | coefficient matrix | - |
+| `b` | in | right-hand side | - |
+| `solution` | out | least-squares solution x | - |
+| `residual_norm` | out | \|Ax - b\| at the solution | - |
 
 **Applies when:** at least as many rows as columns; the columns of A are linearly independent; at most 10 x 10.
 
@@ -941,7 +901,7 @@ residual_norm = 1.154700538
 
 <a id="pseudoinverse"></a>
 
-#### Moore-Penrose pseudoinverse (full rank) — `pseudoinverse`
+#### Moore-Penrose pseudoinverse (full rank): `pseudoinverse`
 
 The pseudoinverse A+ of a matrix with independent columns, (A^T A)^-1 A^T, or independent rows, A^T (A A^T)^-1.
 
@@ -951,8 +911,8 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `A` | in | a matrix of full rank (up to 10 x 10) | — |
-| `pseudoinverse` | out | the matrix A+ | — |
+| `A` | in | a matrix of full rank (up to 10 x 10) | - |
+| `pseudoinverse` | out | the matrix A+ | - |
 
 **Applies when:** A has full rank (independent rows or independent columns); at most 10 x 10.
 
@@ -967,7 +927,7 @@ pseudoinverse = [[0.6666666666666666,-0.3333333333333333,0.3333333333333333],[-0
 
 <a id="projection_matrix"></a>
 
-#### Orthogonal projection matrix onto a column space — `projection_matrix`
+#### Orthogonal projection matrix onto a column space, `projection_matrix`
 
 The matrix P = A (A^T A)^-1 A^T that projects orthogonally onto the column space of A.
 
@@ -977,8 +937,8 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `A` | in | a matrix with independent columns | — |
-| `projection` | out | the projection matrix P | — |
+| `A` | in | a matrix with independent columns | - |
+| `projection` | out | the projection matrix P | - |
 
 **Applies when:** the columns of A are linearly independent; at most 10 x 10.
 
@@ -995,7 +955,7 @@ projection = [[0.2,0.4],[0.4,0.8]]
 
 <a id="conjugate_gradient"></a>
 
-#### Conjugate gradient method for Ax = b — `conjugate_gradient`
+#### Conjugate gradient method for Ax = b, `conjugate_gradient`
 
 Solve Ax = b for a symmetric positive definite A by the method of conjugate gradients.
 
@@ -1005,9 +965,9 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `A` | in | coefficient matrix | — |
-| `b` | in | right-hand side | — |
-| `solution` | out | the solution x | — |
+| `A` | in | coefficient matrix | - |
+| `b` | in | right-hand side | - |
+| `solution` | out | the solution x | - |
 
 **Applies when:** A is symmetric positive definite (checked exactly); at most 10 x 10.
 
@@ -1022,7 +982,7 @@ solution = [0.09090909090909091,0.6363636363636364]
 
 <a id="gauss_seidel"></a>
 
-#### Gauss-Seidel iteration for Ax = b — `gauss_seidel`
+#### Gauss-Seidel iteration for Ax = b, `gauss_seidel`
 
 Solve Ax = b by the Gauss-Seidel method (each new value used at once), iterated to convergence.
 
@@ -1032,9 +992,9 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `A` | in | coefficient matrix | — |
-| `b` | in | right-hand side | — |
-| `solution` | out | the converged solution x | — |
+| `A` | in | coefficient matrix | - |
+| `b` | in | right-hand side | - |
+| `solution` | out | the converged solution x | - |
 
 **Applies when:** A is square and strictly diagonally dominant, or symmetric positive definite (guarantees convergence); at most 10 x 10.
 
@@ -1049,7 +1009,7 @@ solution = [1.0,2.0]
 
 <a id="jacobi_iteration"></a>
 
-#### Jacobi iteration for Ax = b — `jacobi_iteration`
+#### Jacobi iteration for Ax = b, `jacobi_iteration`
 
 Solve Ax = b for a strictly diagonally dominant A by the Jacobi method, iterated to convergence.
 
@@ -1059,9 +1019,9 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `A` | in | coefficient matrix | — |
-| `b` | in | right-hand side | — |
-| `solution` | out | the converged solution x | — |
+| `A` | in | coefficient matrix | - |
+| `b` | in | right-hand side | - |
+| `solution` | out | the converged solution x | - |
 
 **Applies when:** A is square and strictly diagonally dominant by rows (guarantees convergence); at most 10 x 10.
 
@@ -1076,7 +1036,7 @@ solution = [1.0,2.0]
 
 <a id="linear_system_classification"></a>
 
-#### Number of solutions of a linear system — `linear_system_classification`
+#### Number of solutions of a linear system: `linear_system_classification`
 
 Whether Ax = b has a unique solution, infinitely many, or none (Rouche-Capelli), with the two ranks.
 
@@ -1086,11 +1046,11 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `A` | in | coefficient matrix | — |
-| `b` | in | right-hand side | — |
-| `solutions` | out | unique / infinitely many / none | — |
-| `rank_A` | out | rank of A | — |
-| `rank_augmented` | out | rank of the augmented matrix [A \| b] | — |
+| `A` | in | coefficient matrix | - |
+| `b` | in | right-hand side | - |
+| `solutions` | out | unique / infinitely many / none | - |
+| `rank_A` | out | rank of A | - |
+| `rank_augmented` | out | rank of the augmented matrix [A \| b] | - |
 
 **Applies when:** b has one entry per row of A; at most 10 x 10.
 
@@ -1107,7 +1067,7 @@ rank_augmented = 2
 
 <a id="rref"></a>
 
-#### Reduced row echelon form — `rref`
+#### Reduced row echelon form: `rref`
 
 The reduced row echelon form (RREF) of a matrix, its pivot columns (1-based) and its rank.
 
@@ -1117,10 +1077,10 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `A` | in | the matrix (up to 10 x 10) | — |
-| `rref` | out | the reduced row echelon form | — |
-| `pivot_columns` | out | pivot columns, 1-based | — |
-| `rank` | out | number of pivots | — |
+| `A` | in | the matrix (up to 10 x 10) | - |
+| `rref` | out | the reduced row echelon form | - |
+| `pivot_columns` | out | pivot columns, 1-based | - |
+| `rank` | out | number of pivots | - |
 
 **Applies when:** at most 10 x 10.
 
@@ -1137,7 +1097,7 @@ rank = 2
 
 <a id="solve_linear_system"></a>
 
-#### Solve a square linear system Ax = b — `solve_linear_system`
+#### Solve a square linear system Ax = b, `solve_linear_system`
 
 The unique solution of Ax = b for a nonsingular n x n matrix A (n up to 10).
 
@@ -1147,9 +1107,9 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `A` | in | coefficient matrix | — |
-| `b` | in | right-hand side | — |
-| `solution` | out | the solution vector x | — |
+| `A` | in | coefficient matrix | - |
+| `b` | in | right-hand side | - |
+| `solution` | out | the solution vector x | - |
 
 **Applies when:** A is square and nonsingular; b has one entry per row of A; at most 10 x 10.
 
@@ -1164,7 +1124,7 @@ solution = [0.8,1.4]
 
 <a id="solve_3x3_system"></a>
 
-#### Three linear equations in three unknowns — `solve_3x3_system`
+#### Three linear equations in three unknowns: `solve_3x3_system`
 
 Solve three linear equations in x, y, z by Cramer's rule.
 
@@ -1174,10 +1134,10 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `A` | in | coefficient matrix | — |
-| `b` | in | right-hand side | — |
-| `solution` | out | the solution (x, y, z) | — |
-| `det` | out | determinant of the coefficient matrix | — |
+| `A` | in | coefficient matrix | - |
+| `b` | in | right-hand side | - |
+| `solution` | out | the solution (x, y, z) | - |
+| `det` | out | determinant of the coefficient matrix | - |
 
 **Applies when:** A is 3 x 3; det A != 0 (otherwise there is no unique solution).
 
@@ -1193,7 +1153,7 @@ det = 7
 
 <a id="tridiagonal_solve"></a>
 
-#### Tridiagonal system (Thomas algorithm) — `tridiagonal_solve`
+#### Tridiagonal system (Thomas algorithm): `tridiagonal_solve`
 
 Solve a tridiagonal system given its three diagonals and right-hand side, in O(n) operations.
 
@@ -1203,11 +1163,11 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `sub` | in | sub-diagonal a_2..a_n (n-1 entries) | — |
-| `diag` | in | main diagonal b_1..b_n | — |
-| `sup` | in | super-diagonal c_1..c_(n-1) (n-1 entries) | — |
-| `d` | in | right-hand side (n entries) | — |
-| `solution` | out | the solution x | — |
+| `sub` | in | sub-diagonal a_2..a_n (n-1 entries) | - |
+| `diag` | in | main diagonal b_1..b_n | - |
+| `sup` | in | super-diagonal c_1..c_(n-1) (n-1 entries) | - |
+| `d` | in | right-hand side (n entries) | - |
+| `solution` | out | the solution x | - |
 
 **Applies when:** n >= 2, at most 200; no zero pivot arises in the elimination (true for diagonally dominant matrices).
 
@@ -1222,7 +1182,7 @@ solution = [1.0,1.0,1.0]
 
 <a id="solve_2x2_system"></a>
 
-#### Two linear equations in two unknowns — `solve_2x2_system`
+#### Two linear equations in two unknowns: `solve_2x2_system`
 
 Solve a x + b y = e, c x + d y = f for (x, y) by Cramer's rule.
 
@@ -1232,10 +1192,10 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `A` | in | coefficient matrix | — |
-| `b` | in | right-hand side | — |
-| `solution` | out | the solution (x, y) | — |
-| `det` | out | determinant of the coefficient matrix | — |
+| `A` | in | coefficient matrix | - |
+| `b` | in | right-hand side | - |
+| `solution` | out | the solution (x, y) | - |
+| `det` | out | determinant of the coefficient matrix | - |
 
 **Applies when:** A is 2 x 2; det A != 0 (otherwise there is no unique solution).
 
@@ -1253,7 +1213,7 @@ det = -5
 
 <a id="matrix_vector_product"></a>
 
-#### Matrix times vector (image under a linear map) — `matrix_vector_product`
+#### Matrix times vector (image under a linear map), `matrix_vector_product`
 
 The vector Ax: the image of x under the linear transformation with matrix A.
 
@@ -1263,9 +1223,9 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `A` | in | the matrix | — |
-| `x` | in | the vector | — |
-| `image` | out | the vector Ax | — |
+| `A` | in | the matrix | - |
+| `x` | in | the vector | - |
+| `image` | out | the vector Ax | - |
 
 **Applies when:** columns of A = length of x.
 
@@ -1280,7 +1240,7 @@ image = [17.0,39.0]
 
 <a id="rotate_vector_2d"></a>
 
-#### Rotation of a plane vector — `rotate_vector_2d`
+#### Rotation of a plane vector: `rotate_vector_2d`
 
 Rotate a 2-D vector counterclockwise about the origin by an angle given in degrees.
 
@@ -1290,9 +1250,9 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `v` | in | the vector (2 entries) | — |
-| `angle` | in | rotation angle in degrees (counterclockwise) | — |
-| `rotated` | out | the rotated vector R(angle) v | — |
+| `v` | in | the vector (2 entries) | - |
+| `angle` | in | rotation angle in degrees (counterclockwise) | - |
+| `rotated` | out | the rotated vector R(angle) v | - |
 
 **Applies when:** v has 2 entries; a positive angle turns counterclockwise.
 
@@ -1310,7 +1270,7 @@ rotated = [0.0,1.0]
 
 <a id="condition_number"></a>
 
-#### Condition number of a matrix — `condition_number`
+#### Condition number of a matrix: `condition_number`
 
 How sensitive Ax = b is to errors: the 2-norm condition number sigma_max/sigma_min and the 1-norm one.
 
@@ -1320,9 +1280,9 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `A` | in | a nonsingular square matrix | — |
-| `cond2` | out | 2-norm condition number sigma_max / sigma_min | — |
-| `cond1` | out | 1-norm condition number \|A\|_1 \|A^-1\|_1 | — |
+| `A` | in | a nonsingular square matrix | - |
+| `cond2` | out | 2-norm condition number sigma_max / sigma_min | - |
+| `cond1` | out | 1-norm condition number \|A\|_1 \|A^-1\|_1 | - |
 
 **Applies when:** A is square and nonsingular; at most 10 x 10.
 
@@ -1338,7 +1298,7 @@ cond1 = 4
 
 <a id="matrix_subtraction"></a>
 
-#### Difference of two matrices — `matrix_subtraction`
+#### Difference of two matrices: `matrix_subtraction`
 
 Subtract the second matrix from the first, entry by entry.
 
@@ -1348,9 +1308,9 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `A` | in | first matrix | — |
-| `B` | in | matrix subtracted | — |
-| `difference` | out | the matrix A - B | — |
+| `A` | in | first matrix | - |
+| `B` | in | matrix subtracted | - |
+| `difference` | out | the matrix A - B | - |
 
 **Applies when:** A and B have the same shape.
 
@@ -1365,7 +1325,7 @@ difference = [[4.0,5.0],[6.0,7.0]]
 
 <a id="matrix_inverse"></a>
 
-#### Inverse of a square matrix — `matrix_inverse`
+#### Inverse of a square matrix: `matrix_inverse`
 
 The inverse A^-1 of a nonsingular square matrix (any size up to 10 x 10).
 
@@ -1375,8 +1335,8 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `A` | in | a nonsingular square matrix | — |
-| `inverse` | out | the matrix A^-1 | — |
+| `A` | in | a nonsingular square matrix | - |
+| `inverse` | out | the matrix A^-1 | - |
 
 **Applies when:** A is square; det A != 0 (a singular matrix has no inverse); at most 10 x 10.
 
@@ -1391,7 +1351,7 @@ inverse = [[0.6,-0.7],[-0.2,0.4]]
 
 <a id="kronecker_product"></a>
 
-#### Kronecker (tensor) product of two matrices — `kronecker_product`
+#### Kronecker (tensor) product of two matrices, `kronecker_product`
 
 The block matrix A (x) B whose (i, j) block is a_ij B.
 
@@ -1401,9 +1361,9 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `A` | in | first matrix | — |
-| `B` | in | second matrix | — |
-| `kron` | out | the Kronecker product A (x) B | — |
+| `A` | in | first matrix | - |
+| `B` | in | second matrix | - |
+| `kron` | out | the Kronecker product A (x) B | - |
 
 **Applies when:** each matrix at most 6 x 6.
 
@@ -1418,7 +1378,7 @@ kron = [[0.0,1.0,0.0,2.0],[1.0,0.0,2.0,0.0],[0.0,3.0,0.0,4.0],[3.0,0.0,4.0,0.0]]
 
 <a id="matrix_norms"></a>
 
-#### Norms of a matrix — `matrix_norms`
+#### Norms of a matrix: `matrix_norms`
 
 The Frobenius norm, the 1-norm (largest column sum), the infinity-norm (largest row sum) and the spectral 2-norm.
 
@@ -1428,11 +1388,11 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `A` | in | the matrix | — |
-| `frobenius` | out | Frobenius norm | — |
-| `norm1` | out | 1-norm: largest absolute column sum | — |
-| `norm_inf` | out | infinity-norm: largest absolute row sum | — |
-| `norm2` | out | spectral norm: the largest singular value | — |
+| `A` | in | the matrix | - |
+| `frobenius` | out | Frobenius norm | - |
+| `norm1` | out | 1-norm: largest absolute column sum | - |
+| `norm_inf` | out | infinity-norm: largest absolute row sum | - |
+| `norm2` | out | spectral norm: the largest singular value | - |
 
 **Applies when:** at most 10 x 10.
 
@@ -1450,7 +1410,7 @@ norm2 = 5.116672736
 
 <a id="matrix_power"></a>
 
-#### Power of a square matrix — `matrix_power`
+#### Power of a square matrix: `matrix_power`
 
 A^k for a square matrix A and a whole number k (A^0 = I).
 
@@ -1460,9 +1420,9 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `A` | in | a square matrix (at most 6 x 6) | — |
-| `k` | in | the exponent (0 to 64) | — |
-| `power` | out | the matrix A^k | — |
+| `A` | in | a square matrix (at most 6 x 6) | - |
+| `k` | in | the exponent (0 to 64) | - |
+| `power` | out | the matrix A^k | - |
 
 **Applies when:** A is square; k is a whole number, 0 <= k <= 64.
 
@@ -1477,7 +1437,7 @@ power = [[1.0,3.0],[0.0,1.0]]
 
 <a id="matrix_multiplication"></a>
 
-#### Product of two matrices — `matrix_multiplication`
+#### Product of two matrices: `matrix_multiplication`
 
 The matrix product AB (rows of A times columns of B).
 
@@ -1487,9 +1447,9 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `A` | in | left matrix | — |
-| `B` | in | right matrix | — |
-| `product` | out | the matrix AB | — |
+| `A` | in | left matrix | - |
+| `B` | in | right matrix | - |
+| `product` | out | the matrix AB | - |
 
 **Applies when:** columns of A = rows of B; at most 10 rows and columns.
 
@@ -1504,7 +1464,7 @@ product = [[19.0,22.0],[43.0,50.0]]
 
 <a id="matrix_rank"></a>
 
-#### Rank of a matrix — `matrix_rank`
+#### Rank of a matrix: `matrix_rank`
 
 The rank: the number of linearly independent rows (equivalently columns) of a matrix.
 
@@ -1514,8 +1474,8 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `A` | in | the matrix (up to 10 x 10) | — |
-| `rank` | out | rank of A | — |
+| `A` | in | the matrix (up to 10 x 10) | - |
+| `rank` | out | rank of A | - |
 
 **Applies when:** at most 10 x 10.
 
@@ -1530,7 +1490,7 @@ rank = 2
 
 <a id="scalar_matrix_multiplication"></a>
 
-#### Scalar multiple of a matrix — `scalar_matrix_multiplication`
+#### Scalar multiple of a matrix: `scalar_matrix_multiplication`
 
 Multiply every entry of a matrix by a number k.
 
@@ -1540,9 +1500,9 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `k` | in | the scalar | — |
-| `A` | in | the matrix | — |
-| `product` | out | the matrix k A | — |
+| `k` | in | the scalar | - |
+| `A` | in | the matrix | - |
+| `product` | out | the matrix k A | - |
 
 ```shell
 $ linear-algebra solve scalar_matrix_multiplication k=3 "A=[[1, 2], [3, 4]]"
@@ -1555,7 +1515,7 @@ product = [[3.0,6.0],[9.0,12.0]]
 
 <a id="matrix_addition"></a>
 
-#### Sum of two matrices — `matrix_addition`
+#### Sum of two matrices: `matrix_addition`
 
 Add two matrices of the same shape entry by entry.
 
@@ -1565,9 +1525,9 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `A` | in | first matrix | — |
-| `B` | in | second matrix | — |
-| `sum` | out | the matrix A + B | — |
+| `A` | in | first matrix | - |
+| `B` | in | second matrix | - |
+| `sum` | out | the matrix A + B | - |
 
 **Applies when:** A and B have the same shape.
 
@@ -1582,7 +1542,7 @@ sum = [[6.0,8.0],[10.0,12.0]]
 
 <a id="matrix_trace"></a>
 
-#### Trace of a square matrix — `matrix_trace`
+#### Trace of a square matrix: `matrix_trace`
 
 The trace: the sum of the diagonal entries of a square matrix.
 
@@ -1592,8 +1552,8 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `A` | in | a square matrix | — |
-| `trace` | out | tr(A) = sum of a_ii | — |
+| `A` | in | a square matrix | - |
+| `trace` | out | tr(A) = sum of a_ii | - |
 
 **Applies when:** A is square.
 
@@ -1608,7 +1568,7 @@ trace = 5
 
 <a id="matrix_transpose"></a>
 
-#### Transpose of a matrix — `matrix_transpose`
+#### Transpose of a matrix: `matrix_transpose`
 
 Swap rows and columns: the transpose A^T with (A^T)_ij = a_ji.
 
@@ -1618,8 +1578,8 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `A` | in | the matrix | — |
-| `transpose` | out | the matrix A^T | — |
+| `A` | in | the matrix | - |
+| `transpose` | out | the matrix A^T | - |
 
 ```shell
 $ linear-algebra solve matrix_transpose "A=[[1, 2, 3], [4, 5, 6]]"
@@ -1633,7 +1593,7 @@ transpose = [[1.0,4.0],[2.0,5.0],[3.0,6.0]]
 
 <a id="matrix_exponential"></a>
 
-#### Matrix exponential — `matrix_exponential`
+#### Matrix exponential: `matrix_exponential`
 
 exp(A) = I + A + A^2/2! + ..., the solution operator of x' = A x.
 
@@ -1643,8 +1603,8 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `A` | in | a square matrix with \|A\|_1 <= 50 | — |
-| `exponential` | out | the matrix exp(A) | — |
+| `A` | in | a square matrix with \|A\|_1 <= 50 | - |
+| `exponential` | out | the matrix exp(A) | - |
 
 **Applies when:** A is square, at most 10 x 10; |A|_1 <= 50.
 
@@ -1659,7 +1619,7 @@ exponential = [[1.0,1.0],[0.0,1.0]]
 
 <a id="matrix_square_root"></a>
 
-#### Square root of a positive definite matrix — `matrix_square_root`
+#### Square root of a positive definite matrix: `matrix_square_root`
 
 The unique symmetric positive definite X with X^2 = A, for a symmetric positive definite A.
 
@@ -1669,8 +1629,8 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `A` | in | a symmetric positive definite matrix | — |
-| `sqrt` | out | the principal square root A^(1/2) | — |
+| `A` | in | a symmetric positive definite matrix | - |
+| `sqrt` | out | the principal square root A^(1/2) | - |
 
 **Applies when:** A is symmetric positive definite; at most 10 x 10.
 
@@ -1687,7 +1647,7 @@ sqrt = [[1.9999999999999991,0.9999999999999996],[0.9999999999999996,1.9999999999
 
 <a id="poisson_1d"></a>
 
-#### 1-D Poisson equation by finite differences — `poisson_1d`
+#### 1-D Poisson equation by finite differences, `poisson_1d`
 
 Solve -u'' = f on (0, L) with u(0) = u(L) = 0 on n equally spaced interior points (second-order finite differences).
 
@@ -1697,10 +1657,10 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `f` | in | values of f at the n interior grid points x_k = k L/(n+1) | — |
-| `L` | in | length of the interval | — |
-| `u` | out | approximate u at the interior points | — |
-| `h` | out | grid spacing L/(n+1) | — |
+| `f` | in | values of f at the n interior grid points x_k = k L/(n+1) | - |
+| `L` | in | length of the interval | - |
+| `u` | out | approximate u at the interior points | - |
+| `h` | out | grid spacing L/(n+1) | - |
 
 **Applies when:** L > 0; u = 0 at both ends (homogeneous Dirichlet conditions); at most 200 interior points.
 
@@ -1717,7 +1677,7 @@ h = 0.25
 
 <a id="poisson_2d"></a>
 
-#### 2-D Poisson equation on a grid (5-point stencil) — `poisson_2d`
+#### 2-D Poisson equation on a grid (5-point stencil), `poisson_2d`
 
 Solve -(u_xx + u_yy) = f on a rectangle with u = 0 on the boundary, on an n x m grid of interior points with spacing h.
 
@@ -1727,9 +1687,9 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `f` | in | values of f at the interior grid points (row i, column j) | — |
-| `h` | in | grid spacing (equal in x and y) | — |
-| `u` | out | approximate u at the interior grid points | — |
+| `f` | in | values of f at the interior grid points (row i, column j) | - |
+| `h` | in | grid spacing (equal in x and y) | - |
+| `u` | out | approximate u at the interior grid points | - |
 
 **Applies when:** h > 0; u = 0 on the boundary; at most 12 x 12 interior points.
 
@@ -1747,7 +1707,7 @@ u = [[0.125,0.125],[0.12499999999999999,0.12499999999999999]]
 
 <a id="clamped_cubic_spline"></a>
 
-#### Clamped cubic spline interpolation — `clamped_cubic_spline`
+#### Clamped cubic spline interpolation: `clamped_cubic_spline`
 
 The value at a point of the cubic spline through the data with prescribed slopes at the two ends.
 
@@ -1757,12 +1717,12 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `x` | in | knots, strictly increasing | — |
-| `y` | in | values at the knots | — |
-| `slope_start` | in | slope S'(x0) | — |
-| `slope_end` | in | slope S'(xn) | — |
-| `at` | in | the point (within the knots) | — |
-| `value` | out | spline value S(at) | — |
+| `x` | in | knots, strictly increasing | - |
+| `y` | in | values at the knots | - |
+| `slope_start` | in | slope S'(x0) | - |
+| `slope_end` | in | slope S'(xn) | - |
+| `at` | in | the point (within the knots) | - |
+| `value` | out | spline value S(at) | - |
 
 **Applies when:** x strictly increasing, at least 2 knots (at most 60); x[0] <= at <= x[-1].
 
@@ -1780,7 +1740,7 @@ value = 0.625
 
 <a id="interpolating_polynomial"></a>
 
-#### Coefficients of the interpolating polynomial — `interpolating_polynomial`
+#### Coefficients of the interpolating polynomial, `interpolating_polynomial`
 
 The polynomial c0 + c1 x + ... + c(n-1) x^(n-1) passing exactly through n data points.
 
@@ -1790,9 +1750,9 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `x` | in | x values (distinct) | — |
-| `y` | in | y values | — |
-| `coefficients` | out | [c0, c1, ...], lowest power first | — |
+| `x` | in | x values (distinct) | - |
+| `y` | in | y values | - |
+| `coefficients` | out | [c0, c1, ...], lowest power first | - |
 
 **Applies when:** distinct x values; at most 15 points.
 
@@ -1807,7 +1767,7 @@ coefficients = [1.0,1.0,1.0]
 
 <a id="midpoint_rule"></a>
 
-#### Composite midpoint rule for a polynomial — `midpoint_rule`
+#### Composite midpoint rule for a polynomial: `midpoint_rule`
 
 Approximate the integral of a polynomial over [a, b] by the composite midpoint rule with n subintervals.
 
@@ -1817,11 +1777,11 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `coefficients` | in | polynomial coefficients, highest power first (written out in x in a question) | — |
-| `a` | in | lower limit | — |
-| `b` | in | upper limit | — |
-| `n` | in | number of subintervals | — |
-| `integral` | out | midpoint-rule estimate | — |
+| `coefficients` | in | polynomial coefficients, highest power first (written out in x in a question) | - |
+| `a` | in | lower limit | - |
+| `b` | in | upper limit | - |
+| `n` | in | number of subintervals | - |
+| `integral` | out | midpoint-rule estimate | - |
 
 **Applies when:** a < b; 1 <= n <= 1000.
 
@@ -1838,7 +1798,7 @@ integral = 2.625
 
 <a id="numerical_derivative"></a>
 
-#### Derivative of equally spaced data (finite differences) — `numerical_derivative`
+#### Derivative of equally spaced data (finite differences), `numerical_derivative`
 
 Estimate dy/dx at every sample of equally spaced data: central differences inside, one-sided differences at the ends.
 
@@ -1848,9 +1808,9 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `y` | in | samples y_0, ..., y_n (at least 2) | — |
-| `h` | in | spacing between samples | — |
-| `derivative` | out | estimated dy/dx at each sample | — |
+| `y` | in | samples y_0, ..., y_n (at least 2) | - |
+| `h` | in | spacing between samples | - |
+| `derivative` | out | estimated dy/dx at each sample | - |
 
 **Applies when:** h > 0; at least 2 samples (at most 200).
 
@@ -1866,7 +1826,7 @@ derivative = [1.0,2.0,4.0,6.0,7.0]
 
 <a id="polynomial_evaluation"></a>
 
-#### Evaluate a polynomial and its derivative (Horner's method) — `polynomial_evaluation`
+#### Evaluate a polynomial and its derivative (Horner's method), `polynomial_evaluation`
 
 The value p(x) and the derivative p'(x) of a polynomial at a point.
 
@@ -1876,10 +1836,10 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `coefficients` | in | polynomial coefficients, highest power first (written out in x in a question) | — |
-| `x` | in | the point | — |
-| `value` | out | p(x) | — |
-| `derivative` | out | p'(x) | — |
+| `coefficients` | in | polynomial coefficients, highest power first (written out in x in a question) | - |
+| `x` | in | the point | - |
+| `value` | out | p(x) | - |
+| `derivative` | out | p'(x) | - |
 
 **Applies when:** at most degree 12.
 
@@ -1896,7 +1856,7 @@ derivative = 20
 
 <a id="gauss_legendre_rule"></a>
 
-#### Gauss-Legendre quadrature nodes and weights — `gauss_legendre_rule`
+#### Gauss-Legendre quadrature nodes and weights, `gauss_legendre_rule`
 
 The nodes and weights of the n-point Gauss-Legendre rule on [-1, 1] (exact for polynomials of degree up to 2n - 1).
 
@@ -1906,9 +1866,9 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `n` | in | number of points (1 to 40) | — |
-| `nodes` | out | nodes x_i in [-1, 1], ascending | — |
-| `weights` | out | weights w_i | — |
+| `n` | in | number of points (1 to 40) | - |
+| `nodes` | out | nodes x_i in [-1, 1], ascending | - |
+| `weights` | out | weights w_i | - |
 
 **Applies when:** 1 <= n <= 40.
 
@@ -1924,7 +1884,7 @@ weights = [0.5555555555555552,0.8888888888888888,0.5555555555555552]
 
 <a id="gauss_legendre_integral"></a>
 
-#### Gauss-Legendre quadrature of a polynomial — `gauss_legendre_integral`
+#### Gauss-Legendre quadrature of a polynomial: `gauss_legendre_integral`
 
 The n-point Gauss-Legendre approximation of the integral of a polynomial over [a, b] (exact up to degree 2n - 1).
 
@@ -1934,11 +1894,11 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `coefficients` | in | polynomial coefficients, highest power first (written out in x in a question) | — |
-| `a` | in | lower limit | — |
-| `b` | in | upper limit | — |
-| `n` | in | number of Gauss points (1 to 40) | — |
-| `integral` | out | Gauss-Legendre estimate | — |
+| `coefficients` | in | polynomial coefficients, highest power first (written out in x in a question) | - |
+| `a` | in | lower limit | - |
+| `b` | in | upper limit | - |
+| `n` | in | number of Gauss points (1 to 40) | - |
+| `integral` | out | Gauss-Legendre estimate | - |
 
 **Applies when:** a < b; 1 <= n <= 40.
 
@@ -1955,7 +1915,7 @@ integral = 6.666666667
 
 <a id="lagrange_interpolation"></a>
 
-#### Lagrange interpolation — `lagrange_interpolation`
+#### Lagrange interpolation: `lagrange_interpolation`
 
 The value at a point of the polynomial of lowest degree through given data points (Lagrange form).
 
@@ -1965,10 +1925,10 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `x` | in | x values of the data (distinct) | — |
-| `y` | in | y values of the data | — |
-| `at` | in | the point where the interpolant is evaluated | — |
-| `value` | out | interpolated value p(at) | — |
+| `x` | in | x values of the data (distinct) | - |
+| `y` | in | y values of the data | - |
+| `at` | in | the point where the interpolant is evaluated | - |
+| `value` | out | interpolated value p(at) | - |
 
 **Applies when:** distinct x values; x and y of equal length (at most 60).
 
@@ -1984,7 +1944,7 @@ value = 2.875
 
 <a id="natural_cubic_spline"></a>
 
-#### Natural cubic spline interpolation — `natural_cubic_spline`
+#### Natural cubic spline interpolation: `natural_cubic_spline`
 
 The value at a point of the natural cubic spline through the data (second derivative zero at both ends).
 
@@ -1994,10 +1954,10 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `x` | in | knots, strictly increasing (at least 3) | — |
-| `y` | in | values at the knots | — |
-| `at` | in | the point (within the knots) | — |
-| `value` | out | spline value S(at) | — |
+| `x` | in | knots, strictly increasing (at least 3) | - |
+| `y` | in | values at the knots | - |
+| `at` | in | the point (within the knots) | - |
+| `value` | out | spline value S(at) | - |
 
 **Applies when:** x strictly increasing, at least 3 knots (at most 60); x[0] <= at <= x[-1]; natural end conditions S''(x0) = S''(xn) = 0.
 
@@ -2013,7 +1973,7 @@ value = 0.6875
 
 <a id="newton_divided_differences"></a>
 
-#### Newton divided differences — `newton_divided_differences`
+#### Newton divided differences: `newton_divided_differences`
 
 The coefficients f[x0], f[x0,x1], ..., f[x0..xn] of the Newton form of the interpolating polynomial.
 
@@ -2023,9 +1983,9 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `x` | in | x values (distinct) | — |
-| `y` | in | y values | — |
-| `coefficients` | out | divided differences f[x0], f[x0,x1], ...: p(t) = c0 + c1 (t - x0) + c2 (t - x0)(t - x1) + ... | — |
+| `x` | in | x values (distinct) | - |
+| `y` | in | y values | - |
+| `coefficients` | out | divided differences f[x0], f[x0,x1], ...: p(t) = c0 + c1 (t - x0) + c2 (t - x0)(t - x1) + ... | - |
 
 **Applies when:** distinct x values; x and y of equal length (at most 60).
 
@@ -2040,7 +2000,7 @@ coefficients = [1.0,3.0,1.0]
 
 <a id="linear_interpolation"></a>
 
-#### Piecewise linear interpolation — `linear_interpolation`
+#### Piecewise linear interpolation: `linear_interpolation`
 
 The value at a point of the broken line joining consecutive data points.
 
@@ -2050,10 +2010,10 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `x` | in | x values, strictly increasing | — |
-| `y` | in | y values | — |
-| `at` | in | the point (within the data range) | — |
-| `value` | out | interpolated value | — |
+| `x` | in | x values, strictly increasing | - |
+| `y` | in | y values | - |
+| `at` | in | the point (within the data range) | - |
+| `value` | out | interpolated value | - |
 
 **Applies when:** x strictly increasing; x[0] <= at <= x[-1] (no extrapolation).
 
@@ -2069,7 +2029,7 @@ value = 2.5
 
 <a id="bisection_root"></a>
 
-#### Root of a polynomial by bisection — `bisection_root`
+#### Root of a polynomial by bisection: `bisection_root`
 
 The root of a polynomial inside an interval [a, b] where it changes sign, by repeated halving.
 
@@ -2079,10 +2039,10 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `coefficients` | in | polynomial coefficients, highest power first (written out in x in a question) | — |
-| `a` | in | left end of the interval | — |
-| `b` | in | right end of the interval | — |
-| `root` | out | the root in [a, b] | — |
+| `coefficients` | in | polynomial coefficients, highest power first (written out in x in a question) | - |
+| `a` | in | left end of the interval | - |
+| `b` | in | right end of the interval | - |
+| `root` | out | the root in [a, b] | - |
 
 **Applies when:** a < b; p(a) and p(b) have opposite signs; exactly one root in (a, b) (checked exactly by a Sturm sequence); the root is simple and well conditioned.
 
@@ -2099,7 +2059,7 @@ root = 1.414213562
 
 <a id="newton_root"></a>
 
-#### Root of a polynomial by Newton's method — `newton_root`
+#### Root of a polynomial by Newton's method: `newton_root`
 
 A root of a polynomial by Newton's method x <- x - p(x)/p'(x) from a starting value x0.
 
@@ -2109,9 +2069,9 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `coefficients` | in | polynomial coefficients, highest power first (written out in x in a question) | — |
-| `x0` | in | starting value | — |
-| `root` | out | the root the iteration converges to | — |
+| `coefficients` | in | polynomial coefficients, highest power first (written out in x in a question) | - |
+| `x0` | in | starting value | - |
+| `root` | out | the root the iteration converges to | - |
 
 **Applies when:** the iteration converges (within 200 steps) to a simple, well-conditioned root; p'(x) never vanishes at an iterate.
 
@@ -2127,7 +2087,7 @@ root = 2.094551482
 
 <a id="secant_root"></a>
 
-#### Root of a polynomial by the secant method — `secant_root`
+#### Root of a polynomial by the secant method: `secant_root`
 
 A root of a polynomial by the secant method from two starting values x0 and x1.
 
@@ -2137,10 +2097,10 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `coefficients` | in | polynomial coefficients, highest power first (written out in x in a question) | — |
-| `x0` | in | first starting value | — |
-| `x1` | in | second starting value | — |
-| `root` | out | the root the iteration converges to | — |
+| `coefficients` | in | polynomial coefficients, highest power first (written out in x in a question) | - |
+| `x0` | in | first starting value | - |
+| `x1` | in | second starting value | - |
+| `root` | out | the root the iteration converges to | - |
 
 **Applies when:** x0 != x1; the iteration converges (within 200 steps) to a simple, well-conditioned root.
 
@@ -2157,7 +2117,7 @@ root = 2.094551482
 
 <a id="simpson_rule"></a>
 
-#### Simpson's rule for tabulated data — `simpson_rule`
+#### Simpson's rule for tabulated data: `simpson_rule`
 
 The integral of equally spaced tabulated data by the composite Simpson 1/3 rule.
 
@@ -2167,9 +2127,9 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `x` | in | equally spaced, increasing x values (odd count) | — |
-| `y` | in | y values | — |
-| `integral` | out | Simpson estimate of the integral | — |
+| `x` | in | equally spaced, increasing x values (odd count) | - |
+| `y` | in | y values | - |
+| `integral` | out | Simpson estimate of the integral | - |
 
 **Applies when:** x equally spaced and increasing; an odd number of points, at least 3 (an even number of intervals).
 
@@ -2184,7 +2144,7 @@ integral = 4.666666667
 
 <a id="trapezoid_rule"></a>
 
-#### Trapezoidal rule for tabulated data — `trapezoid_rule`
+#### Trapezoidal rule for tabulated data: `trapezoid_rule`
 
 The integral of tabulated data by the composite trapezoidal rule (any spacing).
 
@@ -2194,9 +2154,9 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `x` | in | x values, strictly increasing | — |
-| `y` | in | y values | — |
-| `integral` | out | trapezoidal estimate of the integral | — |
+| `x` | in | x values, strictly increasing | - |
+| `y` | in | y values | - |
+| `integral` | out | trapezoidal estimate of the integral | - |
 
 **Applies when:** x strictly increasing; at least 2 points (at most 60).
 
@@ -2213,7 +2173,7 @@ integral = 6.5
 
 <a id="csc_format"></a>
 
-#### Compressed sparse column (CSC) form of a matrix — `csc_format`
+#### Compressed sparse column (CSC) form of a matrix, `csc_format`
 
 Store a matrix in compressed sparse column form: the nonzero values, their row indices and the column pointers.
 
@@ -2223,12 +2183,12 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `A` | in | the matrix (up to 50 x 50) | — |
-| `data` | out | nonzero values, column by column | — |
-| `indices` | out | 0-based row index of each value | — |
-| `indptr` | out | column pointers: the values of column k are data[indptr[k]:indptr[k+1]] | — |
-| `nnz` | out | number of stored nonzeros | — |
-| `density` | out | nnz / (rows x columns) | — |
+| `A` | in | the matrix (up to 50 x 50) | - |
+| `data` | out | nonzero values, column by column | - |
+| `indices` | out | 0-based row index of each value | - |
+| `indptr` | out | column pointers: the values of column k are data[indptr[k]:indptr[k+1]] | - |
+| `nnz` | out | number of stored nonzeros | - |
+| `density` | out | nnz / (rows x columns) | - |
 
 **Applies when:** at most 50 x 50; zeros are not stored; indices sorted within each column (canonical form).
 
@@ -2247,7 +2207,7 @@ density = 0.5555555556
 
 <a id="csr_format"></a>
 
-#### Compressed sparse row (CSR) form of a matrix — `csr_format`
+#### Compressed sparse row (CSR) form of a matrix, `csr_format`
 
 Store a matrix in compressed sparse row form: the nonzero values, their column indices and the row pointers.
 
@@ -2257,12 +2217,12 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `A` | in | the matrix (up to 50 x 50) | — |
-| `data` | out | nonzero values, row by row | — |
-| `indices` | out | 0-based column index of each value | — |
-| `indptr` | out | row pointers: the values of row k are data[indptr[k]:indptr[k+1]] | — |
-| `nnz` | out | number of stored nonzeros | — |
-| `density` | out | nnz / (rows x columns) | — |
+| `A` | in | the matrix (up to 50 x 50) | - |
+| `data` | out | nonzero values, row by row | - |
+| `indices` | out | 0-based column index of each value | - |
+| `indptr` | out | row pointers: the values of row k are data[indptr[k]:indptr[k+1]] | - |
+| `nnz` | out | number of stored nonzeros | - |
+| `density` | out | nnz / (rows x columns) | - |
 
 **Applies when:** at most 50 x 50; zeros are not stored; indices sorted within each row (canonical form).
 
@@ -2281,7 +2241,7 @@ density = 0.5555555556
 
 <a id="csr_to_dense"></a>
 
-#### Dense matrix from CSR arrays — `csr_to_dense`
+#### Dense matrix from CSR arrays: `csr_to_dense`
 
 Rebuild the full matrix from compressed sparse row arrays (data, indices, indptr) and the number of columns.
 
@@ -2291,11 +2251,11 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `data` | in | stored values | — |
-| `indices` | in | 0-based column index of each value | — |
-| `indptr` | in | row pointers (rows + 1 entries) | — |
-| `ncols` | in | number of columns | — |
-| `dense` | out | the full matrix | — |
+| `data` | in | stored values | - |
+| `indices` | in | 0-based column index of each value | - |
+| `indptr` | in | row pointers (rows + 1 entries) | - |
+| `ncols` | in | number of columns | - |
+| `dense` | out | the full matrix | - |
 
 **Applies when:** indptr starts at 0, never decreases, ends at len(data); indices within 0..ncols-1; duplicate entries are summed; at most 50 x 50.
 
@@ -2310,7 +2270,7 @@ dense = [[1.0,0.0,2.0],[0.0,3.0,0.0]]
 
 <a id="sparse_matvec"></a>
 
-#### Sparse matrix times vector (CSR) — `sparse_matvec`
+#### Sparse matrix times vector (CSR): `sparse_matvec`
 
 The product y = A x for a matrix A given in compressed sparse row form.
 
@@ -2320,11 +2280,11 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `data` | in | stored values | — |
-| `indices` | in | 0-based column index of each value | — |
-| `indptr` | in | row pointers (rows + 1 entries) | — |
-| `x` | in | the vector (one entry per column) | — |
-| `product` | out | the vector A x | — |
+| `data` | in | stored values | - |
+| `indices` | in | 0-based column index of each value | - |
+| `indptr` | in | row pointers (rows + 1 entries) | - |
+| `x` | in | the vector (one entry per column) | - |
+| `product` | out | the vector A x | - |
 
 **Applies when:** consistent CSR arrays; column indices below len(x); at most 50 x 50.
 
@@ -2341,7 +2301,7 @@ product = [3.0,3.0]
 
 <a id="column_space"></a>
 
-#### Column space of a matrix — `column_space`
+#### Column space of a matrix: `column_space`
 
 A basis of the column space (range) of A: the pivot columns of A itself, and its dimension.
 
@@ -2351,9 +2311,9 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `A` | in | the matrix (up to 10 x 10) | — |
-| `dimension` | out | dimension of the column space (the rank) | — |
-| `basis` | out | the pivot columns of A, left to right | — |
+| `A` | in | the matrix (up to 10 x 10) | - |
+| `dimension` | out | dimension of the column space (the rank) | - |
+| `basis` | out | the pivot columns of A, left to right | - |
 
 **Applies when:** at most 10 x 10.
 
@@ -2369,7 +2329,7 @@ basis = [[1.0,2.0],[3.0,7.0]]
 
 <a id="change_of_basis"></a>
 
-#### Coordinates of a vector in a basis — `change_of_basis`
+#### Coordinates of a vector in a basis: `change_of_basis`
 
 The coordinates c of v with respect to a basis b1, ..., bn: v = c1 b1 + ... + cn bn.
 
@@ -2379,9 +2339,9 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `basis` | in | the basis vectors, one per row | — |
-| `v` | in | the vector | — |
-| `coordinates` | out | the coordinate vector [v]_B | — |
+| `basis` | in | the basis vectors, one per row | - |
+| `v` | in | the vector | - |
+| `coordinates` | out | the coordinate vector [v]_B | - |
 
 **Applies when:** n basis vectors of length n that are linearly independent; v has n entries.
 
@@ -2396,7 +2356,7 @@ coordinates = [2.0,1.0]
 
 <a id="gram_schmidt"></a>
 
-#### Gram-Schmidt orthonormalization — `gram_schmidt`
+#### Gram-Schmidt orthonormalization: `gram_schmidt`
 
 Turn linearly independent vectors v1, ..., vk into orthonormal vectors e1, ..., ek spanning the same nested subspaces.
 
@@ -2406,8 +2366,8 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `vectors` | in | the vectors, one per row (independent) | — |
-| `orthonormal` | out | orthonormal vectors e1, ..., ek, one per row | — |
+| `vectors` | in | the vectors, one per row (independent) | - |
+| `orthonormal` | out | orthonormal vectors e1, ..., ek, one per row | - |
 
 **Applies when:** the vectors are linearly independent; at most 10 vectors of at most 10 entries.
 
@@ -2422,7 +2382,7 @@ orthonormal = [[0.6,0.8],[0.7999999999999999,-0.6]]
 
 <a id="linear_independence"></a>
 
-#### Linear independence of vectors — `linear_independence`
+#### Linear independence of vectors: `linear_independence`
 
 Whether a list of vectors is linearly independent, with the rank of the list.
 
@@ -2432,9 +2392,9 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `vectors` | in | the vectors, one per row (equal lengths) | — |
-| `independent` | out | true when no vector is a combination of the others | — |
-| `rank` | out | dimension of their span | — |
+| `vectors` | in | the vectors, one per row (equal lengths) | - |
+| `independent` | out | true when no vector is a combination of the others | - |
+| `rank` | out | dimension of their span | - |
 
 **Applies when:** all vectors have the same length; at most 10 vectors of at most 10 entries.
 
@@ -2450,7 +2410,7 @@ rank = 2
 
 <a id="null_space"></a>
 
-#### Null space (kernel) of a matrix — `null_space`
+#### Null space (kernel) of a matrix: `null_space`
 
 The dimension of the null space {x : Ax = 0} (the nullity) and a basis of it.
 
@@ -2460,9 +2420,9 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `A` | in | the matrix (up to 10 x 10) | — |
-| `nullity` | out | dimension of the null space = columns - rank | — |
-| `basis` | out | basis vectors: one per free variable, that variable 1, the other free variables 0 | — |
+| `A` | in | the matrix (up to 10 x 10) | - |
+| `nullity` | out | dimension of the null space = columns - rank | - |
+| `basis` | out | basis vectors: one per free variable, that variable 1, the other free variables 0 | - |
 
 **Applies when:** at most 10 x 10.
 
@@ -2480,7 +2440,7 @@ basis = [[-2.0,1.0,0.0],[-3.0,0.0,1.0]]
 
 <a id="angle_between_vectors"></a>
 
-#### Angle between two vectors — `angle_between_vectors`
+#### Angle between two vectors: `angle_between_vectors`
 
 The angle between two nonzero vectors, in degrees and radians (between 0 and 180 degrees).
 
@@ -2490,10 +2450,10 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `u` | in | first vector | — |
-| `v` | in | second vector | — |
-| `angle_degrees` | out | angle in degrees | — |
-| `angle_radians` | out | angle in radians | — |
+| `u` | in | first vector | - |
+| `v` | in | second vector | - |
+| `angle_degrees` | out | angle in degrees | - |
+| `angle_radians` | out | angle in radians | - |
 
 **Applies when:** u and v have the same number of entries; neither vector is zero.
 
@@ -2509,7 +2469,7 @@ angle_radians = 0.7853981634
 
 <a id="parallelogram_area"></a>
 
-#### Area of the parallelogram (and triangle) spanned by two vectors — `parallelogram_area`
+#### Area of the parallelogram (and triangle) spanned by two vectors, `parallelogram_area`
 
 |u x v|: the area of the parallelogram with sides u and v (2-D or 3-D), and half of it for the triangle.
 
@@ -2519,10 +2479,10 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `u` | in | first side (2 or 3 entries) | — |
-| `v` | in | second side (2 or 3 entries) | — |
-| `area` | out | parallelogram area \|u x v\| | — |
-| `triangle_area` | out | triangle area \|u x v\| / 2 | — |
+| `u` | in | first side (2 or 3 entries) | - |
+| `v` | in | second side (2 or 3 entries) | - |
+| `area` | out | parallelogram area \|u x v\| | - |
+| `triangle_area` | out | triangle area \|u x v\| / 2 | - |
 
 **Applies when:** u and v have the same number of entries, 2 or 3.
 
@@ -2538,7 +2498,7 @@ triangle_area = 3
 
 <a id="cross_product"></a>
 
-#### Cross product of two 3-D vectors — `cross_product`
+#### Cross product of two 3-D vectors: `cross_product`
 
 The cross product u x v of two vectors in three dimensions (right-hand rule).
 
@@ -2548,9 +2508,9 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `u` | in | first vector (3 entries) | — |
-| `v` | in | second vector (3 entries) | — |
-| `cross` | out | the vector u x v | — |
+| `u` | in | first vector (3 entries) | - |
+| `v` | in | second vector (3 entries) | - |
+| `cross` | out | the vector u x v | - |
 
 **Applies when:** u and v have exactly 3 entries.
 
@@ -2565,7 +2525,7 @@ cross = [-3.0,6.0,-3.0]
 
 <a id="vector_subtraction"></a>
 
-#### Difference of two vectors — `vector_subtraction`
+#### Difference of two vectors: `vector_subtraction`
 
 Subtract the second vector from the first, entry by entry.
 
@@ -2575,9 +2535,9 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `u` | in | first vector | — |
-| `v` | in | vector subtracted | — |
-| `difference` | out | the vector u - v | — |
+| `u` | in | first vector | - |
+| `v` | in | vector subtracted | - |
+| `difference` | out | the vector u - v | - |
 
 **Applies when:** u and v have the same number of entries.
 
@@ -2592,7 +2552,7 @@ difference = [3.0,-4.0]
 
 <a id="distance_between_points"></a>
 
-#### Distance between two points — `distance_between_points`
+#### Distance between two points: `distance_between_points`
 
 The Euclidean distance between two points given by their coordinates (any dimension).
 
@@ -2602,9 +2562,9 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `p` | in | coordinates of the first point | — |
-| `r` | in | coordinates of the second point | — |
-| `distance` | out | Euclidean distance \|p - r\| | — |
+| `p` | in | coordinates of the first point | - |
+| `r` | in | coordinates of the second point | - |
+| `distance` | out | Euclidean distance \|p - r\| | - |
 
 **Applies when:** the points have the same number of coordinates.
 
@@ -2619,7 +2579,7 @@ distance = 5
 
 <a id="dot_product"></a>
 
-#### Dot product of two vectors — `dot_product`
+#### Dot product of two vectors: `dot_product`
 
 The dot (scalar, inner) product u . v = sum of u_i v_i.
 
@@ -2629,9 +2589,9 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `u` | in | first vector | — |
-| `v` | in | second vector | — |
-| `dot` | out | the dot product u . v | — |
+| `u` | in | first vector | - |
+| `v` | in | second vector | - |
+| `dot` | out | the dot product u . v | - |
 
 **Applies when:** u and v have the same number of entries.
 
@@ -2646,7 +2606,7 @@ dot = 12
 
 <a id="vector_norm"></a>
 
-#### Length (norm) of a vector — `vector_norm`
+#### Length (norm) of a vector: `vector_norm`
 
 The Euclidean length |v| of a vector, with its 1-norm (sum of magnitudes) and max-norm.
 
@@ -2656,10 +2616,10 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `v` | in | the vector | — |
-| `norm` | out | Euclidean length \|v\|_2 | — |
-| `norm1` | out | 1-norm: sum of \|v_i\| | — |
-| `norm_inf` | out | max-norm: largest \|v_i\| | — |
+| `v` | in | the vector | - |
+| `norm` | out | Euclidean length \|v\|_2 | - |
+| `norm1` | out | 1-norm: sum of \|v_i\| | - |
+| `norm_inf` | out | max-norm: largest \|v_i\| | - |
 
 ```shell
 $ linear-algebra solve vector_norm "v=[3, 4]"
@@ -2673,7 +2633,7 @@ norm_inf = 4
 
 <a id="outer_product"></a>
 
-#### Outer product of two vectors — `outer_product`
+#### Outer product of two vectors: `outer_product`
 
 The matrix u v^T with entries u_i v_j.
 
@@ -2683,9 +2643,9 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `u` | in | first vector (rows) | — |
-| `v` | in | second vector (columns) | — |
-| `outer` | out | the matrix u v^T | — |
+| `u` | in | first vector (rows) | - |
+| `v` | in | second vector (columns) | - |
+| `outer` | out | the matrix u v^T | - |
 
 ```shell
 $ linear-algebra solve outer_product "u=[1, 2]" "v=[3, 4, 5]"
@@ -2697,7 +2657,7 @@ outer = [[3.0,4.0,5.0],[6.0,8.0,10.0]]
 
 <a id="vector_projection"></a>
 
-#### Projection of one vector onto another — `vector_projection`
+#### Projection of one vector onto another: `vector_projection`
 
 The orthogonal projection of u onto v, (u.v / v.v) v, and the scalar projection (component) u.v / |v|.
 
@@ -2707,10 +2667,10 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `u` | in | vector to project | — |
-| `v` | in | direction projected onto (not zero) | — |
-| `projection` | out | vector projection of u onto v | — |
-| `scalar_projection` | out | scalar projection u.v / \|v\| | — |
+| `u` | in | vector to project | - |
+| `v` | in | direction projected onto (not zero) | - |
+| `projection` | out | vector projection of u onto v | - |
+| `scalar_projection` | out | scalar projection u.v / \|v\| | - |
 
 **Applies when:** u and v have the same number of entries; v is not the zero vector.
 
@@ -2726,7 +2686,7 @@ scalar_projection = 2
 
 <a id="scalar_vector_multiplication"></a>
 
-#### Scalar multiple of a vector — `scalar_vector_multiplication`
+#### Scalar multiple of a vector: `scalar_vector_multiplication`
 
 Multiply every entry of a vector by a number k.
 
@@ -2736,9 +2696,9 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `k` | in | the scalar | — |
-| `v` | in | the vector | — |
-| `product` | out | the vector k v | — |
+| `k` | in | the scalar | - |
+| `v` | in | the vector | - |
+| `product` | out | the vector k v | - |
 
 ```shell
 $ linear-algebra solve scalar_vector_multiplication k=4 "v=[1, -2, 3]"
@@ -2751,7 +2711,7 @@ product = [4.0,-8.0,12.0]
 
 <a id="triple_scalar_product"></a>
 
-#### Scalar triple product (volume of a parallelepiped) — `triple_scalar_product`
+#### Scalar triple product (volume of a parallelepiped), `triple_scalar_product`
 
 u . (v x w), the signed volume of the parallelepiped spanned by three 3-D vectors, and its absolute value.
 
@@ -2761,11 +2721,11 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `u` | in | first vector (3 entries) | — |
-| `v` | in | second vector (3 entries) | — |
-| `w` | in | third vector (3 entries) | — |
-| `triple` | out | u . (v x w) | — |
-| `volume` | out | volume \|u . (v x w)\| | — |
+| `u` | in | first vector (3 entries) | - |
+| `v` | in | second vector (3 entries) | - |
+| `w` | in | third vector (3 entries) | - |
+| `triple` | out | u . (v x w) | - |
+| `volume` | out | volume \|u . (v x w)\| | - |
 
 **Applies when:** each vector has exactly 3 entries.
 
@@ -2781,7 +2741,7 @@ volume = 1
 
 <a id="vector_addition"></a>
 
-#### Sum of two vectors — `vector_addition`
+#### Sum of two vectors: `vector_addition`
 
 Add two vectors of the same length entry by entry.
 
@@ -2791,9 +2751,9 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `u` | in | first vector | — |
-| `v` | in | second vector | — |
-| `sum` | out | the vector u + v | — |
+| `u` | in | first vector | - |
+| `v` | in | second vector | - |
+| `sum` | out | the vector u + v | - |
 
 **Applies when:** u and v have the same number of entries.
 
@@ -2808,7 +2768,7 @@ sum = [5.0,7.0,9.0]
 
 <a id="unit_vector"></a>
 
-#### Unit vector in the direction of a vector — `unit_vector`
+#### Unit vector in the direction of a vector: `unit_vector`
 
 Normalize a nonzero vector: v / |v|, the vector of length 1 pointing the same way.
 
@@ -2818,8 +2778,8 @@ $$
 
 | symbol |  | meaning | SI unit |
 |---|---|---|---|
-| `v` | in | the vector (not all zero) | — |
-| `unit` | out | the unit vector v / \|v\| | — |
+| `v` | in | the vector (not all zero) | - |
+| `unit` | out | the unit vector v / \|v\| | - |
 
 **Applies when:** v is not the zero vector.
 
@@ -2832,4 +2792,4 @@ unit = [0.6,0.8]
 
 **What the worked example means:** To find the unit vector, each component of the input vector [3, 4] is divided by its Euclidean length. The resulting vector [0.6, 0.8] has a magnitude of exactly one but maintains the original orientation of [3, 4]. This normalization process is essential when only the direction of a vector matters, such as in defining axes or calculating projections.
 
-Questions and reports: support@ai999x.com. AI999X — The Future Is Self-Improving.
+Questions and reports: support@ai999x.com. AI999X, The Future Is Self-Improving.
