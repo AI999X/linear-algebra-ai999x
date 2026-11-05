@@ -2,7 +2,7 @@
 
 [![tests](https://github.com/AI999X/linear-algebra-ai999x/actions/workflows/ci.yml/badge.svg)](https://github.com/AI999X/linear-algebra-ai999x/actions/workflows/ci.yml) [![PyPI](https://img.shields.io/pypi/v/linear-algebra-ai999x)](https://pypi.org/project/linear-algebra-ai999x/) [![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97-Hugging%20Face-yellow)](https://huggingface.co/AI999X/linear-algebra-ai999x)
 
-**[Install](https://pypi.org/project/linear-algebra-ai999x/)** · **[Capability guide](https://huggingface.co/AI999X/linear-algebra-ai999x/tree/main/docs)** · **[Evaluation](https://huggingface.co/AI999X/linear-algebra-ai999x/tree/main/evaluation)** · **[AI999X on Hugging Face](https://huggingface.co/AI999X)** · **[Website](https://ai999x.com)** · **[Support: Buy Me a Coffee](https://buymeacoffee.com/ibnuljaiffarabi)**
+**[Desktop app & command line](https://www.ai999x.com/desktop-cli/)** · **[Compute in your browser](https://www.ai999x.com/models/linear-algebra-ai999x/#try)** · **[Install (Python)](https://pypi.org/project/linear-algebra-ai999x/)** · **[Guides](https://huggingface.co/AI999X/linear-algebra-ai999x/tree/main/docs)** · **[Evaluation](https://huggingface.co/AI999X/linear-algebra-ai999x/tree/main/evaluation)** · **[AI999X on Hugging Face](https://huggingface.co/AI999X)** · **[Website](https://ai999x.com)** · **[Support: Buy Me a Coffee](https://buymeacoffee.com/ibnuljaiffarabi)**
 
 License: Apache-2.0 · Author: Ibnul Jaif Farabi (creator and engineer) · Organization: AI999X · Version 1.0.3
 
@@ -12,7 +12,266 @@ linear-algebra-ai999x is an offline, deterministic Python solver that answers li
 
 **linear-algebra-ai999x** is a compact, deterministic linear algebra engine for Python. It reads a question in plain English (or a typed call), picks a certified linear algebra capability, computes the answer exactly, checks it, and returns the result with its steps, units, LaTeX and assumptions — or an honest refusal that says what is missing. It runs fully offline on any CPU, needs no GPU, no API key and no internet, and is built to give **zero wrong answers**: when it is not sure, it refuses instead of guessing.
 
-[![Buy me a coffee](https://img.shields.io/badge/Buy%20me%20a%20coffee-support%20development-FFDD00?logo=buymeacoffee&logoColor=black)](https://buymeacoffee.com/ibnuljaiffarabi) ![License](https://img.shields.io/badge/license-Apache--2.0-blue) ![Python](https://img.shields.io/badge/python-3.10%20%7C%203.11%20%7C%203.12%20%7C%203.13%20%7C%203.14-blue) ![Offline](https://img.shields.io/badge/runs-offline%20on%20CPU-green)
+[![Buy me a coffee](https://img.shields.io/badge/Buy%20me%20a%20coffee-support%20development-FFDD00?logo=buymeacoffee&logoColor=black)](https://buymeacoffee.com/ibnuljaiffarabi) ![License](https://img.shields.io/badge/license-Apache--2.0-blue) ![Python](https://img.shields.io/badge/python-3.10%20%7C%203.11%20%7C%203.12%20%7C%203.13%20%7C%203.14-blue) ![Offline](https://img.shields.io/badge/runs-offline%20on%20CPU-green) ![Rust](https://img.shields.io/badge/Rust-Windows%20%7C%20Linux%20%7C%20WebAssembly-orange)
+
+**Run it your way.** linear-algebra-ai999x comes as the AI999X desktop app and as the command-line program `linear-algebra` for Windows and Linux, runs in your browser as WebAssembly, and installs as a Python package. The desktop app, the command line and the browser run the same compiled Rust program on your own device: offline, no Python needed.
+
+## Get it
+
+| Way to run it | For | Get it |
+|---|---|---|
+| **AI999X Linear Algebra desktop app** 1.2.0 | Windows, Linux — this model in its own app: search, ask in words, forms, live figures, explanations, offline | [Windows (x86-64)](https://www.ai999x.com/downloads/desktop/1.2.0/ai999x-linear-algebra-1.2.0-windows-x86_64.zip) · [Linux (x86-64)](https://www.ai999x.com/downloads/desktop/1.2.0/ai999x-linear-algebra-1.2.0-linux-x86_64.tar.gz) |
+| **AI999X desktop app** 1.2.0 | Windows, Linux — every AI999X model in one app: search, ask in words, forms, live figures, explanations, offline | [Windows (x86-64)](https://www.ai999x.com/downloads/desktop/1.2.0/ai999x-1.2.0-windows-x86_64.zip) · [Linux (x86-64)](https://www.ai999x.com/downloads/desktop/1.2.0/ai999x-1.2.0-linux-x86_64.tar.gz) |
+| **Command line** (`linear-algebra`) | Windows, Linux — one program per model, offline, no Python | [Windows (x86-64)](https://www.ai999x.com/downloads/desktop/1.2.0/ai999x-cli-1.2.0-windows-x86_64.zip) · [Linux (x86-64)](https://www.ai999x.com/downloads/desktop/1.2.0/ai999x-cli-1.2.0-linux-x86_64.tar.gz) |
+| **In your browser** | any device — nothing to install | [Compute on the model page](https://www.ai999x.com/models/linear-algebra-ai999x/#try) |
+| **Python** | Python 3.10+ | `pip install linear-algebra-ai999x` |
+
+Checksums: [SHA256SUMS](https://www.ai999x.com/downloads/desktop/1.2.0/SHA256SUMS) · every version: [https://www.ai999x.com/downloads/desktop/latest/](https://www.ai999x.com/downloads/desktop/latest/) · install guide: [desktop & command line](https://www.ai999x.com/desktop-cli/)
+
+## Rust versions
+
+Linear Algebra also comes as native programs compiled from Rust, version 1.2.0 of the AI999X desktop app and command line: they run offline on your computer and need no Python. Each file is in this repository's `rust/` folder, on the [GitHub release v1.0.3](https://github.com/AI999X/linear-algebra-ai999x/releases/tag/v1.0.3) and on the website.
+
+| Program | System | File | Size | Download | Use |
+|---|---|---|---|---|---|
+| Desktop app (Linear Algebra) | Windows x86-64 | `ai999x-linear-algebra-1.2.0-windows-x86_64.zip` | 7.6 MB | [Hub](https://huggingface.co/AI999X/linear-algebra-ai999x/resolve/main/rust/ai999x-linear-algebra-1.2.0-windows-x86_64.zip) · [GitHub](https://github.com/AI999X/linear-algebra-ai999x/releases/download/v1.0.3/ai999x-linear-algebra-1.2.0-windows-x86_64.zip) · [website](https://www.ai999x.com/downloads/desktop/1.2.0/ai999x-linear-algebra-1.2.0-windows-x86_64.zip) | unzip, then double-click `ai999x-linear-algebra.exe` (no installer) |
+| Desktop app (Linear Algebra) | Linux x86-64 | `ai999x-linear-algebra-1.2.0-linux-x86_64.tar.gz` | 8.6 MB | [Hub](https://huggingface.co/AI999X/linear-algebra-ai999x/resolve/main/rust/ai999x-linear-algebra-1.2.0-linux-x86_64.tar.gz) · [GitHub](https://github.com/AI999X/linear-algebra-ai999x/releases/download/v1.0.3/ai999x-linear-algebra-1.2.0-linux-x86_64.tar.gz) · [website](https://www.ai999x.com/downloads/desktop/1.2.0/ai999x-linear-algebra-1.2.0-linux-x86_64.tar.gz) | extract, then run `./ai999x-linear-algebra` (X11 or Wayland desktop) |
+| Command line (`linear-algebra`) | Windows x86-64 | `ai999x-linear-algebra-cli-1.2.0-windows-x86_64.zip` | 3.4 MB | [Hub](https://huggingface.co/AI999X/linear-algebra-ai999x/resolve/main/rust/ai999x-linear-algebra-cli-1.2.0-windows-x86_64.zip) · [GitHub](https://github.com/AI999X/linear-algebra-ai999x/releases/download/v1.0.3/ai999x-linear-algebra-cli-1.2.0-windows-x86_64.zip) · [website (all models)](https://www.ai999x.com/downloads/desktop/1.2.0/ai999x-cli-1.2.0-windows-x86_64.zip) | unzip, then `linear-algebra.exe ask "<question>"` or `linear-algebra.exe solve <capability> name=value` |
+| Command line (`linear-algebra`) | Linux x86-64 | `ai999x-linear-algebra-cli-1.2.0-linux-x86_64.tar.gz` | 3.4 MB | [Hub](https://huggingface.co/AI999X/linear-algebra-ai999x/resolve/main/rust/ai999x-linear-algebra-cli-1.2.0-linux-x86_64.tar.gz) · [GitHub](https://github.com/AI999X/linear-algebra-ai999x/releases/download/v1.0.3/ai999x-linear-algebra-cli-1.2.0-linux-x86_64.tar.gz) · [website (all models)](https://www.ai999x.com/downloads/desktop/1.2.0/ai999x-cli-1.2.0-linux-x86_64.tar.gz) | extract, then `./linear-algebra ask "<question>"` or `./linear-algebra solve <capability> name=value` |
+
+The command-line archive holds `linear-algebra` with a README of its commands and examples, the licence and the notice. Checksums: [`rust/SHA256SUMS`](https://huggingface.co/AI999X/linear-algebra-ai999x/resolve/main/rust/SHA256SUMS) (`sha256sum -c SHA256SUMS`).
+
+## Quick start
+
+### Desktop app
+
+Download **AI999X Linear Algebra** for your system (above), unpack it and start it; type a question in words or pick a capability, fill in the form and press Compute. Figures and an explanation of the answer appear beside it. The AI999X desktop app has the same, with Linear Algebra among all AI999X models.
+
+Linux, from a terminal:
+
+```bash
+curl -LO https://www.ai999x.com/downloads/desktop/1.2.0/ai999x-linear-algebra-1.2.0-linux-x86_64.tar.gz
+curl -LO https://www.ai999x.com/downloads/desktop/1.2.0/SHA256SUMS
+sha256sum -c --ignore-missing SHA256SUMS
+tar xzf ai999x-linear-algebra-1.2.0-linux-x86_64.tar.gz
+./ai999x-linear-algebra-1.2.0-linux-x86_64/ai999x-linear-algebra
+```
+
+### Command line
+
+Linux:
+
+```bash
+curl -LO https://www.ai999x.com/downloads/desktop/1.2.0/ai999x-cli-1.2.0-linux-x86_64.tar.gz
+curl -LO https://www.ai999x.com/downloads/desktop/1.2.0/SHA256SUMS
+sha256sum -c --ignore-missing SHA256SUMS
+mkdir -p ~/.local/share && tar xzf ai999x-cli-1.2.0-linux-x86_64.tar.gz -C ~/.local/share
+echo 'export PATH="$HOME/.local/share/ai999x-cli-1.2.0-linux-x86_64:$PATH"' >> ~/.bashrc && source ~/.bashrc
+linear-algebra --version
+```
+
+Windows (PowerShell):
+
+```powershell
+$F = "ai999x-cli-1.2.0-windows-x86_64.zip"
+Invoke-WebRequest "https://www.ai999x.com/downloads/desktop/1.2.0/$F" -OutFile $F
+Invoke-WebRequest "https://www.ai999x.com/downloads/desktop/1.2.0/SHA256SUMS" -OutFile SHA256SUMS
+(Get-FileHash $F -Algorithm SHA256).Hash.ToLower() -eq ((Select-String -SimpleMatch $F SHA256SUMS).Line -split ' ')[0]
+Expand-Archive $F -DestinationPath "$env:LOCALAPPDATA\AI999X" -Force
+$D = "$env:LOCALAPPDATA\AI999X\ai999x-cli-1.2.0-windows-x86_64"; $env:Path += ";$D"
+[Environment]::SetEnvironmentVariable("Path", [Environment]::GetEnvironmentVariable("Path", "User") + ";$D", "User")
+linear-algebra --version
+```
+
+Every command below was run as shown; the text under it is what the program printed.
+
+**What a capability needs** — The equation or method, every input and output with its SI unit. Read this before solve: it tells you the input names.
+
+```console
+$ linear-algebra info newton_root
+Root of a polynomial by Newton's method
+  Newton-Raphson iteration until the step is below the last bit of x
+  in   coefficients polynomial coefficients, highest power first (written out in x in a question) (vector) [1]
+  in   x0       starting value [1]
+  out  root     the root the iteration converges to [1]
+```
+
+**Solve** — Inputs as name=value, each with any unit of the right kind. The answer lists every output, the method used, each input converted to SI, and the conditions the answer assumes.
+
+```console
+$ linear-algebra solve newton_root "coefficients=[1, 0, -2, -5]" x0=2.0
+root = 2.094551482
+  by: Root of a polynomial by Newton's method  (Newton-Raphson iteration until the step is below the last bit of x)
+  x0 = 2
+  assumes: the iteration converges (within 200 steps) to a simple, well-conditioned root; p'(x) never vanishes at an iterate
+```
+
+**Draw the figures** — The live figures for your own inputs, written as SVG files into the folder given with --out (here the current folder); open them in any browser. Without --out the SVG text comes back as JSON.
+
+```console
+$ linear-algebra figures newton_root "coefficients=[1, 0, -2, -5]" x0=2.0 --out .
+[
+  {
+    "slug": "newton-root-live-1",
+    "title": "The root the iteration converges to as polynomial coefficients, highest power first (w... varies",
+    "caption": "The root the iteration converges to as coefficients[1] runs from 0.25 to 1.75, every other input as you entered it (41 solutions). Marked: your coefficients[1] = 1 gives root = 2.095. Your inputs: coefficients = (list), x0 = 2.0.",
+    "file": "./newton-root-live-1.svg"
+  },
+  {
+    "slug": "newton-root-live-2",
+    "title": "The root the iteration converges to as polynomial coefficients, highest power first (w... varies",
+    "caption": "The root the iteration converges to as coefficients[4] runs from -8.75 to -1.25, every other input as you entered it (29 solutions). Marked: your coefficients[4] = -5 gives root = 2.095. Your inputs: coefficients = (list), x0 = 2.0.",
+    "file": "./newton-root-live-2.svg"
+  }
+]
+```
+
+**Many questions at once** — One JSON request per line in, one JSON answer per line out, in order: for scripts, notebooks and agents (the program starts once). In PowerShell: Get-Content cases.jsonl | linear-algebra batch
+
+`cases.jsonl`:
+
+```json
+{"key": "newton_root", "inputs": {"coefficients": "[1, 0, -2, -5]", "x0": 2.0}}
+{"key": "qr_decomposition", "inputs": {"A": "[[3, 1], [4, 2]]"}}
+```
+
+```console
+$ linear-algebra batch < cases.jsonl
+{"outcome":"SOLVED","message":"","value":2.0945514815423265,"unit":"","solved_for":"root","si":[["x0",2.0]],"values":[["root",2.0945514815423265,""]],"target":"root","phrase":"the root the iteration converges to","assumptions":["the iteration converges (within 200 steps) to a simple, well-conditioned root","p'(x) never vanishes at an iterate"],"name":"Root of a polynomial by Newton's method","equation":"Newton-Raphson iteration until the step is below the last bit of x"}
+{"outcome":"SOLVED","message":"","value":null,"unit":"","solved_for":"R","values":[["Q",[[0.5999999999999999,-0.7999999999999999],[0.7999999999999999,0.6000000000000001]],""],["R",[[5.0,2.1999999999999997],[0.0,0.40000000000000013]],""]],"target":"R","phrase":"m x n matrix with orthonormal columns","assumptions":["rows >= columns","independent columns","at most 10 x 10","convention: the diagonal of R is positive (unique)"],"name":"QR decomposition (Householder)","equation":"Householder reflections, then signs fixed so that diag(R) > 0"}
+```
+
+### In your browser
+
+Open [Linear Algebra on ai999x.com](https://www.ai999x.com/models/linear-algebra-ai999x/#try), choose a capability and press **Compute**: the model runs on your own device as WebAssembly; nothing is sent anywhere. Change any input (any unit of the right kind) and the answer, its explanation and the figures follow.
+
+In your own page: `linear_algebra_ai999x.wasm` and the loader `ax-wasm.js` (https://www.ai999x.com/compute/rust/ax-wasm.js).
+
+### Python
+
+```bash
+pip install linear-algebra-ai999x
+```
+
+## Worked examples in every form
+
+The same worked example from the command line, from Python and in the browser. Each command-line output is what the program printed.
+
+### Best rank-k approximation (Eckart-Young)
+
+The rank-k matrix closest to A in the 2- and Frobenius norms (truncated SVD), with both approximation errors.
+
+Command line:
+
+```console
+$ linear-algebra solve low_rank_approximation "A=[[3, 0], [0, 1]]" k=1
+approximation = [[3.0,0.0],[0.0,0.0]]
+error2 = 1
+errorF = 1
+  by: Best rank-k approximation (Eckart-Young)  (one-sided Jacobi SVD, keep the k largest singular triplets)
+  assumes: 1 <= k <= min(rows, columns); sigma_k > sigma_(k+1) (otherwise A_k is not unique); at most 10 x 10
+```
+
+Python:
+
+```python
+import linear_algebra_ai999x as m
+
+a = m.solve("low_rank_approximation", A=[[3, 0], [0, 1]], k="1")
+print(a.values or (a.value, a.unit))
+```
+
+Browser: [open this capability on the model page](https://www.ai999x.com/models/linear-algebra-ai999x/#cap-low_rank_approximation) and press **Compute in your browser**.
+
+_What this means:_ This calculation produces the closest matrix of rank k to the input matrix A, denoted as [[3, 0], [0, 0]]. The method computes this by retaining only the largest k singular values and their corresponding vectors from the singular value decomposition. The resulting approximation minimizes the distance to A in both the spectral norm and the Frobenius norm. The specific errors introduced by this truncation are reported as 1 for the spectral norm and 1 for the Frobenius norm.
+
+### Cholesky decomposition
+
+Factor a symmetric positive definite matrix as A = L L^T with L lower triangular, positive diagonal.
+
+Command line:
+
+```console
+$ linear-algebra solve cholesky "A=[[4, 12, -16], [12, 37, -43], [-16, -43, 98]]"
+L = [[2.0,0.0,0.0],[6.0,1.0,0.0],[-8.0,5.0,3.0]]
+  by: Cholesky decomposition  (the Cholesky-Banachiewicz recursion l_jj = sqrt(a_jj - sum l_jk^2), l_ij = (a_ij - sum l_ik l_jk)/l_jj)
+  assumes: A is symmetric; A is positive definite (checked exactly by its leading minors); at most 10 x 10
+```
+
+Python:
+
+```python
+import linear_algebra_ai999x as m
+
+a = m.solve("cholesky", A=[[4, 12, -16], [12, 37, -43], [-16, -43, 98]])
+print(a.values or (a.value, a.unit))
+```
+
+Browser: [open this capability on the model page](https://www.ai999x.com/models/linear-algebra-ai999x/#cap-cholesky) and press **Compute in your browser**.
+
+_What this means:_ This calculation computes the Cholesky decomposition of the symmetric positive definite matrix [4 12 -16; 12 37 -43; -16 -43 98], yielding the lower triangular factor [[2, 0, 0], [6, 1, 0], [-8, 5, 3]]. The result means that multiplying [[2, 0, 0], [6, 1, 0], [-8, 5, 3]] by its transpose reproduces the original matrix, which simplifies solving systems and computing determinants for this specific type of matrix.
+
+### LU decomposition with partial pivoting
+
+Factor a nonsingular square matrix as A = P L U (permutation, unit lower triangular, upper triangular).
+
+Command line:
+
+```console
+$ linear-algebra solve lu_decomposition "A=[[1, 2], [3, 4]]"
+P = [[0.0,1.0],[1.0,0.0]]
+L = [[1.0,0.0],[0.3333333333333333,1.0]]
+U = [[3.0,4.0],[0.0,0.6666666666666667]]
+  by: LU decomposition with partial pivoting  (Gaussian elimination with partial pivoting (Doolittle form) in floating point)
+  assumes: A is square and nonsingular; at most 10 x 10; pivot: the first row of largest magnitude in the column (the scipy.linalg.lu convention A = P L U)
+```
+
+Python:
+
+```python
+import linear_algebra_ai999x as m
+
+a = m.solve("lu_decomposition", A=[[1, 2], [3, 4]])
+print(a.values or (a.value, a.unit))
+```
+
+Browser: [open this capability on the model page](https://www.ai999x.com/models/linear-algebra-ai999x/#cap-lu_decomposition) and press **Compute in your browser**.
+
+_What this means:_ This calculation factors the square nonsingular matrix [1 2; 3 4] into three components: a permutation matrix [[0, 1], [1, 0]], a unit lower triangular matrix [[1, 0], [0.333333, 1]], and an upper triangular matrix [[3, 4], [0, 0.666667]]. The product of these matrices reconstructs the original input, satisfying the relationship where the permuted rows of the lower and upper factors combine to form the initial data. This decomposition is achieved through Gaussian elimination with partial pivoting, ensuring numerical stability by selecting the largest available pivot element at each step.
+
+### Polar decomposition
+
+Write a nonsingular square matrix as A = U P: U orthogonal (a rotation or reflection), P symmetric positive definite (a stretch).
+
+Command line:
+
+```console
+$ linear-algebra solve polar_decomposition "A=[[0, -2], [1, 0]]"
+U = [[0.0,-1.0],[1.0,0.0]]
+P = [[1.0,0.0],[0.0,2.0]]
+  by: Polar decomposition  (from the one-sided Jacobi SVD A = W S V^T: U = W V^T, P = V S V^T)
+  assumes: A is square and nonsingular; at most 10 x 10; right polar form A = U P (scipy.linalg.polar's default)
+```
+
+Python:
+
+```python
+import linear_algebra_ai999x as m
+
+a = m.solve("polar_decomposition", A=[[0, -2], [1, 0]])
+print(a.values or (a.value, a.unit))
+```
+
+Browser: [open this capability on the model page](https://www.ai999x.com/models/linear-algebra-ai999x/#cap-polar_decomposition) and press **Compute in your browser**.
+
+_What this means:_ Polar decomposition separates a nonsingular square matrix into two distinct geometric components. For the input matrix [0 -2; 1 0], the algorithm computes an orthogonal factor [[0, -1], [1, 0]], which represents a pure rotation or reflection, and a symmetric positive definite factor [[1, 0], [0, 2]], which represents a pure stretch. The product of these factors reconstructs the original transformation, allowing you to analyze rotational and scaling effects independently.
+
+## Documentation
+
+- **Rust user guide** — the command line, every capability with a command and what it printed: [PDF](https://huggingface.co/AI999X/linear-algebra-ai999x/blob/main/docs/linear_algebra_ai999x_rust_guide.pdf) · [Markdown](https://huggingface.co/AI999X/linear-algebra-ai999x/blob/main/docs/linear_algebra_ai999x_rust_guide.md)
+- **Python guide** — every capability with a Python example: [PDF](https://huggingface.co/AI999X/linear-algebra-ai999x/blob/main/docs/linear_algebra_ai999x_capabilities.pdf) · [Markdown](https://huggingface.co/AI999X/linear-algebra-ai999x/blob/main/docs/linear_algebra_ai999x_capabilities.md)
+- **Desktop app & command line** — downloads, install, ask and search, figures, offline use, checksums: https://www.ai999x.com/desktop-cli/
+- **Model page** — compute in your browser, every capability explained: https://www.ai999x.com/models/linear-algebra-ai999x/
 
 ## Highlights
 
@@ -20,6 +279,7 @@ linear-algebra-ai999x is an offline, deterministic Python solver that answers li
 - **Zero wrong answers by design.** Seven explicit outcomes — SOLVED, NEEDS_INPUT, AMBIGUOUS, INVALID_INPUT, OUT_OF_SCOPE, UNRECOGNIZED_FORMAT, INTERNAL_ERROR — never a silent guess. Every one of its 399 documented answers is reproduced exactly on every tested platform.
 - **Plain-English questions and a guaranteed typed interface.** `ask()` reads documented question forms; `solve(capability_id, **inputs)` always solves a supported task with valid inputs.
 - **Explains itself.** Steps, formulas in LaTeX, units, assumptions and the model used, ready for notebooks, tutoring apps and homework checkers.
+- **Native and in the browser.** Every capability also computes natively in Rust: the desktop app and the `linear-algebra` command line for Windows and Linux, and WebAssembly on the model page — no Python, no network.
 - **Small and portable.** Pure Python (sympy, mpmath); identical answers on Windows and Linux (Python 3.10, 3.11, 3.12, 3.13, 3.14).
 - **Coverage:** vectors, matrices, determinants, linear systems, eigenvalues, decompositions, least squares, sparse matrices and numerical methods (root finding, interpolation, quadrature).
 
@@ -38,7 +298,7 @@ linear-algebra-ai999x is an offline, deterministic Python solver that answers li
 | Creator / engineer | Ibnul Jaif Farabi |
 | Organization | AI999X |
 
-## Quickstart
+## Python quick start
 
 ```bash
 pip install linear-algebra-ai999x
@@ -61,7 +321,7 @@ linear_algebra.ask("Who created you?").message
 # -> linear-algebra-ai999x was created and engineered by Ibnul Jaif Farabi at AI999X.
 ```
 
-Command line: `linear-algebra-ai999x "<question>"`, `linear-algebra-ai999x --capabilities`. The outputs above were produced by running this exact code on linear-algebra-ai999x 1.0.3.
+The Python package also installs a Python command, `linear-algebra-ai999x "<question>"`; for the native program use `linear-algebra` (above). The outputs above were produced by running this exact code on linear-algebra-ai999x 1.0.3.
 
 ## Find the right capability, and draw it
 
@@ -83,7 +343,7 @@ linear_algebra.search("Solve x^2 - 5x + 6 = 0", k=2)
 
 Capabilities are certified before they ship: each must reproduce hand-worked reference cases, reject a deliberately wrong variant (a control), and leave every benchmark answer unchanged.
 
-## Worked examples
+## Python worked examples, with their steps
 
 Each question was put to `linear-algebra-ai999x`; the answer is the one it returned, with the steps it took.
 
