@@ -312,7 +312,7 @@ $$
 
 ![the vector k v (product) returned by linear-algebra-ai999x for the worked example, one value for each position in the list (3 values, first 4, last 12, largest 12)](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/scalar-vector-multiplication-series)
 
-*the vector k v (product) returned by linear-algebra-ai999x for the worked example, one value for each position in the list (3 values, first 4, last 12, largest 12). Inputs: k = 4, v = 1, -2, 3.*
+*the vector k v (product) returned by linear-algebra-ai999x for the worked example, one value for each position in the list (3 values, first 4, last 12, largest 12). Inputs: k = 4.0, v = 1, -2, 3.*
 
 ```python
 linear_algebra_ai999x.solve('scalar_vector_multiplication', k=4, v='1, -2, 3')
@@ -769,7 +769,7 @@ $$
 
 ![The plane vectors of the worked example as arrows from the origin: input v = (1, 0); returned by linear-algebra-ai999x: rotated = (0, 1)](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/rotate-vector-2d-vectors)
 
-*The plane vectors of the worked example as arrows from the origin: input v = (1, 0); returned by linear-algebra-ai999x: rotated = (0, 1). Other inputs: angle = 90. Marked: the tip of each returned vector.*
+*The plane vectors of the worked example as arrows from the origin: input v = (1, 0); returned by linear-algebra-ai999x: rotated = (0, 1). Other inputs: angle = 90.0. Marked: the tip of each returned vector.*
 
 ```python
 linear_algebra_ai999x.solve('rotate_vector_2d', v='1, 0', angle=90)
@@ -908,7 +908,7 @@ $$
 
 ![The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): A (input); product (returned)](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/scalar-matrix-multiplication-matrix)
 
-*The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): A (input); product (returned). Other inputs: k = 3.*
+*The matrices of the worked example as heatmaps (rows and columns numbered; each cell shaded by its magnitude, negative values in the second colour; each panel shaded by its own largest magnitude): A (input); product (returned). Other inputs: k = 3.0.*
 
 ```python
 linear_algebra_ai999x.solve('scalar_matrix_multiplication', k=3, A='[[1, 2], [3, 4]]')
@@ -3521,7 +3521,7 @@ $$
 
 ![approximate u at the interior points (u) returned by linear-algebra-ai999x for the worked example, one value for each position in the list (3 values, first 0](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/poisson-1d-series)
 
-*approximate u at the interior points (u) returned by linear-algebra-ai999x for the worked example, one value for each position in the list (3 values, first 0.09375, last 0.09375, largest 0.125). Inputs: f = 1, 1, 1, L = 1.*
+*approximate u at the interior points (u) returned by linear-algebra-ai999x for the worked example, one value for each position in the list (3 values, first 0.09375, last 0.09375, largest 0.125). Inputs: f = 1, 1, 1, L = 1.0.*
 
 ![h (grid spacing L/(n+1)) against L (length of the interval) from 0](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/poisson-1d-curve)
 
@@ -3659,7 +3659,7 @@ $$
 
 ![root (the root the iteration converges to) as value 4 of coefficients (polynomial coefficients, highest power first (written out in x in a question)) moves from -8 to 4, the other values as given (1, 0, -2, -5); 41 runs of linear-algebra-ai999x](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/newton-root-sensitivity)
 
-*root (the root the iteration converges to) as value 4 of coefficients (polynomial coefficients, highest power first (written out in x in a question)) moves from -8 to 4, the other values as given (1, 0, -2, -5); 41 runs of linear-algebra-ai999x. Other inputs: x0 = 2. Marked: the worked example, coefficients[4] = -5, root = 2.09455.*
+*root (the root the iteration converges to) as value 4 of coefficients (polynomial coefficients, highest power first (written out in x in a question)) moves from -8 to 4, the other values as given (1, 0, -2, -5); 41 runs of linear-algebra-ai999x. Other inputs: x0 = 2.0. Marked: the worked example, coefficients[4] = -5, root = 2.09455.*
 
 ```python
 linear_algebra_ai999x.solve('newton_root', coefficients='1, 0, -2, -5', x0=2)
@@ -3705,7 +3705,7 @@ $$
 
 ![root (the root the iteration converges to) as value 4 of coefficients (polynomial coefficients, highest power first (written out in x in a question)) moves from -8 to 4, the other values as given (1, 0, -2, -5); 41 runs of linear-algebra-ai999x](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/secant-root-sensitivity)
 
-*root (the root the iteration converges to) as value 4 of coefficients (polynomial coefficients, highest power first (written out in x in a question)) moves from -8 to 4, the other values as given (1, 0, -2, -5); 41 runs of linear-algebra-ai999x. Other inputs: x0 = 2, x1 = 3. Marked: the worked example, coefficients[4] = -5, root = 2.09455.*
+*root (the root the iteration converges to) as value 4 of coefficients (polynomial coefficients, highest power first (written out in x in a question)) moves from -8 to 4, the other values as given (1, 0, -2, -5); 41 runs of linear-algebra-ai999x. Other inputs: x0 = 2.0, x1 = 3.0. Marked: the worked example, coefficients[4] = -5, root = 2.09455.*
 
 ```python
 linear_algebra_ai999x.solve('secant_root', coefficients='1, 0, -2, -5', x0=2, x1=3)
@@ -3941,7 +3941,7 @@ $$
 
 ![The data y (y values) against x (x values, strictly increasing) as given in the worked example (3 points)](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/linear-interpolation-xy)
 
-*The data y (y values) against x (x values, strictly increasing) as given in the worked example (3 points). Also returned: value = 2.5. Other inputs: at = 2.*
+*The data y (y values) against x (x values, strictly increasing) as given in the worked example (3 points). Also returned: value = 2.5. Other inputs: at = 2.0.*
 
 ![value (interpolated value) against at (the point (within the data range)) from 1 to 3](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/linear-interpolation-curve)
 
@@ -4046,11 +4046,11 @@ $$
 
 ![The data y (values at the knots) against x (knots, strictly increasing) as given in the worked example (3 points)](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/clamped-cubic-spline-xy)
 
-*The data y (values at the knots) against x (knots, strictly increasing) as given in the worked example (3 points). Also returned: value = 0.625. Other inputs: slope_start = 1, slope_end = -1, at = 0.5.*
+*The data y (values at the knots) against x (knots, strictly increasing) as given in the worked example (3 points). Also returned: value = 0.625. Other inputs: slope_start = 1.0, slope_end = -1.0, at = 0.5.*
 
 ![value (spline value S(at)) against at (the point (within the knots)) from 0](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/clamped-cubic-spline-curve)
 
-*value (spline value S(at)) against at (the point (within the knots)) from 0.05 to 5 on a logarithmic axis. One curve for each value of slope_start (slope S'(x0)): 1, 0.5, 2. Other inputs as in the worked example: x = 0, 1, 2, y = 0, 1, 0, slope_end = -1. 33 points per curve computed by linear-algebra-ai999x; marked: the worked example, at = 0.5, value = 0.625.*
+*value (spline value S(at)) against at (the point (within the knots)) from 0.05 to 5 on a logarithmic axis. One curve for each value of slope_start (slope S'(x0)): 1, 0.5, 2. Other inputs as in the worked example: x = 0, 1, 2, y = 0, 1, 0, slope_end = -1.0. 33 points per curve computed by linear-algebra-ai999x; marked: the worked example, at = 0.5, value = 0.625.*
 
 ```python
 linear_algebra_ai999x.solve('clamped_cubic_spline', x='0, 1, 2', y='0, 1, 0', slope_start=1, slope_end=-1, at=0.5)
@@ -4183,7 +4183,7 @@ $$
 
 ![integral (midpoint-rule estimate) against n (number of subintervals) from 1 to 12](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/midpoint-rule-curve)
 
-*integral (midpoint-rule estimate) against n (number of subintervals) from 1 to 12. One curve for each value of b (upper limit): 2, 1, 4. Other inputs as in the worked example: coefficients = 1, 0, 0, a = 0. 12 points per curve computed by linear-algebra-ai999x; marked: the worked example, n = 4, integral = 2.625.*
+*integral (midpoint-rule estimate) against n (number of subintervals) from 1 to 12. One curve for each value of b (upper limit): 2, 1, 4. Other inputs as in the worked example: coefficients = 1, 0, 0, a = 0.0. 12 points per curve computed by linear-algebra-ai999x; marked: the worked example, n = 4, integral = 2.625.*
 
 ```python
 linear_algebra_ai999x.solve('midpoint_rule', coefficients='1, 0, 0', a=0, b=2, n=4)
@@ -4225,9 +4225,9 @@ $$
 - **Assumes:** $1  \leq  n  \leq  40$
 - **Evidence:** certified procedure (gates: conditions, control, examples, fast_enough, questions, reference, sensitivity, templates)
 
-![weights w_i (weights) at each nodes x_i in [-1, 1], ascending (nodes), both returned by linear-algebra-ai999x for the worked example (n = 2): -0](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/gauss-legendre-rule-series)
+![nodes x_i in [-1, 1], ascending (nodes) returned by linear-algebra-ai999x for the worked example, one value for each position in the list (3 values, first -0](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/gauss-legendre-rule-series)
 
-*weights w_i (weights) at each nodes x_i in [-1, 1], ascending (nodes), both returned by linear-algebra-ai999x for the worked example (n = 2): -0.57735 → 1; 0.57735 → 1.*
+*nodes x_i in [-1, 1], ascending (nodes) returned by linear-algebra-ai999x for the worked example, one value for each position in the list (3 values, first -0.774597, last 0.774597, largest 0.774597); with weights (weights w_i). Inputs: n = 3.*
 
 ```python
 linear_algebra_ai999x.solve('gauss_legendre_rule', n=2)
@@ -4274,7 +4274,7 @@ $$
 
 ![integral (Gauss-Legendre estimate) against n (number of Gauss points (1 to 40)) from 1 to 7](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/gauss-legendre-integral-curve)
 
-*integral (Gauss-Legendre estimate) against n (number of Gauss points (1 to 40)) from 1 to 7. Other inputs as in the worked example: coefficients = 1, 1, 0, 0, a = 0, b = 2. 7 points computed by linear-algebra-ai999x; marked: the worked example, n = 2, integral = 6.66667.*
+*integral (Gauss-Legendre estimate) against n (number of Gauss points (1 to 40)) from 1 to 7. Other inputs as in the worked example: coefficients = 1, 1, 0, 0, a = 0.0, b = 2.0. 7 points computed by linear-algebra-ai999x; marked: the worked example, n = 2, integral = 6.66667.*
 
 ```python
 linear_algebra_ai999x.solve('gauss_legendre_integral', coefficients='1, 1, 0, 0', a=0, b=2, n=2)
@@ -4323,7 +4323,7 @@ $$
 
 ![estimated dy/dx at each sample (derivative) returned by linear-algebra-ai999x for the worked example, one value for each y (samples y_0, ](https://www.ai999x.com/?ax_fig=linear-algebra-ai999x/numerical-derivative-series)
 
-*estimated dy/dx at each sample (derivative) returned by linear-algebra-ai999x for the worked example, one value for each y (samples y_0, ..., y_n (at least 2)) (5 values, first 1, last 7, largest 7). Inputs: y = 0, 1, 4, 9, 16, h = 1.*
+*estimated dy/dx at each sample (derivative) returned by linear-algebra-ai999x for the worked example, one value for each y (samples y_0, ..., y_n (at least 2)) (5 values, first 1, last 7, largest 7). Inputs: y = 0, 1, 4, 9, 16, h = 1.0.*
 
 ```python
 linear_algebra_ai999x.solve('numerical_derivative', y='0, 1, 4, 9, 16', h=1)
