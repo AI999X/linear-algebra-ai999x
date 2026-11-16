@@ -26,37 +26,37 @@ figcaption{font-size:9pt;color:#555}
 <h2>Contents</h2>
 <ul><li>1. Get it: desktop app, command line, browser, Python</li><li>2. Quick start</li><li>3. Writing inputs</li><li>4. Outcomes and exit codes</li><li>5. Scripts and agents: batch and JSON</li><li>6. Figures</li><li>7. In a web page or Node.js: WebAssembly</li><li>8. Every capability</li></ul>
 <h2>1. Get it</h2>
-<p>Version 1.5.0 of the AI999X desktop app and of the command-line bundle. Checksums for every file: https://downloads.ai999x.com/desktop/1.5.0/SHA256SUMS; the newest version is always under https://downloads.ai999x.com/desktop/latest/. Full instructions: https://www.ai999x.com/desktop-cli/</p>
-<table><thead><tr><th>what</th><th>system</th><th>download</th></tr></thead><tbody><tr><td>Desktop app: Linear Algebra</td><td>Windows x86-64</td><td>https://downloads.ai999x.com/desktop/1.5.0/ai999x-linear-algebra-1.5.0-windows-x86_64.zip</td></tr><tr><td>Desktop app: Linear Algebra</td><td>Linux x86-64</td><td>https://downloads.ai999x.com/desktop/1.5.0/ai999x-linear-algebra-1.5.0-linux-x86_64.tar.gz</td></tr><tr><td>Desktop app: all models</td><td>Windows x86-64</td><td>https://downloads.ai999x.com/desktop/1.5.0/ai999x-1.5.0-windows-x86_64.zip</td></tr><tr><td>Desktop app: all models</td><td>Linux x86-64</td><td>https://downloads.ai999x.com/desktop/1.5.0/ai999x-1.5.0-linux-x86_64.tar.gz</td></tr><tr><td>Command line</td><td>Windows x86-64</td><td>https://downloads.ai999x.com/desktop/1.5.0/ai999x-cli-1.5.0-windows-x86_64.zip</td></tr><tr><td>Command line</td><td>Linux x86-64</td><td>https://downloads.ai999x.com/desktop/1.5.0/ai999x-cli-1.5.0-linux-x86_64.tar.gz</td></tr></tbody></table>
+<p>Version 1.6.4 of the AI999X desktop app and of the command-line bundle. Checksums for every file: https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.4/SHA256SUMS; the newest version is always under https://github.com/AI999X/ai999x-desktop/releases/latest. Full instructions: https://www.ai999x.com/desktop-cli/</p>
+<table><thead><tr><th>what</th><th>system</th><th>download</th></tr></thead><tbody><tr><td>Desktop app: Linear Algebra</td><td>Windows x86-64</td><td>https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.4/ai999x-linear-algebra-1.6.4-windows-x86_64.zip</td></tr><tr><td>Desktop app: Linear Algebra</td><td>Linux x86-64</td><td>https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.4/ai999x-linear-algebra-1.6.4-linux-x86_64.tar.gz</td></tr><tr><td>Desktop app: all models</td><td>Windows x86-64</td><td>https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.4/ai999x-1.6.4-windows-x86_64.zip</td></tr><tr><td>Desktop app: all models</td><td>Linux x86-64</td><td>https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.4/ai999x-1.6.4-linux-x86_64.tar.gz</td></tr><tr><td>Command line</td><td>Windows x86-64</td><td>https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.4/ai999x-cli-1.6.4-windows-x86_64.zip</td></tr><tr><td>Command line</td><td>Linux x86-64</td><td>https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.4/ai999x-cli-1.6.4-linux-x86_64.tar.gz</td></tr></tbody></table>
 <h3>Desktop app</h3>
-<p>Linear Algebra in its own app: search, questions in words, input forms, live figures and explanations. Windows: Download ai999x-linear-algebra-1.5.0-windows-x86_64.zip, right-click it → Extract All, then open the folder and start ai999x-linear-algebra.exe. If Windows SmartScreen asks, choose More info → Run anyway. Linux:</p>
-<pre><code class="shell">curl -LO https://downloads.ai999x.com/desktop/1.5.0/ai999x-linear-algebra-1.5.0-linux-x86_64.tar.gz
-curl -LO https://downloads.ai999x.com/desktop/1.5.0/SHA256SUMS
+<p>Linear Algebra in its own app: search, questions in words, input forms, live figures and explanations. Windows: Download ai999x-linear-algebra-1.6.4-windows-x86_64.zip, right-click it → Extract All, then open the folder and start ai999x-linear-algebra.exe. If Windows SmartScreen asks, choose More info → Run anyway. Linux:</p>
+<pre><code class="shell">curl -LO https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.4/ai999x-linear-algebra-1.6.4-linux-x86_64.tar.gz
+curl -LO https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.4/SHA256SUMS
 sha256sum -c --ignore-missing SHA256SUMS
-tar xzf ai999x-linear-algebra-1.5.0-linux-x86_64.tar.gz
-./ai999x-linear-algebra-1.5.0-linux-x86_64/ai999x-linear-algebra</code></pre>
-<p>It opens on this model: type a question or pick a capability, fill in the form and press Compute. The AI999X desktop app with every model works the same way (choose the model first). Windows: Download ai999x-1.5.0-windows-x86_64.zip, right-click it → Extract All, then open the folder and start ai999x.exe. If Windows SmartScreen asks, choose More info → Run anyway. Linux:</p>
-<pre><code class="shell">curl -LO https://downloads.ai999x.com/desktop/1.5.0/ai999x-1.5.0-linux-x86_64.tar.gz
-curl -LO https://downloads.ai999x.com/desktop/1.5.0/SHA256SUMS
+tar xzf ai999x-linear-algebra-1.6.4-linux-x86_64.tar.gz
+./ai999x-linear-algebra-1.6.4-linux-x86_64/ai999x-linear-algebra</code></pre>
+<p>It opens on this model: type a question or pick a capability, fill in the form and press Compute. The AI999X desktop app with every model works the same way (choose the model first). Windows: Download ai999x-1.6.4-windows-x86_64.zip, right-click it → Extract All, then open the folder and start ai999x.exe. If Windows SmartScreen asks, choose More info → Run anyway. Linux:</p>
+<pre><code class="shell">curl -LO https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.4/ai999x-1.6.4-linux-x86_64.tar.gz
+curl -LO https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.4/SHA256SUMS
 sha256sum -c --ignore-missing SHA256SUMS
-tar xzf ai999x-1.5.0-linux-x86_64.tar.gz
-./ai999x-1.5.0-linux-x86_64/ai999x</code></pre>
+tar xzf ai999x-1.6.4-linux-x86_64.tar.gz
+./ai999x-1.6.4-linux-x86_64/ai999x</code></pre>
 <h3>Command line, Linux</h3>
 <p>The bundle holds one program per model; <code>linear-algebra</code> is this one. The checksum line should print OK.</p>
-<pre><code class="shell">curl -LO https://downloads.ai999x.com/desktop/1.5.0/ai999x-cli-1.5.0-linux-x86_64.tar.gz
-curl -LO https://downloads.ai999x.com/desktop/1.5.0/SHA256SUMS
+<pre><code class="shell">curl -LO https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.4/ai999x-cli-1.6.4-linux-x86_64.tar.gz
+curl -LO https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.4/SHA256SUMS
 sha256sum -c --ignore-missing SHA256SUMS
-mkdir -p ~/.local/share &amp;&amp; tar xzf ai999x-cli-1.5.0-linux-x86_64.tar.gz -C ~/.local/share
-echo &#x27;export PATH=&quot;$HOME/.local/share/ai999x-cli-1.5.0-linux-x86_64:$PATH&quot;&#x27; &gt;&gt; ~/.bashrc &amp;&amp; source ~/.bashrc
+mkdir -p ~/.local/share &amp;&amp; tar xzf ai999x-cli-1.6.4-linux-x86_64.tar.gz -C ~/.local/share
+echo &#x27;export PATH=&quot;$HOME/.local/share/ai999x-cli-1.6.4-linux-x86_64:$PATH&quot;&#x27; &gt;&gt; ~/.bashrc &amp;&amp; source ~/.bashrc
 linear-algebra --version</code></pre>
 <h3>Command line, Windows (PowerShell)</h3>
 <p>The fourth line should print True.</p>
-<pre><code class="powershell">$F = &quot;ai999x-cli-1.5.0-windows-x86_64.zip&quot;
-Invoke-WebRequest &quot;https://downloads.ai999x.com/desktop/1.5.0/$F&quot; -OutFile $F
-Invoke-WebRequest &quot;https://downloads.ai999x.com/desktop/1.5.0/SHA256SUMS&quot; -OutFile SHA256SUMS
+<pre><code class="powershell">$F = &quot;ai999x-cli-1.6.4-windows-x86_64.zip&quot;
+Invoke-WebRequest &quot;https://github.com/AI999X/ai999x-desktop/releases/tag/v1.6.4$F&quot; -OutFile $F
+Invoke-WebRequest &quot;https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.4/SHA256SUMS&quot; -OutFile SHA256SUMS
 (Get-FileHash $F -Algorithm SHA256).Hash.ToLower() -eq ((Select-String -SimpleMatch $F SHA256SUMS).Line -split &#x27; &#x27;)[0]
 Expand-Archive $F -DestinationPath &quot;$env:LOCALAPPDATA\AI999X&quot; -Force
-$D = &quot;$env:LOCALAPPDATA\AI999X\ai999x-cli-1.5.0-windows-x86_64&quot;; $env:Path += &quot;;$D&quot;
+$D = &quot;$env:LOCALAPPDATA\AI999X\ai999x-cli-1.6.4-windows-x86_64&quot;; $env:Path += &quot;;$D&quot;
 [Environment]::SetEnvironmentVariable(&quot;Path&quot;, [Environment]::GetEnvironmentVariable(&quot;Path&quot;, &quot;User&quot;) + &quot;;$D&quot;, &quot;User&quot;)
 linear-algebra --version</code></pre>
 <h3>In your browser</h3>
@@ -129,7 +129,7 @@ NEEDS_INPUT: newton_root needs x0 (starting value). Example: solve(&#x27;newton_
 {&quot;key&quot;: &quot;qr_decomposition&quot;, &quot;inputs&quot;: {&quot;A&quot;: &quot;[[3, 1], [4, 2]]&quot;}}</code></pre>
 <pre><code class="shell">$ linear-algebra batch &lt; cases.jsonl
 {&quot;outcome&quot;:&quot;SOLVED&quot;,&quot;message&quot;:&quot;&quot;,&quot;value&quot;:2.0945514815423265,&quot;unit&quot;:&quot;&quot;,&quot;solved_for&quot;:&quot;root&quot;,&quot;si&quot;:[[&quot;x0&quot;,2.0]],&quot;values&quot;:[[&quot;root&quot;,2.0945514815423265,&quot;&quot;]],&quot;target&quot;:&quot;root&quot;,&quot;phrase&quot;:&quot;the root the iteration converges to&quot;,&quot;assumptions&quot;:[&quot;the iteration converges (within 200 steps) to a simple, well-conditioned root&quot;,&quot;p&#x27;(x) never vanishes at an iterate&quot;],&quot;name&quot;:&quot;Root of a polynomial by Newton&#x27;s method&quot;,&quot;equation&quot;:&quot;Newton-Raphson iteration until the step is below the last bit of x&quot;}
-{&quot;outcome&quot;:&quot;SOLVED&quot;,&quot;message&quot;:&quot;&quot;,&quot;value&quot;:null,&quot;unit&quot;:&quot;&quot;,&quot;solved_for&quot;:&quot;R&quot;,&quot;values&quot;:[[&quot;Q&quot;,[[0.5999999999999999,-0.7999999999999999],[0.7999999999999999,0.6000000000000001]],&quot;&quot;],[&quot;R&quot;,[[5.0,2.1999999999999997],[0.0,0.40000000000000013]],&quot;&quot;]],&quot;target&quot;:&quot;R&quot;,&quot;phrase&quot;:&quot;m x n matrix with orthonormal columns&quot;,&quot;assumptions&quot;:[&quot;rows &gt;= columns&quot;,&quot;independent columns&quot;,&quot;at most 10 x 10&quot;,&quot;convention: the diagonal of R is positive (unique)&quot;],&quot;name&quot;:&quot;QR decomposition (Householder)&quot;,&quot;equation&quot;:&quot;Householder reflections, then signs fixed so that diag(R) &gt; 0&quot;}</code></pre>
+{&quot;outcome&quot;:&quot;SOLVED&quot;,&quot;message&quot;:&quot;&quot;,&quot;value&quot;:null,&quot;unit&quot;:&quot;&quot;,&quot;solved_for&quot;:&quot;R&quot;,&quot;values&quot;:[[&quot;Q&quot;,[[0.5999999999999999,-0.7999999999999999],[0.7999999999999999,0.6000000000000001]],&quot;&quot;],[&quot;R&quot;,[[5.0,2.1999999999999997],[-0.0,0.40000000000000013]],&quot;&quot;]],&quot;target&quot;:&quot;R&quot;,&quot;phrase&quot;:&quot;m x n matrix with orthonormal columns&quot;,&quot;assumptions&quot;:[&quot;rows &gt;= columns&quot;,&quot;independent columns&quot;,&quot;at most 10 x 10&quot;,&quot;convention: the diagonal of R is positive (unique)&quot;],&quot;name&quot;:&quot;QR decomposition (Householder)&quot;,&quot;equation&quot;:&quot;Householder reflections, then signs fixed so that diag(R) &gt; 0&quot;}</code></pre>
 <h2>3. Writing inputs</h2>
 <p>Inputs are written <code>name=value</code>, one per argument; <code>linear-algebra info &lt;capability&gt;</code> lists the names. Quote an argument that holds a space or brackets (bash, zsh and PowerShell all accept double quotes). The answer always states each input as it was read, converted to SI, so a misread unit is visible at once.</p>
 <table><thead><tr><th>kind</th><th>example</th><th>how it is read</th></tr></thead><tbody><tr><td>a number with a unit</td><td><code>&quot;R=0.128 nm&quot;</code></td><td>any unit of the same kind; converted to SI</td></tr><tr><td>a number in SI</td><td><code>R=1.28e-10</code></td><td>no unit means the SI unit shown by info</td></tr><tr><td>a choice</td><td><code>structure=FCC</code></td><td>one of the values info lists</td></tr><tr><td>a list or vector</td><td><code>&quot;v=[1, 2, 3]&quot; or &quot;v=1, 2, 3&quot;</code></td><td>brackets keep it a list</td></tr><tr><td>a matrix</td><td><code>&quot;A=[[1, 2], [3, 4]]&quot;</code></td><td>one list per row</td></tr><tr><td>true / false</td><td><code>inclusive=true</code></td><td>for yes/no options</td></tr></tbody></table>
@@ -213,7 +213,7 @@ P = [[1.0,0.0],[0.0,2.0]]
 <p><strong>Applies when:</strong> rows &gt;= columns; independent columns; at most 10 x 10; convention: the diagonal of R is positive (unique).</p>
 <pre><code class="shell">$ linear-algebra solve qr_decomposition &quot;A=[[3, 1], [4, 2]]&quot;
 Q = [[0.5999999999999999,-0.7999999999999999],[0.7999999999999999,0.6000000000000001]]
-R = [[5.0,2.1999999999999997],[0.0,0.40000000000000013]]
+R = [[5.0,2.1999999999999997],[-0.0,0.40000000000000013]]
   by: QR decomposition (Householder)  (Householder reflections, then signs fixed so that diag(R) &gt; 0)
   assumes: rows &gt;= columns; independent columns; at most 10 x 10; convention: the diagonal of R is positive (unique)</code></pre>
 <p><strong>What the worked example means:</strong> This capability computes the QR decomposition of the input matrix [3 1; 4 2] using Householder reflections. The result consists of two matrices: [[0.6, -0.8], [0.8, 0.6]], which has orthonormal columns, and [[5, 2.2], [-0, 0.4]], which is upper triangular with positive diagonal entries. This factorization expresses [3 1; 4 2] as the product of [[0.6, -0.8], [0.8, 0.6]] and [[5, 2.2], [-0, 0.4]], ensuring numerical stability and a unique representation under the specified conditions.</p>
