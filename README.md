@@ -10,8 +10,8 @@ Linear Algebra covers vectors, matrices, determinants, linear systems, eigenvalu
 
 | | |
 |---|---|
-| **Desktop app** (Windows, Linux) | [Windows](https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.6/ai999x-linear-algebra-1.6.6-windows-x86_64.zip) · [Linux](https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.6/ai999x-linear-algebra-1.6.6-linux-x86_64.tar.gz) |
-| **Command line** `linear-algebra` (Windows, Linux) | [Windows](https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.6/ai999x-cli-1.6.6-windows-x86_64.zip) · [Linux](https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.6/ai999x-cli-1.6.6-linux-x86_64.tar.gz) |
+| **Desktop app** (Windows, Linux) | [Windows](https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.7/ai999x-linear-algebra-1.6.7-windows-x86_64.zip) · [Linux](https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.7/ai999x-linear-algebra-1.6.7-linux-x86_64.tar.gz) |
+| **Command line** `linear-algebra` (Windows, Linux) | [Windows](https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.7/ai999x-cli-1.6.7-windows-x86_64.zip) · [Linux](https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.7/ai999x-cli-1.6.7-linux-x86_64.tar.gz) |
 | **Browser** (any device) | [Try it on the model page](https://www.ai999x.com/models/linear-algebra-ai999x/#capabilities) |
 | **Python** 3.10+ | `pip install linear-algebra-ai999x`: on Windows and Linux (x86-64) `pip` installs the same compiled engine; on other systems (macOS, ARM) it installs a pure-Python build that gives the same answers |
 
@@ -134,67 +134,6 @@ print(a.outcome, a.values)
 # SOLVED {'minor': -6.0, 'cofactor': 6.0}
 ```
 
-## Command line: 15 examples
-
-Each command below was run with `linear-algebra` of this release; the lines under it are the answer it printed (the full answer goes on with the method, every input in SI units and the conditions it assumes).
-
-```text
-$ linear-algebra solve low_rank_approximation "A=[[3, 0], [0, 1]]" k=1
-approximation = [[3.0,0.0],[0.0,0.0]]
-error2 = 1
-errorF = 1
-
-$ linear-algebra solve adjugate "A=[[1, 2], [3, 4]]"
-adjugate = [[4.0,-2.0],[-3.0,1.0]]
-
-$ linear-algebra solve characteristic_polynomial "A=[[2, 1], [1, 2]]"
-coefficients = [1.0,-4.0,3.0]
-
-$ linear-algebra solve least_squares_polynomial "x=[0, 1, 2, 3]" "y=[1, 0, 3, 10]" degree=2
-coefficients = [1.0,-3.0,2.0]
-
-$ linear-algebra solve conjugate_gradient "A=[[4, 1], [1, 3]]" "b=[1, 2]"
-solution = [0.09090909090909091,0.6363636363636364]
-
-$ linear-algebra solve matrix_vector_product "A=[[1, 2], [3, 4]]" "x=[5, 6]"
-image = [17.0,39.0]
-
-$ linear-algebra solve condition_number "A=[[2, 0], [0, 0.5]]"
-cond2 = 4
-cond1 = 4
-
-$ linear-algebra solve matrix_exponential "A=[[0, 1], [0, 0]]"
-exponential = [[1.0,1.0],[0.0,1.0]]
-
-$ linear-algebra solve poisson_1d "f=[1, 1, 1]" L=1
-u = [0.09375,0.125,0.09375]
-h = 0.25
-
-$ linear-algebra solve clamped_cubic_spline "x=[0, 1, 2]" "y=[0, 1, 0]" at=0.5 slope_start=1 slope_end=-1
-value = 0.625
-
-$ linear-algebra solve csc_format "A=[[1, 0, 2], [0, 0, 3], [4, 5, 0]]"
-data = [1.0,4.0,5.0,2.0,3.0]
-indices = [0,2,2,0,1]
-indptr = [0,2,3,5]
-nnz = 5
-density = 0.5555555556
-
-$ linear-algebra solve column_space "A=[[1, 2, 3], [2, 4, 7]]"
-dimension = 2
-basis = [[1.0,2.0],[3.0,7.0]]
-
-$ linear-algebra solve angle_between_vectors "u=[1, 0]" "v=[1, 1]"
-angle_degrees = 45
-angle_radians = 0.7853981634
-
-$ linear-algebra solve cholesky "A=[[4, 12, -16], [12, 37, -43], [-16, -43, 98]]"
-L = [[2.0,0.0,0.0],[6.0,1.0,0.0],[-8.0,5.0,3.0]]
-
-$ linear-algebra solve determinant_2x2 "A=[[1, 2], [3, 4]]"
-det = -2
-```
-
 ## Guides
 
 - Desktop app guide: the window, every calculation, scenes and charts: [PDF](https://huggingface.co/AI999X/linear-algebra-ai999x/blob/main/docs/linear_algebra_ai999x_desktop_guide.pdf) · [HTML](https://huggingface.co/AI999X/linear-algebra-ai999x/blob/main/docs/linear_algebra_ai999x_desktop_guide.html) · [Markdown](https://huggingface.co/AI999X/linear-algebra-ai999x/blob/main/docs/linear_algebra_ai999x_desktop_guide.md)
@@ -203,13 +142,13 @@ det = -2
 
 Every calculation, with its formula, a worked example and its figures: **[Linear Algebra on ai999x.com](https://www.ai999x.com/models/linear-algebra-ai999x/)**. Install guides for the app and the command line: [https://www.ai999x.com/desktop-cli/](https://www.ai999x.com/desktop-cli/).
 
-Version 1.6.6 · License: Apache-2.0 · Author: Ibnul Jaif Farabi · Organization: AI999X · Contact: support@ai999x.com · [Support the project](https://buymeacoffee.com/ibnuljaiffarabi)
+Version 1.6.7 · License: Apache-2.0 · Author: Ibnul Jaif Farabi · Organization: AI999X · Contact: support@ai999x.com · [Support the project](https://buymeacoffee.com/ibnuljaiffarabi)
 
 *The Future Is Self-Improving.*
 
 ## Source and releases
 
-This repository holds the installable source of each release, exactly as published on [PyPI](https://pypi.org/project/linear-algebra-ai999x/) (`pip install .` builds it). Releases are tagged `v1.6.6`; the [GitHub release](https://github.com/AI999X/linear-algebra-ai999x/releases/tag/v1.6.6) carries the wheel, the desktop app and the command-line program for Windows and Linux, and their checksums.
+This repository holds the installable source of each release, exactly as published on [PyPI](https://pypi.org/project/linear-algebra-ai999x/) (`pip install .` builds it). Releases are tagged `v1.6.7`; the [GitHub release](https://github.com/AI999X/linear-algebra-ai999x/releases/tag/v1.6.7) carries the wheel, the desktop app and the command-line program for Windows and Linux, and their checksums.
 
 ## Build the program from source
 
