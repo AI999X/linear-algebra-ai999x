@@ -10,8 +10,8 @@ Linear Algebra covers vectors, matrices, determinants, linear systems, eigenvalu
 
 | | |
 |---|---|
-| **Desktop app** (Windows, Linux) | [Windows](https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.5/ai999x-linear-algebra-1.6.5-windows-x86_64.zip) · [Linux](https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.5/ai999x-linear-algebra-1.6.5-linux-x86_64.tar.gz) |
-| **Command line** `linear-algebra` (Windows, Linux) | [Windows](https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.4/ai999x-cli-1.6.4-windows-x86_64.zip) · [Linux](https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.4/ai999x-cli-1.6.4-linux-x86_64.tar.gz) |
+| **Desktop app** (Windows, Linux) | [Windows](https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.6/ai999x-linear-algebra-1.6.6-windows-x86_64.zip) · [Linux](https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.6/ai999x-linear-algebra-1.6.6-linux-x86_64.tar.gz) |
+| **Command line** `linear-algebra` (Windows, Linux) | [Windows](https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.6/ai999x-cli-1.6.6-windows-x86_64.zip) · [Linux](https://github.com/AI999X/ai999x-desktop/releases/download/v1.6.6/ai999x-cli-1.6.6-linux-x86_64.tar.gz) |
 | **Browser** (any device) | [Try it on the model page](https://www.ai999x.com/models/linear-algebra-ai999x/#capabilities) |
 | **Python** 3.10+ | `pip install linear-algebra-ai999x`: on Windows and Linux (x86-64) `pip` installs the same compiled engine; on other systems (macOS, ARM) it installs a pure-Python build that gives the same answers |
 
@@ -195,94 +195,6 @@ $ linear-algebra solve determinant_2x2 "A=[[1, 2], [3, 4]]"
 det = -2
 ```
 
-## Rust library: 15 examples
-
-The crate `linear-algebra-ai999x` (in `rust/` of the GitHub repository) answers a JSON request with `linear_algebra_ai999x::solve_json`. Each call below was compiled and run on this release; the comment under it is what it printed. The whole program is `rust/linear-algebra/examples/readme.rs`: `cd rust && cargo run --release --example readme -p linear-algebra-ai999x`.
-
-```rust
-use serde_json::{json, Value};
-
-fn show(request: Value) {
-    let answer: Value = serde_json::from_str(&linear_algebra_ai999x::solve_json(&request.to_string())).unwrap();
-    println!("{}", answer["outcome"].as_str().unwrap_or(""));
-    for v in answer["values"].as_array().into_iter().flatten() {
-        let unit = v[2].as_str().unwrap_or("");
-        let unit = if unit.is_empty() || unit == "1" { String::new() } else { format!(" {unit}") };
-        println!("{} = {}{}", v[0].as_str().unwrap_or(""), v[1], unit);
-    }
-}
-
-show(json!({"key": "low_rank_approximation", "inputs": {"A": [[3, 0], [0, 1]], "k": "1"}}));
-// SOLVED
-// approximation = [[3.0,0.0],[0.0,0.0]]
-// error2 = 1.0
-// errorF = 1.0
-
-show(json!({"key": "adjugate", "inputs": {"A": [[1, 2], [3, 4]]}}));
-// SOLVED
-// adjugate = [[4.0,-2.0],[-3.0,1.0]]
-
-show(json!({"key": "characteristic_polynomial", "inputs": {"A": [[2, 1], [1, 2]]}}));
-// SOLVED
-// coefficients = [1.0,-4.0,3.0]
-
-show(json!({"key": "least_squares_polynomial", "inputs": {"x": [0, 1, 2, 3], "y": [1, 0, 3, 10], "degree": "2"}}));
-// SOLVED
-// coefficients = [1.0,-3.0,2.0]
-
-show(json!({"key": "conjugate_gradient", "inputs": {"A": [[4, 1], [1, 3]], "b": [1, 2]}}));
-// SOLVED
-// solution = [0.09090909090909091,0.6363636363636364]
-
-show(json!({"key": "matrix_vector_product", "inputs": {"A": [[1, 2], [3, 4]], "x": [5, 6]}}));
-// SOLVED
-// image = [17.0,39.0]
-
-show(json!({"key": "condition_number", "inputs": {"A": [[2, 0], [0, 0.5]]}}));
-// SOLVED
-// cond2 = 4.0
-// cond1 = 4.0
-
-show(json!({"key": "matrix_exponential", "inputs": {"A": [[0, 1], [0, 0]]}}));
-// SOLVED
-// exponential = [[1.0,1.0],[0.0,1.0]]
-
-show(json!({"key": "poisson_1d", "inputs": {"f": [1, 1, 1], "L": "1"}}));
-// SOLVED
-// u = [0.09375,0.125,0.09375]
-// h = 0.25
-
-show(json!({"key": "clamped_cubic_spline", "inputs": {"x": [0, 1, 2], "y": [0, 1, 0], "at": "0.5", "slope_start": "1", "slope_end": "-1"}}));
-// SOLVED
-// value = 0.625
-
-show(json!({"key": "csc_format", "inputs": {"A": [[1, 0, 2], [0, 0, 3], [4, 5, 0]]}}));
-// SOLVED
-// data = [1.0,4.0,5.0,2.0,3.0]
-// indices = [0,2,2,0,1]
-// indptr = [0,2,3,5]
-// nnz = 5
-// density = 0.5555555555555556
-
-show(json!({"key": "column_space", "inputs": {"A": [[1, 2, 3], [2, 4, 7]]}}));
-// SOLVED
-// dimension = 2.0
-// basis = [[1.0,2.0],[3.0,7.0]]
-
-show(json!({"key": "angle_between_vectors", "inputs": {"u": [1, 0], "v": [1, 1]}}));
-// SOLVED
-// angle_degrees = 45.0
-// angle_radians = 0.7853981633974483
-
-show(json!({"key": "cholesky", "inputs": {"A": [[4, 12, -16], [12, 37, -43], [-16, -43, 98]]}}));
-// SOLVED
-// L = [[2.0,0.0,0.0],[6.0,1.0,0.0],[-8.0,5.0,3.0]]
-
-show(json!({"key": "determinant_2x2", "inputs": {"A": [[1, 2], [3, 4]]}}));
-// SOLVED
-// det = -2.0
-```
-
 ## Guides
 
 - Desktop app guide: the window, every calculation, scenes and charts: [PDF](https://huggingface.co/AI999X/linear-algebra-ai999x/blob/main/docs/linear_algebra_ai999x_desktop_guide.pdf) · [HTML](https://huggingface.co/AI999X/linear-algebra-ai999x/blob/main/docs/linear_algebra_ai999x_desktop_guide.html) · [Markdown](https://huggingface.co/AI999X/linear-algebra-ai999x/blob/main/docs/linear_algebra_ai999x_desktop_guide.md)
@@ -291,7 +203,7 @@ show(json!({"key": "determinant_2x2", "inputs": {"A": [[1, 2], [3, 4]]}}));
 
 Every calculation, with its formula, a worked example and its figures: **[Linear Algebra on ai999x.com](https://www.ai999x.com/models/linear-algebra-ai999x/)**. Install guides for the app and the command line: [https://www.ai999x.com/desktop-cli/](https://www.ai999x.com/desktop-cli/).
 
-Version 1.6.4 · License: Apache-2.0 · Author: Ibnul Jaif Farabi · Organization: AI999X · Contact: support@ai999x.com · [Support the project](https://buymeacoffee.com/ibnuljaiffarabi)
+Version 1.6.6 · License: Apache-2.0 · Author: Ibnul Jaif Farabi · Organization: AI999X · Contact: support@ai999x.com · [Support the project](https://buymeacoffee.com/ibnuljaiffarabi)
 
 *The Future Is Self-Improving.*
 
