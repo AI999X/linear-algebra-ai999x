@@ -1,6 +1,6 @@
 # linear-algebra: the Linear Algebra program, user guide
 
-**linear-algebra-ai999x 1.6.4**, Rust build: command line, desktop app and browser. **Creator / engineer:** Ibnul Jaif Farabi · **Company:** AI999X · support@ai999x.com
+**linear-algebra-ai999x 1.6.6**, Rust build: command line, desktop app and browser. **Creator / engineer:** Ibnul Jaif Farabi · **Company:** AI999X · support@ai999x.com
 
 Linear Algebra covers vectors, matrices, determinants, linear systems, eigenvalues, decompositions, least squares, sparse matrices and numerical methods (root finding, interpolation, quadrature). This guide is about `linear-algebra`, the model as a self-contained program for Windows and Linux: 89 capabilities in 13 topics, answered on your own computer with no network, no Python and nothing else to install. The same compiled model runs in the AI999X desktop app and in the browser on the model's page (https://www.ai999x.com/models/linear-algebra-ai999x/); the Python package (`pip install linear-algebra-ai999x`) has its own guide. Every command output printed here is what the program printed.
 
@@ -96,7 +96,7 @@ Prints the model, its version and that this is the Rust build.
 
 ```shell
 $ linear-algebra --version
-linear-algebra-ai999x 1.6.4 (Rust build, ax-engine 1.6.4)
+linear-algebra-ai999x 1.6.6 (Rust build, ax-engine 1.6.6)
 ```
 
 ### 2.2 Ask in words
